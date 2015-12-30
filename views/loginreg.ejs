@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<% include common/head %>
+	<link rel="stylesheet" type="text/css" href="stylesheets/css/login.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/css/animate-custom.css" />
+	<script src="javascripts/js/loginreg.js"></script>	
+</head>
+
+<body>
+	<header>
+		<div class="header_con">
+			<a href="/"><img src="images/shargo_logo.png" alt=""/></a>			
+	        <div class="header_search">
+				<input type="text" name="search" class="search" />
+			</div>
+			<div class="header_button">
+				<button id="search_button">
+				<span class="ui-button-text">搜索</span>
+				</button>
+			</div>		
+		
+		</div>	
+		 <div id="head_nav">
+	  		<div class="head_nav area">
+	    		<div class="l">
+	    		<a class="on" href="/">首页<i></i></a>
+		        <a class="" href="/jordan">乔丹<i></i></a>     
+		        <a class="" href="/kobe">科比<i></i></a>
+	      		<a class="" href="/james">詹姆斯<i></i></a>
+		        <a class="" href="/durant">杜兰特<i></i></a>
+		        <a class="" href="/paul">保罗<i></i></a>
+		        <a class="" href="/curry">库里<i></i></a>
+		        <a class="" href="/harden">哈登<i></i></a>
+	     	    <a class="" href="/morestar">更多...<i></i></a>
+	    	  </div>   
+	  		</div>
+		</div>   
+	</header><!-- /header -->
+		
+	<% include common/login %>
+<div id="loading">
+	<p>加载中</p>
+</div>
+
+<div id="success">
+	<p>成功</p>
+</div>
+<div id="error">
+	<p>错误</p>
+</div>
+
+<% include common/footer %>		
+</body>
+</html>

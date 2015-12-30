@@ -1,0 +1,122 @@
+/*顶部banner栏css样式*/
+.head_banner{
+	width:980px;
+	height:150px;
+	margin:0 auto;
+	margin-bottom: 10px;
+}
+#banner {
+	width:980px;
+	height:150px;
+	float:left;
+	margin: 0 auto;
+	position:relative;
+	overflow:hidden;
+}
+#banner img {
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1
+}
+#banner ul {
+	position:absolute;
+	top:128px;
+	left:420px;
+	z-index:4;
+}
+#banner ul li {
+	float:left;
+	padding:0 5px;
+	font-size:16px;
+	color:#999;
+	cursor:pointer;
+	list-style: none;
+}
+#banner span {
+	width:980px;
+	height:25px;
+	position:absolute;
+	top:125px;
+	left:0;
+	background:#333;
+	opacity:0.3;
+	z-index:3;
+}
+#banner strong {
+	position:absolute;
+	top:127px;
+	left:10px;
+	color:#fff;
+	z-index:4;
+	font: 16px "微软雅黑";
+	padding-bottom: 5px;
+}
+
+
+/* all品牌 */
+.area {
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+}
+.brand_category_tit {
+    position: relative;
+    margin-bottom: 10px;
+}
+.brand_category_tit p.bct_dividing {
+    height: 1px;
+    background: #ccc;
+    width: 100%;
+    position: absolute;
+    top: 14px;
+    left: 0;
+    z-index: -1;
+}
+.bct_info{text-align: center;}
+.brandbox .brand_category_tit p.bct_info span {
+    background-position: 0 -35px;
+}
+.brand_category_tit p.bct_info span {
+    font: 18px/20px "微软雅黑";
+    color: #333;
+    vertical-align: middle;
+    background: url(image/brand_tit.png) 0 -2px no-repeat #f2f2f2;
+    padding: 4px 18px 4px 80px;
+    display: inline-block;
+}
+.brand_category_tit p.bct_info span.comm_charts{
+	background: #f2f2f2;
+	padding: 4px 18px 4px 18px;
+}
+
+
+/* 评论页 */
+.charts{margin: 10px auto 0;width:600px;height:100%;}
+#myChart{margin:0 auto;} 
+
+.comments{margin: 10px auto 0;width:980px;height:100%;}
+.comments ul{}
+.comments ul li{
+	width: 960px;padding: 0 10px;list-style:none;
+	color: #666;font-family: "微软雅黑";
+}
+.comments ul li span{
+	display: inline-block;line-height: 26px;	
+}
+.comments ul li span.commonts_user{
+	width: 90px;height: 58px;
+	margin-right: 20px;
+	padding-left: 10px;
+	font-size: 16px;
+	text-align: center;vertical-align:middle;
+}
+.comments ul li span.commonts_con{
+	width: 820px;
+	height: auto;
+	padding-left: 10px;
+	font-size: 14px;
+	text-align: left;vertical:middle;
+	overflow: hidden;	
+}

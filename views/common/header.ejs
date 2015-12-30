@@ -1,0 +1,22 @@
+
+	<div class="header_con">
+		<a href="/"><img src="images/shargo_logo.png" alt=""/></a>			
+        <div class="header_search">
+			<input type="text" name="search" class="search" />
+		</div>
+		<div class="header_button">
+			<button id="search_button">
+			<span class="ui-button-text">搜索</span>
+			</button>
+		</div>
+		<div class="header_member">		
+			<% if(user) { %>
+			<a href="javascript:void(0)" id="member">欢迎您，<span class="user_name"><%= user %></span></a>
+			|			
+			<a href="/logout" id="logout">退出</a>
+			<% } else { %>
+			<a href="loginreg" id="login_a">登录</a>|<a href="loginreg#toregister" id="reg_a">注册</a>
+			<% } %>
+		</div>
+
+	</div>	       

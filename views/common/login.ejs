@@ -1,0 +1,70 @@
+
+        <div class="container">
+            <section>				
+                <div id="container_demo" >
+                    <!-- hidden anchor to stop jump -->
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <div id="wrapper">
+                        <div id="login" class="animate form">
+                            <form id="login-form" autocomplete="on" method="post" onsubmit="return false"> 
+                                <h1>登录</h1> 
+                                <p> 
+                                    <label for="username" class="uname" data-icon="u" > 用户名： </label>
+                                    <input id="username" name="username" required="required" type="text" placeholder="请输入用户名"/>
+                                </p>
+                                <p> 
+                                    <label for="password" class="youpasswd" data-icon="p"> 密码： </label>
+                                    <input id="password" name="password" required="required" type="password" placeholder="请输入密码" /> 
+                                </p>
+                                <p class="keeplogin"> 
+									<input type="checkbox" name="status" id="loginkeeping" value="1" /> 
+									<label for="loginkeeping">保持登录状态</label>
+								</p>
+                                <p class="login button"> 
+                                    <input type="submit" value="登录" /> 
+								</p>
+                                <p class="change_link">
+									还没有账号 ？
+									<a href="#toregister" class="to_register">去注册&gt;&gt;</a>
+								</p>
+                            </form>
+                        </div>
+
+                        <div id="register" class="animate form">
+                            <form  id="register-form" autocomplete="on" method="post" onsubmit="return false"> 
+                                <h1> 注册 </h1> 
+                                <p> 
+                                    <label for="usernamesignup" class="uname" data-icon="u">用户名：</label>
+                                    <span class="error error_user">输入不合法（2~10位），请重新输入</span>
+                                    <input id="username" name="username" required="required" type="text" placeholder="请输入用户名（2~10位）" />
+                                </p>
+                                <p> 
+                                    <label for="emailsignup" class="youmail" data-icon="e" > 邮箱：</label>
+                                    <span class="error error_email">邮件输入不合法，请重新输入</span>
+                                    <input id="email" name="email" required="required" type="email" placeholder="请输入邮箱"/> 
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup" class="youpasswd" data-icon="p">密码： </label>
+                                    <span class="error error_pass">输入不合法（6~18位），请重新输入</span>
+                                    <input id="password" name="password" required="required" type="password" placeholder="请输入密码（6~18位）"/>
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">重复密码： </label>
+                                    <span class="error error_notpass">密码不一致，请重新输入</span>
+                                    <input id="confirm_password" name="confirm_password" required="required" type="password" placeholder="请再次输入密码"/>
+                                </p>
+                                <p class="signin button"> 
+									<input type="submit" value="注册"/> 
+								</p>
+                                <p class="change_link">  
+									已有账号？
+									<a href="#tologin" class="to_register"> 去登录&gt;&gt; </a>
+								</p>
+                            </form>
+                        </div>
+						
+                    </div>
+                </div>  
+            </section>
+        </div>

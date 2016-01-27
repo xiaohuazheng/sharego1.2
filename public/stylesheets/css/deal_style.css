@@ -4,7 +4,7 @@
     background: url('image/jordan_banner.png') top center no-repeat #0a063d;
     height: 240px;
 }
-
+.dealbox{width: 1200px;}
 
 
 
@@ -14,17 +14,17 @@
 
 /*默认deal样式 start*/
 .deal .con:hover{border:1px solid #ec6060;}
-.deal .con{width:312px;height:305px; float:left;margin:0 12px 15px 0; display: inline;text-align: left;border: 1px solid transparent;position: relative;line-height: 20px;z-index: 100;}
+.deal .con{background-color: #fff;width:225px;height:270px; float:left;margin:0 24px 20px 0; display: inline;text-align: left;border: 1px solid transparent;position: relative;line-height: 20px;z-index: 100;}
 .con>a{font-size:0;display: block;background-color: #fff;}
-.deal img{width: 312px;height: 208px;margin-bottom: 10px;z-index: 100;}
+.deal img{width: 182px;height: 182px;margin-bottom: 10px;z-index: 100;}
 .deal img.bdg_img{height: 30px; position: absolute; left: 1px; bottom: 98px; margin-bottom: 0;z-index: 10;}
 .deal .dealon img.bdg_img{left: 0px;bottom: 97px;}
 .deal img::after{content: ""; height: 20px; width: 20px; display: block;}
-.deal h3{padding:0px 0px 5px 15px; height:20px;overflow: hidden; text-align:left;font:14px/20px "microsoft yahei";white-space: nowrap;text-overflow:ellipsis;width: 297px;background-color: #fff;}
+.deal h3{padding:0px 0px 5px 4px; height:20px;overflow: hidden; text-align:left;font:14px/20px "microsoft yahei";white-space: nowrap;text-overflow:ellipsis;width: 218px;background-color: #fff;}
 .deal h3 b{display: none;}
-.deal h4{display: inline-block;height:30px;padding:10px 0 0 22px;overflow: hidden; text-align:right;background: #fff;line-height: 36px;}
+.deal h4{display: inline-block;height:30px;padding:0 0 0 10px;overflow: hidden; text-align:right;background: #fff;line-height: 30px;}
 .deal h4 span{width: 110px; float:left;color:#e02f2f;font-family: "tahoma"; line-height: 13px;font-size: 12px;text-align: left;}
-.deal h4 em{padding-right: 10px;color:#fd4700;font:22px/36px "微软雅黑";float:left;font-weight: bold;}
+.deal h4 em{padding-right: 10px;color:#fd4700;font:16px/30px "微软雅黑";float:left;font-weight: bold;}
 .deal h4 em i{font-size: 30px;}
 .brandstyle .con h4 em i{font-size: 40px;}
 .brandstyle .con h4 em .qi{font-size: 18px;font-family: "微软雅黑";font-weight: bold;float: right; margin-top: 5px;*float: none;}

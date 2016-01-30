@@ -1,8 +1,7 @@
 //https://github.com/felixge/node-mysql
 var MySQLUtil = require('../utils/mysql');
 exports.dele = function (callback) {
-  MySQLUtil.query('TRUNCATE TABLE jordan', function (rows, fields) {
-    //console.log('fields', JSON.stringify(fields));
+  MySQLUtil.query('TRUNCATE TABLE jordan', [], function (rows, fields) {
     if(rows){
       callback(message.login.success, rows);        
     }else{
@@ -14,7 +13,6 @@ exports.dele = function (callback) {
 exports.query = function (callback) {
   MySQLUtil.query('select id, href, picsrc, price, name from jordan', [], function (rows, fields) {
     console.log('rows', JSON.stringify(rows));
-    //console.log('fields', JSON.stringify(fields));
     callback(rows);
   });
 };

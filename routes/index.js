@@ -1,11 +1,15 @@
-
+var Jordan = require('../model/Jordan');
 /* GET home page. */
 
 exports.index = function(req, res){
   res.render('index',{user:req.session.user});
 };
 exports.jordan = function(req, res){
-  res.render('shoes/jordan',{user:req.session.user});
+  Jordan.query(function(result) {
+    res.render('shoes/jordan',{user:req.session.user,data:result});
+  });
+  //res.send(result);
+  
 };
 exports.kobe = function(req, res){
   res.render('shoes/kobe',{user:req.session.user});

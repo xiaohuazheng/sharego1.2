@@ -12,10 +12,10 @@ var superagent = require('superagent');
 
 var User = require('./model/user');
 var Encrypt = require('./utils/encrypt');
-var Jordan = require('./model/Jordan')
 
 var routes = require('./routes');
 var user = require('./routes/user');
+var star = require('./routes/star');
 
 var app = express();
 
@@ -42,6 +42,7 @@ app.use(session({
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(app.router);
 
+app.use('/crawler',star.jordan);
 
 app.use('/loginreg',user.loginreg);
 app.use('/logout',user.logout);
@@ -145,6 +146,7 @@ app.post('/doregister', function(req, res) {
 
 
 //爬取数据
+/*
 app.get('/crawler', function (req, res, next) {
   superagent.get('http://www.52xie.com/category-410-0-b0-min0-max0-attr0-1-last_update-DESC.html')
     .end(function (err, sres) {
@@ -175,5 +177,6 @@ app.get('/crawler', function (req, res, next) {
       });
     });
 });
+*/
 
 module.exports = app;

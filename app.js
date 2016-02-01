@@ -42,7 +42,15 @@ app.use(session({
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(app.router);
 
-app.use('/crawler',star.jordan);
+app.use('/crawlerjordan',star.jordan);
+app.use('/crawlerkobe',star.kobe);
+app.use('/crawlerjames',star.james);
+app.use('/crawlerdurant',star.durant);
+app.use('/crawlerjorge',star.jorge);
+app.use('/crawlercurry',star.curry);
+app.use('/crawlerharden',star.harden);
+
+app.use('/crawler',routes.crawler);
 
 app.use('/loginreg',user.loginreg);
 app.use('/logout',user.logout);
@@ -93,7 +101,6 @@ app.use(function(err, req, res, next) {
 //用户登录
 app.post('/dologin', function(req, res) {
   console.log('===========登录===========');
-  console.log(JSON.stringify(req.body));
   var username = req.body.username;
   var password = req.body.password;
   var encryptPassword = Encrypt.md5(password).toUpperCase();
@@ -101,8 +108,6 @@ app.post('/dologin', function(req, res) {
   User.loginByEmail(username, encryptPassword, function(status, userInfo){    
     if(status == message.login.success){
       req.session.user = username;
-      console.log('===========req.session.user===========');
-      console.log(req.session.user);
       res.send(200);
       //res.end("end");           
     }else{
@@ -114,8 +119,6 @@ app.post('/dologin', function(req, res) {
 
 //用户注册时判断用户名是否已存在
 app.post('/isuser', function(req, res) {
-  console.log('=========判断用户名=============');
-  console.log(JSON.stringify(req.body));
   var username = req.body.username;
   User.isUser(username, function(status, userInfo){    
     if(status == message.login.success){
@@ -129,8 +132,6 @@ app.post('/isuser', function(req, res) {
 
 //用户注册
 app.post('/doregister', function(req, res) {
-  console.log('=========注册=============');
-  console.log(JSON.stringify(req.body));
   var nickname = req.body.username;
   var email = req.body.email;
   var password = req.body.password;
@@ -144,39 +145,5 @@ app.post('/doregister', function(req, res) {
   });
 });
 
-
-//爬取数据
-/*
-app.get('/crawler', function (req, res, next) {
-  superagent.get('http://www.52xie.com/category-410-0-b0-min0-max0-attr0-1-last_update-DESC.html')
-    .end(function (err, sres) {
-      if (err) {
-        return next(err);
-      }
-      Jordan.dele(function (status, userInfo){
-        if(status == message.login.success){
-          console.log('dele ok');          
-        }else{
-          console.log('dele fail');
-        }
-      });
-      var $ = cheerio.load(sres.text);
-      $('.productList .frame .frameA img').each(function (idx, element) {
-        var $element = $(element),
-        href = $element.parent().attr('href'),
-        picsrc = $element.attr('src'),
-        price = parseInt($element.parent().parent().find('.price ').find('.okprice').text()),
-        name = $element.parent().parent().find('.altName').find('a').text();
-        Jordan.insert(href, picsrc, price, name, function(status, userInfo) {
-          if(status == message.login.success){
-            res.send(200);          
-          }else{
-            res.send(404);
-          }
-        });
-      });
-    });
-});
-*/
 
 module.exports = app;

@@ -11,26 +11,27 @@ exports.jordan = function(req, res, next){
       }
       StarDeal.delejordan(function (status, userInfo){
         if(status == message.login.success){
-          console.log('dele ok');          
+          console.log('dele ok and then:');
+          var $ = cheerio.load(sres.text);
+	      $('.productList .frame .frameA img').each(function (idx, element) {
+	        var $element = $(element),
+	        href = $element.parent().attr('href'),
+	        picsrc = $element.attr('src'),
+	        price = parseInt($element.parent().parent().find('.price').find('.okprice').text()),
+	        name = $element.parent().parent().find('.altName').find('a').text();
+	        dealid = href.replace(/[^0-9]+/g, '');
+	        StarDeal.insertjordan(href, picsrc, price, name, dealid, function(status, userInfo) {
+	          if(status == message.login.success){
+	            console.log('insert success');          
+	          }else{
+	            console.log('insert fail');
+	          }
+	        });
+	      });          
         }else{
           console.log('dele fail');
         }
-      });
-      var $ = cheerio.load(sres.text);
-      $('.productList .frame .frameA img').each(function (idx, element) {
-        var $element = $(element),
-        href = $element.parent().attr('href'),
-        picsrc = $element.attr('src'),
-        price = parseInt($element.parent().parent().find('.price').find('.okprice').text()),
-        name = $element.parent().parent().find('.altName').find('a').text();
-        StarDeal.insertjordan(href, picsrc, price, name, function(status, userInfo) {
-          if(status == message.login.success){
-            console.log('insert success');          
-          }else{
-            console.log('insert fail');
-          }
-        });
-      });
+      });	      
     });
 };
 
@@ -42,26 +43,27 @@ exports.kobe = function(req, res, next){
       }
       StarDeal.delekobe(function (status, userInfo){
         if(status == message.login.success){
-          console.log('dele ok');          
+          console.log('dele ok and then:');
+          var $ = cheerio.load(sres.text);
+	      $('.productList .frame .frameA img').each(function (idx, element) {
+	        var $element = $(element),
+	        href = $element.parent().attr('href'),
+	        picsrc = $element.attr('src'),
+	        price = parseInt($element.parent().parent().find('.price').find('.okprice').text()),
+	        name = $element.parent().parent().find('.altName').find('a').text();
+	        dealid = href.replace(/[^0-9]+/g, '');
+	        StarDeal.insertkobe(href, picsrc, price, name, dealid, function(status, userInfo) {
+	          if(status == message.login.success){
+	            console.log('insert success');          
+	          }else{
+	            console.log('insert fail');
+	          }
+	        });
+	      });          
         }else{
           console.log('dele fail');
         }
-      });
-      var $ = cheerio.load(sres.text);
-      $('.productList .frame .frameA img').each(function (idx, element) {
-        var $element = $(element),
-        href = $element.parent().attr('href'),
-        picsrc = $element.attr('src'),
-        price = parseInt($element.parent().parent().find('.price').find('.okprice').text()),
-        name = $element.parent().parent().find('.altName').find('a').text();
-        StarDeal.insertkobe(href, picsrc, price, name, function(status, userInfo) {
-          if(status == message.login.success){
-            console.log('insert success');          
-          }else{
-            console.log('insert fail');
-          }
-        });
-      });
+      });	      
     });
 };
 
@@ -73,26 +75,27 @@ exports.james = function(req, res, next){
       }
       StarDeal.delejames(function (status, userInfo){
         if(status == message.login.success){
-          console.log('dele ok');          
+          console.log('dele ok and then:');
+          var $ = cheerio.load(sres.text);
+	      $('.productList .frame .frameA img').each(function (idx, element) {
+	        var $element = $(element),
+	        href = $element.parent().attr('href'),
+	        picsrc = $element.attr('src'),
+	        price = parseInt($element.parent().parent().find('.price').find('.okprice').text()),
+	        name = $element.parent().parent().find('.altName').find('a').text();
+	        dealid = href.replace(/[^0-9]+/g, '');
+	        StarDeal.insertjames(href, picsrc, price, name, dealid, function(status, userInfo) {
+	          if(status == message.login.success){
+	            console.log('insert success');          
+	          }else{
+	            console.log('insert fail');
+	          }
+	        });
+	      });          
         }else{
           console.log('dele fail');
         }
-      });
-      var $ = cheerio.load(sres.text);
-      $('.productList .frame .frameA img').each(function (idx, element) {
-        var $element = $(element),
-        href = $element.parent().attr('href'),
-        picsrc = $element.attr('src'),
-        price = parseInt($element.parent().parent().find('.price').find('.okprice').text()),
-        name = $element.parent().parent().find('.altName').find('a').text();
-        StarDeal.insertjames(href, picsrc, price, name, function(status, userInfo) {
-          if(status == message.login.success){
-            console.log('insert success');          
-          }else{
-            console.log('insert fail');
-          }
-        });
-      });
+      });	      
     });
 };
 
@@ -104,118 +107,154 @@ exports.durant = function(req, res, next){
       }
       StarDeal.deledurant(function (status, userInfo){
         if(status == message.login.success){
-          console.log('dele ok');          
+          console.log('dele ok and then:');
+          var $ = cheerio.load(sres.text);
+	      $('.productList .frame .frameA img').each(function (idx, element) {
+	        var $element = $(element),
+	        href = $element.parent().attr('href'),
+	        picsrc = $element.attr('src'),
+	        price = parseInt($element.parent().parent().find('.price').find('.okprice').text()),
+	        name = $element.parent().parent().find('.altName').find('a').text();
+	        dealid = href.replace(/[^0-9]+/g, '');
+	        StarDeal.insertdurant(href, picsrc, price, name, dealid, function(status, userInfo) {
+	          if(status == message.login.success){
+	            console.log('insert success');          
+	          }else{
+	            console.log('insert fail');
+	          }
+	        });
+	      });          
         }else{
           console.log('dele fail');
         }
-      });
-      var $ = cheerio.load(sres.text);
-      $('.productList .frame .frameA img').each(function (idx, element) {
-        var $element = $(element),
-        href = $element.parent().attr('href'),
-        picsrc = $element.attr('src'),
-        price = parseInt($element.parent().parent().find('.price').find('.okprice').text()),
-        name = $element.parent().parent().find('.altName').find('a').text();
-        StarDeal.insertdurant(href, picsrc, price, name, function(status, userInfo) {
-          if(status == message.login.success){
-            console.log('insert success');          
-          }else{
-            console.log('insert fail');
-          }
-        });
-      });
+      });	      
     });
 };
 
 exports.jorge = function(req, res, next){
-  superagent.get('http://www.52xie.com/search.php?encode=YTo0OntzOjg6ImtleXdvcmRzIjtzOjY6IuS5lOayuyI7czoxMToic2VhcmNoSW5kZXgiO3M6MToiMCI7czo4OiJtYXhJbmRleCI7czoxOiIwIjtzOjE4OiJzZWFyY2hfZW5jb2RlX3RpbWUiO2k6MTQ1NDMxMTU0NDt9')
+  superagent.get('http://www.52xie.com/category-869.html')
     .end(function (err, sres) {
       if (err) {
         return next(err);
       }
       StarDeal.delejorge(function (status, userInfo){
         if(status == message.login.success){
-          console.log('dele ok');          
+          console.log('dele ok and then:');
+          var $ = cheerio.load(sres.text);
+	      $('.productList .frame .frameA img').each(function (idx, element) {
+	        var $element = $(element),
+	        href = $element.parent().attr('href'),
+	        picsrc = $element.attr('src'),
+	        price = parseInt($element.parent().parent().find('.price').find('.okprice').text()),
+	        name = $element.parent().parent().find('.altName').find('a').text();
+	        dealid = href.replace(/[^0-9]+/g, '');
+	        StarDeal.insertjorge(href, picsrc, price, name, dealid, function(status, userInfo) {
+	          if(status == message.login.success){
+	            console.log('insert success');          
+	          }else{
+	            console.log('insert fail');
+	          }
+	        });
+	      });          
         }else{
           console.log('dele fail');
         }
-      });
-      var $ = cheerio.load(sres.text);
-      $('.productList .frame .frameA img').each(function (idx, element) {
-        var $element = $(element),
-        href = $element.parent().attr('href'),
-        picsrc = $element.attr('src'),
-        price = parseInt($element.parent().parent().find('.price').find('.okprice').text()),
-        name = $element.parent().parent().find('.altName').find('a').text();
-        StarDeal.insertjorge(href, picsrc, price, name, function(status, userInfo) {
-          if(status == message.login.success){
-            console.log('insert success');          
-          }else{
-            console.log('insert fail');
-          }
-        });
-      });
+      });	      
     });
 };
 
 exports.curry = function(req, res, next){
-  superagent.get('http://www.52xie.com/search.php?encode=YTo0OntzOjg6ImtleXdvcmRzIjtzOjY6IuW6k%2bmHjCI7czoxMToic2VhcmNoSW5kZXgiO3M6MToiMCI7czo4OiJtYXhJbmRleCI7czoxOiIwIjtzOjE4OiJzZWFyY2hfZW5jb2RlX3RpbWUiO2k6MTQ1NDMxMTYwMzt9')
+  superagent.get('http://www.52xie.com/category-866.html')
     .end(function (err, sres) {
       if (err) {
         return next(err);
       }
       StarDeal.delecurry(function (status, userInfo){
         if(status == message.login.success){
-          console.log('dele ok');          
+          console.log('dele ok and then:');
+          var $ = cheerio.load(sres.text);
+	      $('.productList .frame .frameA img').each(function (idx, element) {
+	        var $element = $(element),
+	        href = $element.parent().attr('href'),
+	        picsrc = $element.attr('src'),
+	        price = parseInt($element.parent().parent().find('.price').find('.okprice').text()),
+	        name = $element.parent().parent().find('.altName').find('a').text();
+	        dealid = href.replace(/[^0-9]+/g, '');
+	        StarDeal.insertcurry(href, picsrc, price, name, dealid, function(status, userInfo) {
+	          if(status == message.login.success){
+	            console.log('insert success');          
+	          }else{
+	            console.log('insert fail');
+	          }
+	        });
+	      });          
         }else{
           console.log('dele fail');
         }
-      });
-      var $ = cheerio.load(sres.text);
-      $('.productList .frame .frameA img').each(function (idx, element) {
-        var $element = $(element),
-        href = $element.parent().attr('href'),
-        picsrc = $element.attr('src'),
-        price = parseInt($element.parent().parent().find('.price').find('.okprice').text()),
-        name = $element.parent().parent().find('.altName').find('a').text();
-        StarDeal.insertcurry(href, picsrc, price, name, function(status, userInfo) {
-          if(status == message.login.success){
-            console.log('insert success');          
-          }else{
-            console.log('insert fail');
-          }
-        });
-      });
+      });	      
     });
 };
 
 exports.harden = function(req, res, next){
-  superagent.get('http://www.52xie.com/search.php?encode=YTo0OntzOjg6ImtleXdvcmRzIjtzOjY6IuWTiOeZuyI7czoxMToic2VhcmNoSW5kZXgiO3M6MToiMCI7czo4OiJtYXhJbmRleCI7czoxOiIwIjtzOjE4OiJzZWFyY2hfZW5jb2RlX3RpbWUiO2k6MTQ1NDMxMTY0Njt9')
+  superagent.get('http://www.52xie.com/category-538.html')
     .end(function (err, sres) {
       if (err) {
         return next(err);
       }
       StarDeal.deleharden(function (status, userInfo){
         if(status == message.login.success){
-          console.log('dele ok');          
+          console.log('dele ok and then:');
+          var $ = cheerio.load(sres.text);
+	      $('.productList .frame .frameA img').each(function (idx, element) {
+	        var $element = $(element),
+	        href = $element.parent().attr('href'),
+	        picsrc = $element.attr('src'),
+	        price = parseInt($element.parent().parent().find('.price').find('.okprice').text()),
+	        name = $element.parent().parent().find('.altName').find('a').text();
+	        dealid = href.replace(/[^0-9]+/g, '');
+	        StarDeal.insertharden(href, picsrc, price, name, dealid, function(status, userInfo) {
+	          if(status == message.login.success){
+	            console.log('insert success');          
+	          }else{
+	            console.log('insert fail');
+	          }
+	        });
+	      });          
         }else{
           console.log('dele fail');
         }
-      });
-      var $ = cheerio.load(sres.text);
-      $('.productList .frame .frameA img').each(function (idx, element) {
-        var $element = $(element),
-        href = $element.parent().attr('href'),
-        picsrc = $element.attr('src'),
-        price = parseInt($element.parent().parent().find('.price').find('.okprice').text()),
-        name = $element.parent().parent().find('.altName').find('a').text();
-        StarDeal.insertharden(href, picsrc, price, name, function(status, userInfo) {
-          if(status == message.login.success){
-            console.log('insert success');          
-          }else{
-            console.log('insert fail');
-          }
-        });
-      });
+      });	      
+    });
+};
+
+exports.more = function(req, res, next){
+  superagent.get('http://www.52xie.com/category-425.html')
+    .end(function (err, sres) {
+      if (err) {
+        return next(err);
+      }
+      StarDeal.delemorestar(function (status, userInfo){
+        if(status == message.login.success){
+          console.log('dele ok and then:');
+          var $ = cheerio.load(sres.text);
+	      $('.productList .frame .frameA img').each(function (idx, element) {
+	        var $element = $(element),
+	        href = $element.parent().attr('href'),
+	        picsrc = $element.attr('src'),
+	        price = parseInt($element.parent().parent().find('.price').find('.okprice').text()),
+	        name = $element.parent().parent().find('.altName').find('a').text();
+	        dealid = href.replace(/[^0-9]+/g, '');
+	        StarDeal.insertmorestar(href, picsrc, price, name, dealid, function(status, userInfo) {
+	          if(status == message.login.success){
+	            console.log('insert success');          
+	          }else{
+	            console.log('insert fail');
+	          }
+	        });
+	      });          
+        }else{
+          console.log('dele fail');
+        }
+      });	      
     });
 };

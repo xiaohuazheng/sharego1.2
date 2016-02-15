@@ -42,7 +42,9 @@ exports.harden = function(req, res){
   });
 };
 exports.morestar = function(req, res){
-  res.render('shoes/morestar',{user:req.session.user});
+  StarDeal.querymorestar(function(result) {
+    res.render('shoes/morestar',{user:req.session.user,data:result});
+  });
 };
 exports.dealpage = function(req, res){
   res.render('deals/dealpage',{user:req.session.user});

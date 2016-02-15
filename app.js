@@ -49,6 +49,7 @@ app.use('/crawlerdurant',star.durant);
 app.use('/crawlerjorge',star.jorge);
 app.use('/crawlercurry',star.curry);
 app.use('/crawlerharden',star.harden);
+app.use('/crawlermore',star.more);
 
 app.use('/crawler',routes.crawler);
 

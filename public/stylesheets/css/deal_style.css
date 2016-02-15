@@ -1,6 +1,14 @@
  
-.youbanner {margin-top: 10px;background: url('image/jordan_banner.png') top center no-repeat #0a063d;height: 240px;}
+.youbanner {margin-top: 10px;height: 240px;}
 .dealbox{width: 1200px;}
+.jordan_banner{background: url('image/jordan_banner.png') top center no-repeat #0a063d;}
+.kobe_banner{background: url('image/kobe_banner.png') top center no-repeat #0a063d;}
+.james_banner{background: url('image/james_banner.png') top center no-repeat #0a063d;}
+.durant_banner{background: url('image/durant_banner.png') top center no-repeat #0a063d;}
+.paul_banner{background: url('image/paul_banner.png') top center no-repeat #0a063d;}
+.irving_banner{background: url('image/irving_banner.png') top center no-repeat #0a063d;}
+.harden_banner{background: url('image/harden_banner.png') top center no-repeat #0a063d;}
+.more_banner{background: url('image/more_banner.png') top center no-repeat #0a063d;}
 
 /*默认deal样式*/
 .deal .con:hover{border:1px solid #ec6060;}

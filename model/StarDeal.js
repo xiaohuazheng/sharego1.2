@@ -1,4 +1,3 @@
-//https://github.com/felixge/node-mysql
 var MySQLUtil = require('../utils/mysql');
 
 //乔丹数据库
@@ -24,8 +23,8 @@ exports.detailjordan = function (id, callback) {
   });
 };
 
-exports.insertjordan = function (href, picsrc, price, name, callback) {
-  MySQLUtil.query('INSERT INTO jordan (href, picsrc, price, name) values (?,?,?,?)',[href, picsrc, price, name], function (rows, fields) {
+exports.insertjordan = function (href, picsrc, price, name, dealid, callback) {
+  MySQLUtil.query('INSERT INTO jordan (href, picsrc, price, name, dealid) values (?,?,?,?,?)',[href, picsrc, price, name, dealid], function (rows, fields) {
     if(rows){
       callback(message.login.success, rows);        
     }else{
@@ -51,8 +50,8 @@ exports.querykobe = function (callback) {
   });
 };
 
-exports.insertkobe = function (href, picsrc, price, name, callback) {
-  MySQLUtil.query('INSERT INTO kobe (href, picsrc, price, name) values (?,?,?,?)',[href, picsrc, price, name], function (rows, fields) {
+exports.insertkobe = function (href, picsrc, price, name, dealid, callback) {
+  MySQLUtil.query('INSERT INTO kobe (href, picsrc, price, name, dealid) values (?,?,?,?,?)',[href, picsrc, price, name, dealid], function (rows, fields) {
     if(rows){
       callback(message.login.success, rows);        
     }else{
@@ -78,8 +77,8 @@ exports.queryjames = function (callback) {
   });
 };
 
-exports.insertjames = function (href, picsrc, price, name, callback) {
-  MySQLUtil.query('INSERT INTO james (href, picsrc, price, name) values (?,?,?,?)',[href, picsrc, price, name], function (rows, fields) {
+exports.insertjames = function (href, picsrc, price, name, dealid, callback) {
+  MySQLUtil.query('INSERT INTO james (href, picsrc, price, name, dealid) values (?,?,?,?,?)',[href, picsrc, price, name, dealid], function (rows, fields) {
     if(rows){
       callback(message.login.success, rows);        
     }else{
@@ -105,8 +104,8 @@ exports.querydurant = function (callback) {
   });
 };
 
-exports.insertdurant = function (href, picsrc, price, name, callback) {
-  MySQLUtil.query('INSERT INTO durant (href, picsrc, price, name) values (?,?,?,?)',[href, picsrc, price, name], function (rows, fields) {
+exports.insertdurant = function (href, picsrc, price, name, dealid, callback) {
+  MySQLUtil.query('INSERT INTO durant (href, picsrc, price, name, dealid) values (?,?,?,?,?)',[href, picsrc, price, name, dealid], function (rows, fields) {
     if(rows){
       callback(message.login.success, rows);        
     }else{
@@ -132,8 +131,8 @@ exports.queryjorge = function (callback) {
   });
 };
 
-exports.insertjorge = function (href, picsrc, price, name, callback) {
-  MySQLUtil.query('INSERT INTO jorge (href, picsrc, price, name) values (?,?,?,?)',[href, picsrc, price, name], function (rows, fields) {
+exports.insertjorge = function (href, picsrc, price, name, dealid, callback) {
+  MySQLUtil.query('INSERT INTO jorge (href, picsrc, price, name, dealid) values (?,?,?,?,?)',[href, picsrc, price, name, dealid], function (rows, fields) {
     if(rows){
       callback(message.login.success, rows);        
     }else{
@@ -159,8 +158,8 @@ exports.querycurry = function (callback) {
   });
 };
 
-exports.insertcurry = function (href, picsrc, price, name, callback) {
-  MySQLUtil.query('INSERT INTO curry (href, picsrc, price, name) values (?,?,?,?)',[href, picsrc, price, name], function (rows, fields) {
+exports.insertcurry = function (href, picsrc, price, name, dealid, callback) {
+  MySQLUtil.query('INSERT INTO curry (href, picsrc, price, name, dealid) values (?,?,?,?,?)',[href, picsrc, price, name, dealid], function (rows, fields) {
     if(rows){
       callback(message.login.success, rows);        
     }else{
@@ -186,8 +185,36 @@ exports.queryharden = function (callback) {
   });
 };
 
-exports.insertharden = function (href, picsrc, price, name, callback) {
-  MySQLUtil.query('INSERT INTO harden (href, picsrc, price, name) values (?,?,?,?)',[href, picsrc, price, name], function (rows, fields) {
+exports.insertharden = function (href, picsrc, price, name, dealid, callback) {
+  MySQLUtil.query('INSERT INTO harden (href, picsrc, price, name, dealid) values (?,?,?,?,?)',[href, picsrc, price, name, dealid], function (rows, fields) {
+    if(rows){
+      callback(message.login.success, rows);        
+    }else{
+      callback(message.login.none, null);
+    } 
+  });
+};
+
+
+//more数据库
+exports.delemorestar = function (callback) {
+  MySQLUtil.query('TRUNCATE TABLE morestar', [], function (rows, fields) {
+    if(rows){
+      callback(message.login.success, rows);        
+    }else{
+      callback(message.login.none, null);
+    }
+  });
+};
+
+exports.querymorestar = function (callback) {
+  MySQLUtil.query('select id, href, picsrc, price, name from morestar', [], function (rows, fields) {
+    callback(rows);
+  });
+};
+
+exports.insertmorestar = function (href, picsrc, price, name, dealid, callback) {
+  MySQLUtil.query('INSERT INTO morestar (href, picsrc, price, name, dealid) values (?,?,?,?,?)',[href, picsrc, price, name, dealid], function (rows, fields) {
     if(rows){
       callback(message.login.success, rows);        
     }else{

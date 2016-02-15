@@ -4,10 +4,10 @@ $(function () {
 			type:'get',
 			url:'crawlerjordan',
 			success:function(){
-				alert('数据更新成功！');						
+				console.log('数据更新成功！');					
 			},
 			error:function(){
-				alert('数据更新成功！');
+				console.log('数据更新成功！');
 			},
 			async:true
 		});			
@@ -18,10 +18,10 @@ $(function () {
 			type:'get',
 			url:'crawlerkobe',
 			success:function(){
-				alert('数据更新成功！');						
+				console.log('数据更新成功！');						
 			},
 			error:function(){
-				alert('数据更新成功！');
+				console.log('数据更新成功！');
 			},
 			async:true
 		});			
@@ -32,10 +32,10 @@ $(function () {
 			type:'get',
 			url:'crawlerjames',
 			success:function(){
-				alert('数据更新成功！');						
+				console.log('数据更新成功！');						
 			},
 			error:function(){
-				alert('数据更新成功！');
+				console.log('数据更新成功！');
 			},
 			async:true
 		});			
@@ -46,10 +46,10 @@ $(function () {
 			type:'get',
 			url:'crawlerdurant',
 			success:function(){
-				alert('数据更新成功！');						
+				console.log('数据更新成功！');						
 			},
 			error:function(){
-				alert('数据更新成功！');
+				console.log('数据更新成功！');
 			},
 			async:true
 		});			
@@ -60,10 +60,10 @@ $(function () {
 			type:'get',
 			url:'crawlerjorge',
 			success:function(){
-				alert('数据更新成功！');						
+				console.log('数据更新成功！');						
 			},
 			error:function(){
-				alert('数据更新成功！');
+				console.log('数据更新成功！');
 			},
 			async:true
 		});			
@@ -74,10 +74,10 @@ $(function () {
 			type:'get',
 			url:'crawlercurry',
 			success:function(){
-				alert('数据更新成功！');						
+				console.log('数据更新成功！');						
 			},
 			error:function(){
-				alert('数据更新成功！');
+				console.log('数据更新成功！');
 			},
 			async:true
 		});			
@@ -88,10 +88,24 @@ $(function () {
 			type:'get',
 			url:'crawlerharden',
 			success:function(){
-				alert('数据更新成功！');						
+				console.log('数据更新成功！');						
 			},
 			error:function(){
-				alert('数据更新成功！');
+				console.log('数据更新成功！');
+			},
+			async:true
+		});			
+	});
+
+	$('.crawlerBtn_more').click(function(){			
+		$.ajax({
+			type:'get',
+			url:'crawlermore',
+			success:function(){
+				console.log('数据更新成功！');						
+			},
+			error:function(){
+				console.log('数据更新成功！');
 			},
 			async:true
 		});			

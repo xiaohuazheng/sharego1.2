@@ -68,7 +68,8 @@ h3.rd-goodsCtrl .list_price { display: inline-block; position: relative; height:
 h3.rd-goodsCtrl .listprice_one { text-decoration: line-through; font-size: 16px; color: #c1c1c1; position: absolute; top: 0; left: 0; }
 h3.rd-goodsCtrl .listprice_one b { font-size: 14px; margin-right: 2px; }
 h3.rd-goodsCtrl .specification_one { color: #666; font-size: 16px; position: absolute; left: 0; top: 20px; }
-h3.rd-goodsCtrl .rd-goodsBuy { font-size: 18px; color: #fff; background: #c7000b; line-height: 40px; height: 40px; width: 120px; display: block; float: right; margin-top: 12px; text-align: center; *margin-top: -50px; }
+h3.rd-goodsCtrl .rd-goodsBuy { font-size: 18px; color: #fff; background: #c7000b; line-height: 40px; height: 40px; width: 120px; display: block; float: right; margin-top: 12px; text-align: center; *margin-top: -50px; margin-right: 40px;}
+h3.rd-goodsCtrl .rd-goodsColl { font-size: 18px; color: #fff; background: #c7000b; line-height: 40px; height: 40px; width: 120px; display: block; float: right; margin-top: 12px; text-align: center; *margin-top: -50px; margin-right: 40px;}
 h3.rd-goodsCtrl .rd-goodsBuy:hover { color: #fff; text-decoration: none; }
 h2.rd-goodsDesc a { color: #666; }
 

@@ -7,7 +7,7 @@ var data = {
 			strokeColor : "rgba(250,250,0,1)",
 			pointColor : "rgba(255,0,0,1)",
 			pointStrokeColor : "#f2f2f2",
-			data : [98,91,88,88,96,77,95]
+			data : chartsData
 		}
 	]
 }

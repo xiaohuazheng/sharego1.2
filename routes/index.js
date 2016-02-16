@@ -2,7 +2,7 @@ var StarDeal = require('../model/StarDeal');
 /* GET home page. */
 
 exports.index = function(req, res){
-  StarDeal.queryjordan(function(result) {
+  StarDeal.querymorestar(function(result) {
     res.render('index',{user:req.session.user,data:result});
   });
 };
@@ -45,9 +45,6 @@ exports.morestar = function(req, res){
   StarDeal.querymorestar(function(result) {
     res.render('shoes/morestar',{user:req.session.user,data:result});
   });
-};
-exports.dealpage = function(req, res){
-  res.render('deals/dealpage',{user:req.session.user});
 };
 
 exports.crawler = function(req, res){

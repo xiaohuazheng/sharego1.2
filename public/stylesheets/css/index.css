@@ -110,13 +110,15 @@
 	margin-right: 20px;
 	padding-left: 10px;
 	font-size: 16px;
-	text-align: center;vertical-align:middle;
+	text-align: center;
+	color: orange;
 }
 .comments ul li span.commonts_con{
 	width: 820px;
 	height: auto;
 	padding-left: 10px;
-	font-size: 14px;
-	text-align: left;vertical:middle;
+	font: 15px "楷体";
+	text-align: left;
+	vertical-align:middle;
 	overflow: hidden;	
 }

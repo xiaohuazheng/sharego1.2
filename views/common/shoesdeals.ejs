@@ -1,20 +1,23 @@
+
+
 	<div class="newDeals dealHtml">
 		<div class="youpinRecommDeal clear">
-		  <a target="_blank" href="javascript:0"><img src="images/deals/j1.jpg">
+		  <a target="_blank" href="javascript:0"><img src="<%=dealIn[0].dealPic%>">
 		  </a>  
 		  <div class="rd-goodsDetail">      
 		  	<div class="rd-goodsTitle">
-		  		<a target="_blank" href="javascript:0">品牌篮球鞋</a>      
+		  		<a target="_blank" href="javascript:0">￥<%=dealIn[0].dealPrice%></a>      
 		  	</div>      		  	     
 		  	<a class="rd-goodslist">
 			  	<ul>          
-			  		<li>精选国外材料，免洗抗皱，舒适有型</li>          
-			  		<li>做工精细，外形俊朗，彰显气质</li>          
-			  		<li>时尚百搭，适合各种年龄男士</li>      
+			  		<li><%=dealIn[0].dealName%></li>          
+			  		<li>下单即派，预计1-4天内送达</li>          
+			  		<li>注册磁场VIP即可享受VIP价格</li>      
 			  	</ul>
 		  	</a>      
 		  	<h3 class="rd-goodsCtrl">			  	         
-			  	<a class="rd-goodsBuy" href="javascript:0" target="_blank">立即购买</a>
+			  	<a class="rd-goodsBuy" href="<%=dealIn[0].dealBuy%>" target="_blank">立即购买</a>
+			  	<a class="rd-goodsColl" href="javascript:0" target="_blank">加入收藏</a>
 		  	</h3> 
 		  </div>		  
 		 </div>		 

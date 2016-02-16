@@ -16,6 +16,7 @@ var Encrypt = require('./utils/encrypt');
 var routes = require('./routes');
 var user = require('./routes/user');
 var star = require('./routes/star');
+var deal = require('./routes/deal');
 
 var app = express();
 
@@ -65,8 +66,13 @@ app.use('/paul',routes.paul);
 app.use('/curry',routes.curry);
 app.use('/harden',routes.harden);
 app.use('/morestar',routes.morestar);
-app.use('/dealpage',routes.dealpage);
+
+//评论页
+app.get('/dealpage',deal.dealpage);
+
 app.use('/', routes.index);
+
+
 
 
 

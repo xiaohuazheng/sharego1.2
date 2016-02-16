@@ -46,6 +46,11 @@ exports.morestar = function(req, res){
     res.render('shoes/morestar',{user:req.session.user,data:result});
   });
 };
+exports.dealcoll = function(req, res){
+  StarDeal.querymorestar(function(result) {
+    res.render('deals/dealcoll',{user:req.session.user,data:result});
+  });
+};
 
 exports.crawler = function(req, res){
   res.render('common/crawler',{user:req.session.user});

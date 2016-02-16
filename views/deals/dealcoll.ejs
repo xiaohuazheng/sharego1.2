@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<% include ../common/head %>
+		
+</head>
+
+<body>
+	<header style="margin-bottom: 48px;">
+		<% include ../common/header %>	
+		<div id="head_nav">
+  		<div class="head_nav area">
+    		<div class="l">
+    		<a class="" href="/">首页<i></i></a>
+	        <a class="" href="jordan">乔丹<i></i></a>     
+	        <a class="" href="kobe">科比<i></i></a>
+      		<a class="" href="james">詹姆斯<i></i></a>
+	        <a class="" href="/durant">杜兰特<i></i></a>
+		    <a class="" href="/paul">保罗<i></i></a>
+	        <a class="" href="curry">欧文<i></i></a>
+	        <a class="" href="harden">哈登<i></i></a>
+     	    <a class="" href="morestar">更多...<i></i></a>
+    	  </div>   
+  		</div>
+		</div>   
+	</header><!-- /header -->
+
+	<div class="brandbox area">
+      <div class="brand_category_tit">
+        <p class="bct_dividing"></p>
+        <p class="bct_info">
+          <span>我的收藏</span>
+        </p>
+      </div>
+      
+    </div>
+
+	<div class="area ">
+	    <div class="dealbox">
+	    	<% data.forEach(function(log) { %>		
+			<div class="deal dealstyle_brand_index">
+				<div class="con">
+					<div class="deleColl">删除收藏</div>    		
+					<a class="goods_img" target="_blank" href="http://www.52xie.com/<%=log.href%>">
+						<img src="<%=log.picsrc%>" width="312" height="208" style="display: inline;">    			
+					</a>    		
+					<h3><%=log.name%></h3>
+					<h4><em><b>¥</b><%=log.price%></em></h4>
+					<a href="/dealpage?url=http://www.52xie.com/<%=log.href%>" target="_blank"><h4><em><b>进入评论页&gt;&gt;</b></em></h4></a>
+				</div>
+			</div>
+			<% }); %>
+	 	</div>       
+	</div>	
+
+<% include ../common/footer %>		
+</body>
+</html>

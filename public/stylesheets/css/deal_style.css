@@ -13,6 +13,16 @@
 /*默认deal样式*/
 .deal .con:hover{border:1px solid #ec6060;}
 .deal .con{background-color: #fff;width:225px;height:270px; float:left;margin:0 24px 20px 0; display: inline;text-align: left;border: 1px solid transparent;position: relative;line-height: 20px;z-index: 100;}
+.deal .con .deleColl{
+	position: absolute;
+    top: 269px;
+    left: 158px;
+    width: 71px;
+    height: 30px;
+    font: 16px "微软雅黑";
+    color: #FD471F;
+    cursor: pointer;
+}
 .con>a{font-size:0;display: block;background-color: #fff;}
 .deal img{width: 182px;height: 182px;margin-bottom: 10px;z-index: 100;}
 .deal img.bdg_img{height: 30px; position: absolute; left: 1px; bottom: 98px; margin-bottom: 0;z-index: 10;}

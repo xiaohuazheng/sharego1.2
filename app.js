@@ -67,6 +67,8 @@ app.use('/curry',routes.curry);
 app.use('/harden',routes.harden);
 app.use('/morestar',routes.morestar);
 
+app.get('/dealcoll',routes.dealcoll);
+
 //评论页
 app.get('/dealpage',deal.dealpage);
 

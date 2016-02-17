@@ -1,6 +1,27 @@
 var MySQLUtil = require('../utils/mysql');
 
+//all deal数据库
+exports.queryall = function (callback) {
+  MySQLUtil.query('select id, href, picsrc, price, name, dealid from dealall', [], function (rows, fields) {
+    callback(rows);
+  });
+};
 
+exports.insertall = function (href, picsrc, price, name, dealtype, dealid, callback) {
+  MySQLUtil.query('INSERT INTO dealall (href, picsrc, price, name, dealtype, dealid) values (?,?,?,?,?,?)',[href, picsrc, price, name, dealtype, dealid], function (rows, fields) {
+    callback(rows); 
+  });
+};
+
+exports.deleall = function (dealtype, callback) {
+  MySQLUtil.query('delete from dealall where dealtype=?', [dealtype], function (rows, fields) {
+    if(rows){
+      callback(message.login.success, rows);        
+    }else{
+      callback(message.login.none, null);
+    }
+  });
+};
 
 //乔丹数据库
 exports.delejordan = function (callback) {
@@ -219,5 +240,23 @@ exports.insertmorestar = function (href, picsrc, price, name, dealid, callback) 
   });
 };
 
+//删除收藏
+exports.delecoll = function (id, callback) {
+  MySQLUtil.query('delete from dealcoll where dealid=?',[id], function (rows, fields) {
+    callback(rows);
+  });
+};
 
+//加入收藏
+exports.insertcoll = function (dealid, nickname, callback) {
+  MySQLUtil.query('INSERT INTO dealcoll (dealid, nickname) values (?,?)',[dealid, nickname], function (rows, fields) {
+    callback(rows);
+  });
+};
+
+exports.querycoll = function (nickname, callback) {
+  MySQLUtil.query('select dealid from dealcoll where nickname=?', [nickname], function (rows, fields) {
+    callback(rows);
+  });
+};
 

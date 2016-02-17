@@ -58,3 +58,21 @@ exports.dealpage = function(req, res){
 };
 
 
+//删除收藏
+exports.delecoll = function(req, res){
+  var dealid = parseInt(req.query.id);
+
+  StarDeal.delecoll(dealid, function(result) {
+    console.log('删除收藏成功');
+  });
+};
+
+//加入收藏
+exports.colldeal = function(req, res){
+  var dealid = parseInt(req.query.id);
+  var nickname = req.session.user;
+
+  StarDeal.insertcoll(dealid, nickname, function(result) {
+    console.log('收藏成功');
+  });
+};

@@ -2,7 +2,7 @@ $(function(){
 	$('.rd-goodsColl').click(function(){
 		$(this).text('已加入收藏');
 		var dealid = parseInt($(this).attr('data-id'));
-		var collUrl = 'collDeal?id=' + dealid;
+		var collUrl = 'colldeal?id=' + dealid;
 		$.ajax({
 			type:'get',
 			url:collUrl,

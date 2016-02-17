@@ -9,9 +9,11 @@ exports.jordan = function(req, res, next){
       if (err) {
         return next(err);
       }
+      var dealtype = 1;
       StarDeal.delejordan(function (status, userInfo){
         if(status == message.login.success){
           console.log('dele ok and then:');
+          
           var $ = cheerio.load(sres.text);
 	      $('.productList .frame .frameA img').each(function (idx, element) {
 	        var $element = $(element),
@@ -22,7 +24,8 @@ exports.jordan = function(req, res, next){
 	        dealid = href.replace(/[^0-9]+/g, '');
 	        StarDeal.insertjordan(href, picsrc, price, name, dealid, function(status, userInfo) {
 	          if(status == message.login.success){
-	            console.log('insert success');          
+	            console.log('insert success');
+	                     
 	          }else{
 	            console.log('insert fail');
 	          }

@@ -14,13 +14,14 @@
 .deal .con:hover{border:1px solid #ec6060;}
 .deal .con{background-color: #fff;width:225px;height:270px; float:left;margin:0 24px 20px 0; display: inline;text-align: left;border: 1px solid transparent;position: relative;line-height: 20px;z-index: 100;}
 .deal .con .deleColl{
+	display: none;
 	position: absolute;
-    top: 269px;
-    left: 158px;
+    top: 4px;
+    left: 154px;
     width: 71px;
     height: 30px;
     font: 16px "微软雅黑";
-    color: #FD471F;
+    color: #999;
     cursor: pointer;
 }
 .con>a{font-size:0;display: block;background-color: #fff;}

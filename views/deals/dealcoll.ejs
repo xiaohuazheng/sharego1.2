@@ -2,7 +2,7 @@
 <html>
 <head>	
 	<% include ../common/head %>
-		
+	<script type="text/javascript" src="javascripts/js/dealcoll.js"></script>
 </head>
 
 <body>
@@ -39,7 +39,7 @@
 	    <div class="dealbox">
 	    	<% data.forEach(function(log) { %>		
 			<div class="deal dealstyle_brand_index">
-				<div class="con">
+				<div class="con" data-id="<%=log.dealid%>">
 					<div class="deleColl">删除收藏</div>    		
 					<a class="goods_img" target="_blank" href="http://www.52xie.com/<%=log.href%>">
 						<img src="<%=log.picsrc%>" width="312" height="208" style="display: inline;">    			

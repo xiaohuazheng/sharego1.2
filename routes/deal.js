@@ -1,9 +1,9 @@
-/*商品评论信息页数据爬取*/
 var express = require('express');
 var cheerio = require('cheerio');
 var superagent = require('superagent');
+var StarDeal = require('../model/StarDeal');
 
-
+//商品评论页
 exports.dealpage = function(req, res){
 
   var dealUrl = req.query.url;
@@ -16,12 +16,14 @@ exports.dealpage = function(req, res){
       var $ = cheerio.load(sres.text);
 
       /*商品信息*/
+      var urlId = dealUrl.replace(/[^0-9]+/g, '');
       var dealInfo = [];
       dealInfo.push({
       	dealPic: $('.goods_big_img img').attr('src'),
       	dealName: $('.goods_big_img a').attr('title'),
       	dealPrice: $('#prodPriceAj').text(),
-      	dealBuy: dealUrl
+      	dealBuy: dealUrl,
+        dealid: urlId.substring(2)
       });
 
       //console.log('pppppppppp' + JSON.stringify(dealInfo));
@@ -54,3 +56,5 @@ exports.dealpage = function(req, res){
       res.render('deals/commentpage',{user:req.session.user,comment:commentData,dealIn:dealInfo});
     });
 };
+
+

@@ -46,12 +46,16 @@ exports.morestar = function(req, res){
     res.render('shoes/morestar',{user:req.session.user,data:result});
   });
 };
+
+//收藏页
 exports.dealcoll = function(req, res){
   StarDeal.querymorestar(function(result) {
     res.render('deals/dealcoll',{user:req.session.user,data:result});
   });
 };
 
+
+//爬虫页
 exports.crawler = function(req, res){
   res.render('common/crawler',{user:req.session.user});
 };

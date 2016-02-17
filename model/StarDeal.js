@@ -1,5 +1,7 @@
 var MySQLUtil = require('../utils/mysql');
 
+
+
 //乔丹数据库
 exports.delejordan = function (callback) {
   MySQLUtil.query('TRUNCATE TABLE jordan', [], function (rows, fields) {
@@ -12,14 +14,8 @@ exports.delejordan = function (callback) {
 };
 
 exports.queryjordan = function (callback) {
-  MySQLUtil.query('select id, href, picsrc, price, name from jordan', [], function (rows, fields) {
+  MySQLUtil.query('select id, href, picsrc, price, name, dealid from jordan', [], function (rows, fields) {
     callback(rows);
-  });
-};
-
-exports.detailjordan = function (id, callback) {
-  MySQLUtil.query('select id, href, picsrc, price, name from jordan where id=?',[id], function (rows, fields) {
-    callback(rows.length>0 ? rows[0]:{});
   });
 };
 
@@ -45,7 +41,7 @@ exports.delekobe = function (callback) {
 };
 
 exports.querykobe = function (callback) {
-  MySQLUtil.query('select id, href, picsrc, price, name from kobe', [], function (rows, fields) {
+  MySQLUtil.query('select id, href, picsrc, price, name, dealid from kobe', [], function (rows, fields) {
     callback(rows);
   });
 };
@@ -72,7 +68,7 @@ exports.delejames = function (callback) {
 };
 
 exports.queryjames = function (callback) {
-  MySQLUtil.query('select id, href, picsrc, price, name from james', [], function (rows, fields) {
+  MySQLUtil.query('select id, href, picsrc, price, name, dealid from james', [], function (rows, fields) {
     callback(rows);
   });
 };
@@ -99,7 +95,7 @@ exports.deledurant = function (callback) {
 };
 
 exports.querydurant = function (callback) {
-  MySQLUtil.query('select id, href, picsrc, price, name from durant', [], function (rows, fields) {
+  MySQLUtil.query('select id, href, picsrc, price, name, dealid from durant', [], function (rows, fields) {
     callback(rows);
   });
 };
@@ -126,7 +122,7 @@ exports.delejorge = function (callback) {
 };
 
 exports.queryjorge = function (callback) {
-  MySQLUtil.query('select id, href, picsrc, price, name from jorge', [], function (rows, fields) {
+  MySQLUtil.query('select id, href, picsrc, price, name, dealid from jorge', [], function (rows, fields) {
     callback(rows);
   });
 };
@@ -153,7 +149,7 @@ exports.delecurry = function (callback) {
 };
 
 exports.querycurry = function (callback) {
-  MySQLUtil.query('select id, href, picsrc, price, name from curry', [], function (rows, fields) {
+  MySQLUtil.query('select id, href, picsrc, price, name, dealid from curry', [], function (rows, fields) {
     callback(rows);
   });
 };
@@ -180,7 +176,7 @@ exports.deleharden = function (callback) {
 };
 
 exports.queryharden = function (callback) {
-  MySQLUtil.query('select id, href, picsrc, price, name from harden', [], function (rows, fields) {
+  MySQLUtil.query('select id, href, picsrc, price, name, dealid from harden', [], function (rows, fields) {
     callback(rows);
   });
 };
@@ -208,7 +204,7 @@ exports.delemorestar = function (callback) {
 };
 
 exports.querymorestar = function (callback) {
-  MySQLUtil.query('select id, href, picsrc, price, name from morestar', [], function (rows, fields) {
+  MySQLUtil.query('select id, href, picsrc, price, name, dealid from morestar', [], function (rows, fields) {
     callback(rows);
   });
 };
@@ -222,3 +218,6 @@ exports.insertmorestar = function (href, picsrc, price, name, dealid, callback) 
     } 
   });
 };
+
+
+

@@ -76,6 +76,9 @@ header .header_con img{
 	font:14px "微软雅黑";
     margin: 0 5px;
 }
+.header_member a:hover{
+    color: #ec1611;
+}
 
 header .header_con h2{
     font-size:22px;

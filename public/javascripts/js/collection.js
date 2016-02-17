@@ -1,6 +1,6 @@
 $(function(){
 	$('.rd-goodsColl').click(function(){
-		$(this).text('已加入收藏');
+		$(this).text('已收藏');
 		var dealid = parseInt($(this).attr('data-id'));
 		var collUrl = 'colldeal?id=' + dealid;
 		$.ajax({

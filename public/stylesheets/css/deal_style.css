@@ -127,3 +127,35 @@
 .dealstyle_brand_index .sold{ position: absolute; font: 12px/12px "microsoft yahei";*line-height: 15px; color: #666666; right: 14px; bottom: 21px;*bottom: 19px; display: block;}
 .dealstyle_brand_index .sold a{color: #666666;text-decoration: none;}
 
+
+.mcol6 {
+    padding-bottom: 30px;
+}
+.mcol6 .my_favo_msg {
+    height: 120px;
+    width: 778px;
+    padding-left: 530px;
+    padding-top: 48px;
+}
+.mcol6 .my_favo_msg span.noCollection_pic {
+    display: inline-block;
+    width: 49px;
+    height: 60px;
+    margin-right: 16px;
+    background: url('image/nocollection.png') no-repeat 0 0;
+}
+.mcol6 .my_favo_msg span.noCollection_msg {
+    display: inline-block;
+    width: 250px;
+    height: 60px;
+    text-align: left;
+}
+.mcol6 .my_favo_msg span.noCollection_msg p {
+    color: rgb(102, 102, 102);
+    margin-bottom: 5px;
+    font: 14px/19px "微软雅黑";
+}
+.mcol6 .my_favo_msg span.noCollection_msg p a {
+    color: rgb(0, 153, 204);
+    font: 14px "微软雅黑";
+}

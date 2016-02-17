@@ -35,6 +35,7 @@
       
     </div>
 
+<% if(data.length) { %>
 	<div class="area ">
 	    <div class="dealbox">
 	    	<% data.forEach(function(log) { %>		
@@ -52,7 +53,18 @@
 			<% }); %>
 	 	</div>		 
 	</div>
-
+<% } else { %>	
+	<div class="mcol6">
+      <div class="my_favo_msg">
+        <span class="noCollection_pic"></span> 
+        <span class="noCollection_msg">
+          <p>哎哟,你还没有收藏任何商品~</p>
+          <p>收藏感兴趣的商品购买节约时间哦~</p>
+          <p><a href="/">跟我去逛逛吧&gt;&gt;</a></p>
+        </span>
+      </div>
+    </div>
+<% } %>
 
 <% include ../common/footer %>		
 </body>

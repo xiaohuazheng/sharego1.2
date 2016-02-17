@@ -2,7 +2,7 @@ var StarDeal = require('../model/StarDeal');
 /* GET home page. */
 
 exports.index = function(req, res){
-  StarDeal.querymorestar(function(result) {
+  StarDeal.queryall(function(result) {
     res.render('index',{user:req.session.user,data:result});
   });
 };
@@ -51,14 +51,18 @@ exports.morestar = function(req, res){
 exports.dealcoll = function(req, res){
   var nickname = req.session.user;
   StarDeal.querycoll(nickname, function(arr) {
-    var tempArr = [];
-    for(var i = 0; i < arr.length; i++) {
-      tempArr.push(parseInt(arr[i].dealid));
-    }
-    tempArr.join(',');
-    StarDeal.querycolldeal(tempArr, function(result) {
-      res.render('deals/dealcoll',{user:req.session.user,data:result});
-    });
+    if(arr.length) {
+      var tempArr = [];
+      for(var i = 0; i < arr.length; i++) {
+        tempArr.push(parseInt(arr[i].dealid));
+      }
+      tempArr.join(',');
+      StarDeal.querycolldeal(tempArr, function(result) {
+        res.render('deals/dealcoll',{user:req.session.user,data:result});
+      });
+    } else {
+      res.render('deals/dealcoll',{user:req.session.user,data:arr});
+    }    
   });
 };
 

@@ -260,3 +260,9 @@ exports.querycoll = function (nickname, callback) {
   });
 };
 
+exports.querycolldeal = function (arr, callback) {
+  MySQLUtil.query('select * from dealall where dealid in (?)', [arr], function (rows, fields) {
+    callback(rows);
+  });
+};
+

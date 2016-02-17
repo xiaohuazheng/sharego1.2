@@ -49,8 +49,16 @@ exports.morestar = function(req, res){
 
 //收藏页
 exports.dealcoll = function(req, res){
-  StarDeal.querymorestar(function(result) {
-    res.render('deals/dealcoll',{user:req.session.user,data:result});
+  var nickname = req.session.user;
+  StarDeal.querycoll(nickname, function(arr) {
+    var tempArr = [];
+    for(var i = 0; i < arr.length; i++) {
+      tempArr.push(parseInt(arr[i].dealid));
+    }
+    tempArr.join(',');
+    StarDeal.querycolldeal(tempArr, function(result) {
+      res.render('deals/dealcoll',{user:req.session.user,data:result});
+    });
   });
 };
 

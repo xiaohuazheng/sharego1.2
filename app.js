@@ -43,6 +43,7 @@ app.use(session({
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(app.router);
 
+//爬取数据路由
 app.use('/crawlerjordan',star.jordan);
 app.use('/crawlerkobe',star.kobe);
 app.use('/crawlerjames',star.james);
@@ -54,10 +55,12 @@ app.use('/crawlermore',star.more);
 
 app.use('/crawler',routes.crawler);
 
+//注册登录
 app.use('/loginreg',user.loginreg);
 app.use('/logout',user.logout);
 app.use('/user',user);
 
+//分类商品页
 app.use('/jordan',routes.jordan);
 app.use('/kobe',routes.kobe);
 app.use('/james',routes.james);
@@ -67,6 +70,7 @@ app.use('/curry',routes.curry);
 app.use('/harden',routes.harden);
 app.use('/morestar',routes.morestar);
 
+//收藏页
 app.get('/dealcoll',routes.dealcoll);
 
 app.get('/delecoll',deal.delecoll);
@@ -74,6 +78,9 @@ app.get('/colldeal',deal.colldeal);
 
 //评论页
 app.get('/dealpage',deal.dealpage);
+
+//搜索页
+app.get('/search',deal.search);
 
 app.use('/', routes.index);
 

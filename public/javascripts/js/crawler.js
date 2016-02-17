@@ -1,4 +1,5 @@
 $(function () {
+	//各分类数据爬取
 	$('.crawlerBtn_jordan').click(function(){			
 		$.ajax({
 			type:'get',
@@ -109,6 +110,19 @@ $(function () {
 			},
 			async:true
 		});			
+	});
+
+
+	//搜索
+	$('.header_button').click(function(){
+		var searchCon = $.trim($('.header_search input[name=search]').val());
+		var searchUrl = 'search?name=' + searchCon;
+		if(searchCon != ''){
+			window.location.href = searchUrl;
+			/*$.get(searchUrl,function(){
+				console.log('数据更新成功！');					
+			});*/
+		} 
 	});
 
 });

@@ -266,3 +266,10 @@ exports.querycolldeal = function (arr, callback) {
   });
 };
 
+//搜索
+exports.querysearch = function (name, callback) {
+  MySQLUtil.query('select * from dealall where name like ?', [name], function (rows, fields) {
+    callback(rows);
+  });
+};
+

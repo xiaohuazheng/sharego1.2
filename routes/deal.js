@@ -76,3 +76,13 @@ exports.colldeal = function(req, res){
     console.log('收藏成功');
   });
 };
+
+
+//搜索页
+exports.search = function(req, res){
+  var name = req.query.name;
+  name = '%' + name + '%';
+  StarDeal.querysearch(name, function(result) {
+    res.render('shoes/search',{user:req.session.user,data:result});
+  });
+};

@@ -17,6 +17,7 @@
     "superagent": "^1.7.2"
   },
   "devDependencies": {
+    "crypto": "0.0.3",
     "express-session": "^1.12.1",
     "mysql": "^2.10.0",
     "properties-reader": "0.0.13"

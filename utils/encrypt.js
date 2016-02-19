@@ -1,5 +1,5 @@
 /* 
-* 方法 
+* 方法  
 */
 var crypto = require('crypto');
 

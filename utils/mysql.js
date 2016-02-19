@@ -1,3 +1,4 @@
+//数据库链接
 var mysql = require('mysql');
 
 exports.getConnection=function() {

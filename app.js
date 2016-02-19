@@ -127,8 +127,7 @@ app.post('/dologin', function(req, res) {
   User.loginByEmail(username, encryptPassword, function(status, userInfo){    
     if(status == message.login.success){
       req.session.user = username;
-      res.send(200);
-      //res.end("end");           
+      res.send(200);           
     }else{
       res.send(404);
     }

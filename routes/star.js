@@ -3,7 +3,7 @@ var cheerio = require('cheerio');
 var superagent = require('superagent');
 var StarDeal = require('../model/StarDeal');
 
-
+//乔丹数据爬取存储
 exports.jordan = function(req, res, next){
   superagent.get('http://www.52xie.com/category-410-0-b0-min0-max0-attr0-1-last_update-DESC.html')
     .end(function (err, sres) {
@@ -36,6 +36,7 @@ exports.jordan = function(req, res, next){
     });
 };
 
+//科比数据爬取存储
 exports.kobe = function(req, res, next){
   superagent.get('http://www.52xie.com/category-421-0-b0-min0-max0-attr0-1-last_update-DESC.html')
     .end(function (err, sres) {
@@ -68,6 +69,7 @@ exports.kobe = function(req, res, next){
     });
 };
 
+//詹姆斯数据爬取存储
 exports.james = function(req, res, next){
   superagent.get('http://www.52xie.com/category-422-0-b0-min0-max0-attr0-1-last_update-DESC.html')
     .end(function (err, sres) {
@@ -100,6 +102,7 @@ exports.james = function(req, res, next){
     });
 };
 
+//杜兰特数据爬取存储
 exports.durant = function(req, res, next){
   superagent.get('http://www.52xie.com/category-423.html')
     .end(function (err, sres) {
@@ -132,6 +135,7 @@ exports.durant = function(req, res, next){
     });
 };
 
+//保罗数据爬取存储
 exports.jorge = function(req, res, next){
   superagent.get('http://www.52xie.com/category-869.html')
     .end(function (err, sres) {
@@ -164,6 +168,7 @@ exports.jorge = function(req, res, next){
     });
 };
 
+//欧文数据爬取存储
 exports.curry = function(req, res, next){
   superagent.get('http://www.52xie.com/category-866.html')
     .end(function (err, sres) {
@@ -196,6 +201,7 @@ exports.curry = function(req, res, next){
     });
 };
 
+//哈登数据爬取存储
 exports.harden = function(req, res, next){
   superagent.get('http://www.52xie.com/category-538.html')
     .end(function (err, sres) {
@@ -228,6 +234,7 @@ exports.harden = function(req, res, next){
     });
 };
 
+//其他球星数据爬取存储
 exports.more = function(req, res, next){
   superagent.get('http://www.52xie.com/category-425.html')
     .end(function (err, sres) {

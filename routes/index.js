@@ -1,5 +1,4 @@
 var StarDeal = require('../model/StarDeal');
-/* GET home page. */
 
 exports.index = function(req, res){
   StarDeal.queryall(function(result) {

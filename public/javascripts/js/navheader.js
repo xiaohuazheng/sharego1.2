@@ -1,15 +1,4 @@
-$(function () {
-	
-	//$('#reg_a, #login_a').hide();
-	//$('#member, #logout').hide();
-	//$('#reg_a, #login_a').hide();
-	
-	
-	/*//导航栏点击class变换
-	$('.head_nav .l a').click(function(){
-		$(this).parent().find('on').removeClass('on');
-		$(this).addClass('on');
-	});*/
+$(function () {	
 
 	//初始化轮播器
 	$('#banner img').attr('opacity',0);
@@ -66,7 +55,5 @@ $(function () {
 		banner_index ++;
 	}
 
-
-	//注册登陆
 	
 });	

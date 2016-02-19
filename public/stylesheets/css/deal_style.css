@@ -13,17 +13,8 @@
 /*默认deal样式*/
 .deal .con:hover{border:1px solid #ec6060;}
 .deal .con{background-color: #fff;width:225px;height:270px; float:left;margin:0 24px 20px 0; display: inline;text-align: left;border: 1px solid transparent;position: relative;line-height: 20px;z-index: 100;}
-.deal .con .deleColl{
-	display: none;
-	position: absolute;
-    top: 4px;
-    left: 154px;
-    width: 71px;
-    height: 30px;
-    font: 16px "微软雅黑";
-    color: #999;
-    cursor: pointer;
-}
+.deal .con .deleColl{display: none;position: absolute;top: 4px;left: 154px;width: 71px;height: 30px;font: 16px "微软雅黑";color: #999;cursor: pointer;}
+
 .con>a{font-size:0;display: block;background-color: #fff;}
 .deal img{width: 182px;height: 182px;margin-bottom: 10px;z-index: 100;}
 .deal img.bdg_img{height: 30px; position: absolute; left: 1px; bottom: 98px; margin-bottom: 0;z-index: 10;}
@@ -51,72 +42,6 @@
 .deal .dealon .kttime{left:9px;top:177px;}
 .deal .dealon .youhuiquan{top: -6px;left: -1px;}
 
-
-
-/*推荐deal*/
-.dealstyle4 .con{width:218px;height:237px; float:left;border:2px solid #fff;padding:8px 9px 0px;margin:0 7px 8px 0; display: inline;text-align: left;background: #fff;border-color: #FFFFFF #E2E2E2 #E2E2E2 #FFFFFF;_margin:0 4px 8px 0;position: relative;z-index: 100;}
-.dealstyle4 img{width: 220px;height: 150px;margin-bottom: 10px;}
-.dealstyle4 h3{padding: 0px 0px 5px 0px; height:20px;margin-bottom: 5px;overflow: hidden; text-align:left;font:12px/20px "";white-space: nowrap;text-overflow:ellipsis;width: 100%;color: #333;}
-.dealstyle4 h3 a{color: #333;}
-.dealstyle4 h3 a:hover{color: #C00;}
-.dealstyle4 h3 b{font-weight: normal;display:inline;}
-.dealstyle4 .con>a{font-size:0;display: block;text-align: center;}
-.dealstyle4{position: relative;line-height: 20px;}
-.dealstyle4 h4{height:38px!important;padding:4px 0;overflow: hidden; text-align:right;background: #fff;line-height: 36px;}
-.dealstyle4 h4 a{display: none !important;}
-.dealstyle4 h4 span{float:left;color:#e02f2f;font-family: "tahoma"; line-height: 16px;font-size: 14px;text-align: left;margin-top: -5px;}
-.dealstyle4 h4 em{color:#e02f2f;letter-spacing:-2;font:28px/36px tahoma,Arial;float:left;}
-.dealstyle4 h4 em i{font-size: 20px;}
-.dealstyle4 h4 em b{font-family: "Microsoft Yahei",Arial;font-weight: normal;font-size: 19px;}
-.dealstyle4 h4 span i{text-decoration: line-through;padding: 0 5px;font-size: 12px;color: #999;font-family: "Arial";}
-.dealstyle4 h4 span u{display: none;text-decoration: none;}
-.dealstyle4 h4 span b{display:none;}
-.dealstyle4 h4 .icon_bydj{width:120px;}
-.dealstyle4 h4 a{display: inline-block;width: 87px;height: 31px;background: url(http://z5.tuanimg.com/v1/ju/index/img/dbg1.png) no-repeat 0 -256px;_background: url(http://z5.tuanimg.com/v1/ju/index/img/dbg1_ie6.png) no-repeat 0 -256px;color:#FFFFFF;text-align: center;font: 14px/31px "";margin-top: 0px;}
-.dealstyle4 h4 a:hover{opacity: 0.8;-moz-opacity:0.8;filter: alpha(opacity=80);text-decoration: none;color:#FFFFFF;}
-.dealstyle4 h5,.dealstyle4 h6{display: none;position: absolute;left:-2px;top:245px;width: 216px;_width:218px;height: 20px;padding:10px 10px 0 10px;overflow: hidden;text-align:left;background: #f4f4f4;border:2px solid #ef6060;border-width: 0 2px;color: #333}
-.dealstyle4 h6{padding-top: 5px;}
-.dealstyle4 h5 em{display: block;float: left;width: 62px;height: 20px;vertical-align: middle;overflow: hidden;color: #999;}
-.dealstyle4 h5 i{display: block;float: left;height: 20px;}
-.dealstyle4 h5 .q1{display: block;float: left;width: 51px;height: 16px;background: url(http://z5.tuanimg.com/v2/ju/img/icon1.png) no-repeat 0 -37px;opacity: 0.7;filter:alpha(opacity=70);margin: 2px 0 0 5px;}
-.dealstyle4 h6{height: 20px;top:275px;text-align:left;border-width: 0 2px 2px;}
-.dealstyle4 h6 em{color:#999;}
-.dealstyle4 h6 a{background: #f4f4f4;color:#e02f2f;display: block;width:36px;height: 20px;position: absolute;right:10px;top: 3px;text-align: right;}
-.dealstyle4 .newicon{left: 9px;position: absolute;top: 2px;width: 55px; height: 48px;padding: 0; background: url("http://z5.tuanimg.com/v2/ju/img/xinpin.png") no-repeat 0 0;}
-.dealstyle4 .mycol{display: none;height: 18px;position: absolute;right:17px;top: 17px;text-align: right;overflow: hidden;}
-.dealstyle4 .mycol a i,.dealstyle4 .mycol a em{float:left;display: inline;height: 18px;background: url(http://z5.tuanimg.com/v1/ju/index/img/dbg1.png) no-repeat 0 -189px;vertical-align: top;overflow: hidden;color:#fff;padding-left:17px;line-height: 18px;}
-.dealstyle4 .mycol a em{background-position: 100% -189px;padding:0 4px 0 0;font-family: Arial;width:0; overflow: hidden;}
-.dealstyle4 .mycol a:hover i{background-position: 0 -208px;}
-.dealstyle4 .mycol a:hover em{background-position: 100% -208px;}
-.dealstyle4 .mycol a.on i,.dealstyle4 .mycol a.on:hover i{background-position: 0 -227px;}
-.dealstyle4 .mycol a.on em,.dealstyle4 .mycol a.on:hover em{background-position: 100% -227px;}
-.dealstyle4 .mark{display: none;}
-.dealstyle4 .kticon{display: none;width: 88px;height: 33px;position: absolute;left:207px;top: 272px;font:14px/33px "";text-align:center;}
-.dealstyle4 .mark{background: url("http://z5.tuanimg.com/v1/ju/index/img/deal_stat.png") no-repeat 0 0;_background-image:url(http://z5.tuanimg.com/v1/ju/index/img/deal_stat_ie6.png);height: 90px;position: absolute;right:1px;top: 145px;width: 103px;}
-.dealstyle4 .zt1 .mark{display: none}
-.dealstyle4 .kttime{display:none;position:absolute;left:10px;top:178px;height:22px;line-height:22px;color:#fff;background:rgba(0,0,0,.8);*background:#000;filer:alpha(opacity=80);padding:0 7px;}
-.dealstyle4 .dealon{border:2px solid #ef6060;padding: 8px 9px 0px;z-index: 101;}
-.dealstyle4 .dealon h4 a{*position: relative;*top: 3px;_top: 0;}
-.dealstyle4 .dealon h5,.dealstyle4 .dealon h6,.dealstyle4 .dealon .mycol{display: block;}
-.dealstyle4 .dealon .mycol,.dealstyle4 .dealon h6 em,.dealstyle4 .dealon h6 span{display: none;}
-.dealstyle4 .dealon .newicon{top: 2px;left: 9px;}
-.dealstyle4 .dealon .mark{right:0px;top: 144px;}
-.dealstyle4 .dealon .kttime{left:9px;top:177px;}
-.dealstyle4 h4 span strong b.i5{display: none;}
-.dealstyle4 p, .dealstyle4 h5, .dealstyle4 h6{display: none;}
-.dealstyle4 .sold{position: absolute;font: 12px/12px "宋体";color: #979797;right: 15px;bottom: 16px;display: block;}
-.dealstyle4 .sold em{font-weight: bold;}
-.dealstyle4 .dtype{position: absolute;font: 12px/16px "宋体";color: #979797;right: 15px;bottom:35px;display: block;overflow: auto;}
-.dealstyle4 .dtype span{display: block;float: left;margin-left: 5px;}
-.dealstyle4 .dtype em{background: url(http://z5.tuanimg.com/v2/ju/img/icon4.png) no-repeat 0 0;_background-image: url(http://z5.tuanimg.com/v2/ju/img/icon4_png8.png);width: 16px;height: 16px;display: block;float: left;}
-.dealstyle4 .dtype em.e1{background-position: -41px -18px;}
-.dealstyle4 .dtype em.e2{background-position: -53px 0px;}
-.dealstyle4 .dtype em.e3{background: url(http://z5.tuanimg.com/v2/ju/img/icon5.png) no-repeat 0 0;}
-.dealstyle4 .dealon h4 span strong b.i5{display: none;}
-.dealstyle4 .dealon h5, .dealstyle4 .dealon h6{display: none;}
-.dealstyle4 .con .bdg_img{display: none;}
-.dealstyle4 .icon_xianshiqiang{position: absolute; top: -6px; left:-2px;}
-.dealstyle4 .dealon .icon_xianshiqiang {  top: -6px;  left: -2px;}
 
 .deal .con>a{outline: medium none;display: inline-block;}
 /*品牌团首页商品样式*/

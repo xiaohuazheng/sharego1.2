@@ -1,8 +1,5 @@
 /* 
-* encrypt.js 
-* 说明：
-* Created by Sky on  2015/10/2
-* Copyright (c) 2015 Sky All Rights Reserved
+* 方法 
 */
 var crypto = require('crypto');
 

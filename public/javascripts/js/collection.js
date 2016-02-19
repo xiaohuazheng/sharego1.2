@@ -1,3 +1,4 @@
+//评论页点击收藏
 $(function(){
 	$('.rd-goodsColl').click(function(){
 		$(this).text('已收藏');

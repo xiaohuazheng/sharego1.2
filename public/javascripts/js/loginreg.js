@@ -12,13 +12,14 @@ $(function () {
 				data:$("#login-form").serialize(),
 				success:function(){
 					$('#loading').css('display','none');
-					 //成功
 					$('#success').css('display', 'block');
 					$('#success p').html('登录成功...');
 					setTimeout(function(){						
 						$('#success').css('display','none');
-						window.location.href="/";
-					},1500);			
+						//window.location.href="/";
+						window.history.back(-1);
+					},1500);
+					window.location.href.reload();		
 				},
 				error:function(){
 					$('#loading').css('display','none');
@@ -44,9 +45,11 @@ $(function () {
 	//1.用户名验证
 	$('#register-form input[name=username]').bind('focus',function(){
 		$('#register-form .error_user').hide();
-	}).bind('blur',function(){
+	}).bind('change',function(){
 		var len = $.trim($('#register-form input[name=username]').val()).length;
 		if( len < 2 || len > 10) {
+			$('#register-form .error_user').css('color','#ec1611');
+			$('#register-form .error_user').html('输入不合法（2~10位），请重新输入');
 			$('#register-form .error_user').show();
 		}else if(check_user()){
 			$('#register-form .error_user').css('color','#000991');
@@ -61,6 +64,8 @@ $(function () {
 	function check_user() {
 		var flag = true;
 		if ($.trim($('#register-form input[name=username]').val()).length < 2) {
+			$('#register-form .error_user').css('color','#ec1611');
+			$('#register-form .error_user').html('输入不合法（2~10位），请重新输入');
 			$('#register-form .error_user').show();
 			return false;
 		}else{			
@@ -119,7 +124,7 @@ $(function () {
 		$('#register-form .error_notpass').hide();
 	}).bind('blur', function () {
 		if ($.trim($(this).val()) == '') {
-			$('#register-form .error_notpass').show();
+			$('#register-form .error_notpass').hide();
 		} else if (check_notpass()){
 			$('#register-form .error_notpass').hide();
 		} else {
@@ -137,9 +142,7 @@ $(function () {
 		$('#register-form .error_email').hide();
 	}).bind('blur',function(){		
 		if($.trim($(this).val()) == ''){
-			$('#register-form .error_email').css('color','#ec1611');
-			$('#register-form .error_email').html('请输入邮箱');
-			$('#register-form .error_email').show();
+			$('#register-form .error_email').hide();
 		}else if (check_email()) {			
 			$('#register-form .error_email').hide();
 		} else {

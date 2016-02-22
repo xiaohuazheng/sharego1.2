@@ -39,11 +39,11 @@ $(function () {
 			},1000).css('zIndex',2);
 		}else if(banner_type == 2){
 			$('#banner img').eq(prev).animate({
-				height : '150px',
+				height : '240px',
 			},1000).css('zIndex', 1).attr('opacity',1);
 			$('#banner img').eq($(obj).index()).animate({
 				height : '0',			
-			},1000).css('top', '-150px').css('zIndex', 2).attr('opacity',1);
+			},1000).css('top', '-240px').css('zIndex', 2).attr('opacity',1);
 		}
 	}
 	

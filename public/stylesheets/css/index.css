@@ -8,13 +8,13 @@
 }
 #banner {
 	width:980px;
-	height:150px;
+	height:240px;
 	float:left;
 	margin: 0 auto;
 	position:relative;
 	overflow:hidden;
 	margin-left: 184px;
-    margin-top: 45px;
+    margin-top: 0;
     border-radius: 15px;
 }
 #banner img {
@@ -26,7 +26,7 @@
 }
 #banner ul {
 	position:absolute;
-	top:128px;
+	top:216px;
 	left:420px;
 	z-index:4;
 }
@@ -42,7 +42,7 @@
 	width:980px;
 	height:25px;
 	position:absolute;
-	top:125px;
+	top:214px;
 	left:0;
 	background:#333;
 	opacity:0.3;
@@ -50,8 +50,8 @@
 }
 #banner strong {
 	position:absolute;
-	top:127px;
-	left:10px;
+	top:214px;
+	left:48px;
 	color:#fff;
 	z-index:4;
 	font: 16px "微软雅黑";

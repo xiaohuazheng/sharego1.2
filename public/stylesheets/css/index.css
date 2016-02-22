@@ -15,7 +15,6 @@
 	overflow:hidden;
 	margin-left: 184px;
     margin-top: 0;
-    border-radius: 15px;
 }
 #banner img {
 	display:block;
@@ -64,6 +63,12 @@
     width: 980px;
     margin: 0 auto;
     position: relative;
+}
+.canvas_bg{
+	width: 980px;
+    margin: 0 auto;
+    position: relative;
+    background: url('image/action.png') top center no-repeat;
 }
 .brand_category_tit {
     position: relative;

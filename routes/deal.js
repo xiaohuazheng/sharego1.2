@@ -71,10 +71,15 @@ exports.delecoll = function(req, res){
 exports.colldeal = function(req, res){
   var dealid = parseInt(req.query.id);
   var nickname = req.session.user;
-
-  StarDeal.insertcoll(dealid, nickname, function(result) {
-    console.log('收藏成功');
-  });
+  if (!nickname) {
+    console.log('请先登录');
+    res.send(404);    
+  } else {
+    StarDeal.insertcoll(dealid, nickname, function(result) {
+      console.log('收藏成功');
+      res.send(200);
+    });
+  }
 };
 
 

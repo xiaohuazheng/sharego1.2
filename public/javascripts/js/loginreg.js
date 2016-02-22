@@ -2,6 +2,7 @@ $(function () {
 
 	//用户登录
 	$('.login input').click(function(){	
+		var backurl = $(this).attr('data-id');
 		if ($('#login-form input[name=password]').val().length >= 6) {		
 			$('#loading').css('display','block');
 			$('#loading p').html('正在登录...');
@@ -16,10 +17,8 @@ $(function () {
 					$('#success p').html('登录成功...');
 					setTimeout(function(){						
 						$('#success').css('display','none');
-						//window.location.href="/";
-						window.history.back(-1);
+						window.location.href = backurl;						
 					},1500);
-					window.location.href.reload();		
 				},
 				error:function(){
 					$('#loading').css('display','none');

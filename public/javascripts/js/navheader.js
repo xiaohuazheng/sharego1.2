@@ -56,4 +56,16 @@ $(function () {
 	}
 
 	
+
+	//点击去登陆，带url过去
+    $('#login_a').click(function() {
+    	var url = window.location.href;
+    	var loginUrl = "loginreg?url=" + url;
+    	window.location.href = loginUrl; 
+    });
+
+
+
+
+
 });	

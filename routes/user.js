@@ -1,6 +1,7 @@
 
 exports.loginreg = function(req, res){	
-	res.render('loginreg');
+	var url = req.query.url;
+	res.render('loginreg',{backUrl:url});
 }
 
 exports.logout = function(req, res){

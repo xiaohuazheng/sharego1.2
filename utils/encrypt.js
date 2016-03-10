@@ -1,5 +1,5 @@
 /* 
-* 方法  
+* tool方法  
 */
 var crypto = require('crypto');
 

@@ -1,5 +1,6 @@
 var StarDeal = require('../model/StarDeal');
 
+/* 这么多类似，考虑是否可以用正则进行匹配 */
 exports.index = function(req, res){
   StarDeal.queryall(function(result) {
     res.render('index',{user:req.session.user,data:result});

@@ -1,6 +1,12 @@
+var webpack = require('webpack');
+var path = require('path');
+var output = {
+	path: path.join(__dirname, 'javascripts/js'),
+    filename: 'navheader.min.js'
+}
 module.exports = {
-  entry: 'test1.js',
-  output: {
-    filename: 'test1.min.js'       
-  }
+  resolveLoader: { root: path.join(__dirname, "node_modules") },
+
+  entry: './public/javascripts/js/navheader.js',
+  output: output
 };

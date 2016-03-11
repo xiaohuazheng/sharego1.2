@@ -19,7 +19,7 @@ module.exports = {
     output: output,
     module: {
         loaders: [
-            {test: /\.js$/, loader: 'jsx-loader'},
+            {test: /\.js$/, loader: 'js-loader'},
             { test: /\.css$/, loader: "style-loader!css-loader"},
             { test: /\.png$/, loader: "url-loader?mimetype=image/png" }
         ]

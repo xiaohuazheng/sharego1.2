@@ -43,3 +43,10 @@ exports.insert = function (nickname, email, password, callback) {
       }  
   });
 };
+
+//判断管理员
+exports.queryUser = function (nickname, callback) {
+  MySQLUtil.query('select status from user_info where nickname=?', [nickname], function (rows, fields) {
+    callback(rows);
+  });
+};

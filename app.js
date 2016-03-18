@@ -119,11 +119,9 @@ app.use(function(err, req, res, next) {
 
 //用户登录
 app.post('/dologin', function(req, res) {
-  console.log('===========登录===========');
   var username = req.body.username;
   var password = req.body.password;
   var encryptPassword = Encrypt.md5(password).toUpperCase();
-  console.log('>>>encryptPassword:' + encryptPassword);
   User.loginByEmail(username, encryptPassword, function(status, userInfo){    
     if(status == message.login.success){
       req.session.user = username;

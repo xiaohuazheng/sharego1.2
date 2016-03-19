@@ -60,6 +60,8 @@ app.use('/loginreg',user.loginreg);
 app.use('/logout',user.logout);
 app.use('/user',user);
 
+app.use('/adminuser',user.adminuser);
+
 //分类商品页
 app.use('/jordan',routes.jordan);
 app.use('/kobe',routes.kobe);

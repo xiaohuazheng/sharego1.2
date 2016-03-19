@@ -68,7 +68,7 @@
 	width: 980px;
     margin: 0 auto;
     position: relative;
-    background: url('image/action.png') top center no-repeat;
+    background: url('image/action.png') top center no-repeat #fff;
 }
 .brand_category_tit {
     position: relative;

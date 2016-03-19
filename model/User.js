@@ -53,7 +53,7 @@ exports.queryUser = function (nickname, callback) {
 
 //管理员&&user
 exports.adminuser = function (status, callback) {
-  MySQLUtil.query('select nickname from user_info where status=?', [status], function (rows, fields) {
+  MySQLUtil.query('select nickname, email from user_info where status=?', [status], function (rows, fields) {
     callback(rows);
   });
 };

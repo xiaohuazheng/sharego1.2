@@ -131,3 +131,54 @@
 	vertical-align:middle;
 	overflow: hidden;	
 }
+
+.user_box{
+	margin: 0 auto;
+	width: 980px;
+	height: auto;
+	background: #f2f2f2;
+	margin-bottom: 50px;
+}
+.user_box .admin{
+	display: inline-block;
+	width: 888px;
+	height: auto;
+	margin-left: 50px; 	
+	margin-right: 66px; 
+}
+.user_box .user{
+	display: inline-block;
+	width: 888px;
+	height: auto;
+}
+.user_box dl{
+	margin-bottom: 20px;
+}
+.user_box dl dt{
+	padding: 10px 0 10px 10px;	
+	display: inline-block;
+    margin-right: 20px;
+    font: 18px "微软雅黑";
+    margin-bottom: 15px;
+}
+.user_box dl dt a{
+	font: 18px "微软雅黑";
+}
+.user_box dl dd{
+	border: 1px solid #1B5D8A;
+	padding: 7px 0 7px 10px;
+	margin-top: 5px; 
+	font: 14px "微软雅黑";
+	color: #1B5D8A;
+}
+.user_box dl dd em{
+	display: inline-block;
+    margin-left: 200px;
+    font-style: normal;
+}
+.user_box dl dd span{
+	margin-right: 10px;
+    float: right;
+    display: none;
+    cursor: pointer;
+}

@@ -171,14 +171,14 @@
 	font: 14px "微软雅黑";
 	color: #1B5D8A;
 }
-.user_box dl dd em{
-	display: inline-block;
-    margin-left: 200px;
-    font-style: normal;
-}
+
 .user_box dl dd span{
 	margin-right: 10px;
     float: right;
     display: none;
     cursor: pointer;
+}
+.user_box dl dd span.email{
+	display: inline-block;
+    margin-right: 200px;
 }

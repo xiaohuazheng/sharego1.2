@@ -1,8 +1,8 @@
 $(function() {
 	$('.user_box dd').on('mouseenter', function() {
-		$(this).find('span').show();
+		$(this).find('span:not(.email)').show();
 	}).on('mouseleave', function() {
-		$(this).find('span').hide();
+		$(this).find('span:not(.email)').hide();
 	});
 
 	//点击删除管理员

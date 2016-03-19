@@ -62,6 +62,10 @@ app.use('/user',user);
 
 app.use('/adminuser',user.adminuser);
 app.use('/useradmin',user.useradmin);
+app.get('/updateadmin',user.updateadmin);
+app.get('/updateuser',user.updateuser);
+app.get('/deleuser',user.deleuser);
+
 
 //分类商品页
 app.use('/jordan',routes.jordan);

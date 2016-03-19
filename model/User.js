@@ -57,3 +57,24 @@ exports.adminuser = function (status, callback) {
     callback(rows);
   });
 };
+
+//删除管理员转为普通用户
+exports.updateadmin = function (nickname, callback) {
+  MySQLUtil.query('update user_info set status = 0 where nickname=?', [nickname], function (rows, fields) {
+    callback(rows);
+  });
+};
+
+//删除用户
+exports.deleuser = function (nickname, callback) {
+  MySQLUtil.query('delete from user_info where nickname=?', [nickname], function (rows, fields) {
+    callback(rows);
+  });
+};
+
+//设置用户为管理员
+exports.updateuser = function (nickname, callback) {
+  MySQLUtil.query('update user_info set status = 1 where nickname=?', [nickname], function (rows, fields) {
+    callback(rows);
+  });
+};

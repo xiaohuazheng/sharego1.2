@@ -28,5 +28,30 @@ exports.useradmin = function(req, res){
 	});		
 }
 
+//删除管理员
+exports.updateadmin = function(req, res){
+  var dealid = req.query.id;
 
+  User.updateadmin(dealid, function(result) {
+    console.log('删除管理员成功加入至普通用户');
+  });
+};
+
+//删除用户
+exports.deleuser = function(req, res){
+  var dealid = req.query.id;
+
+  User.deleuser(dealid, function(result) {
+    console.log('删除用户成功');
+  });
+};
+
+//设置用户为管理员
+exports.updateuser = function(req, res){
+  var dealid = req.query.id;
+
+  User.updateuser(dealid, function(result) {
+    console.log('设置用户为管理员成功');
+  });
+};
 

@@ -55,7 +55,7 @@
     				<dt style="border-bottom: 1px solid #EC1612;">管理员设置</dt><dt><a href="/useradmin">用户设置</a></dt>
     				<% var data = locals.adminResult;
     				for(var i = 0; i < data.length; i++) { %>
-    				   	<dd>昵称：<%= data[i].nickname %><em>邮箱：<%= data[i].email %></em><span class="dele_admin">删除管理员</span></dd>
+    				   	<dd>昵称：<%= data[i].nickname %><em>邮箱：<%= data[i].email %></em><span class="dele_admin" data-id="<%= data[i].nickname %>">删除管理员</span></dd>
     				<% } %>
     			</dl>
     		</div>

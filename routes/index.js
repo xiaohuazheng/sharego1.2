@@ -1,7 +1,9 @@
 var StarDeal = require('../model/StarDeal');
 var User = require('../model/User');
 
-/* 这么多类似，考虑是否可以用正则进行匹配 */
+/* 考虑是否可以用正则进行匹配,减少代码量 */
+
+//首页
 exports.index = function(req, res){
   var locals = res.locals;
   locals.admin = false;
@@ -16,6 +18,8 @@ exports.index = function(req, res){
     res.render('index',{user:req.session.user,data:result});
   });
 };
+
+//乔丹
 exports.jordan = function(req, res){
   var locals = res.locals;
   locals.admin = false;
@@ -30,6 +34,8 @@ exports.jordan = function(req, res){
     res.render('shoes/jordan',{user:req.session.user,data:result});
   });
 };
+
+//科比
 exports.kobe = function(req, res){
   var locals = res.locals;
   locals.admin = false;
@@ -44,6 +50,8 @@ exports.kobe = function(req, res){
     res.render('shoes/kobe',{user:req.session.user,data:result});
   });
 };
+
+//詹姆斯
 exports.james = function(req, res){
   var locals = res.locals;
   locals.admin = false;
@@ -58,6 +66,8 @@ exports.james = function(req, res){
     res.render('shoes/james',{user:req.session.user,data:result});
   });
 };
+
+//杜兰特
 exports.durant = function(req, res){
   var locals = res.locals;
   locals.admin = false;
@@ -72,6 +82,8 @@ exports.durant = function(req, res){
     res.render('shoes/durant',{user:req.session.user,data:result});
   });
 };
+
+//保罗
 exports.paul = function(req, res){
   var locals = res.locals;
   locals.admin = false;
@@ -86,6 +98,8 @@ exports.paul = function(req, res){
     res.render('shoes/paul',{user:req.session.user,data:result});
   });
 };
+
+//库里
 exports.curry = function(req, res){
   var locals = res.locals;
   locals.admin = false;
@@ -100,6 +114,8 @@ exports.curry = function(req, res){
     res.render('shoes/curry',{user:req.session.user,data:result});
   });
 };
+
+//哈登
 exports.harden = function(req, res){
   var locals = res.locals;
   locals.admin = false;
@@ -114,6 +130,8 @@ exports.harden = function(req, res){
     res.render('shoes/harden',{user:req.session.user,data:result});
   });
 };
+
+//其他球星
 exports.morestar = function(req, res){
   var locals = res.locals;
   locals.admin = false;
@@ -147,7 +165,6 @@ exports.dealcoll = function(req, res){
     }    
   });
 };
-
 
 //爬虫页
 exports.crawler = function(req, res){

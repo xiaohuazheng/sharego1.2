@@ -1,4 +1,5 @@
 $(function() {
+	//管理栏hover
 	$('.user_box dd').on('mouseenter', function() {
 		$(this).find('span:not(.email)').show();
 	}).on('mouseleave', function() {

@@ -1,4 +1,4 @@
-
+//测试webpack
 $(function() {
-	console.log('it is a test');
+	console.log("it's a test");
 });

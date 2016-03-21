@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50051
 File Encoding         : 65001
 
-Date: 2016-02-18 13:36:00
+Date: 2016-03-21 11:41:47
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -65,91 +65,91 @@ CREATE TABLE `dealall` (
   `dealtype` tinyint(10) default NULL,
   `dealid` char(255) default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=951 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=1111 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of dealall
 -- ----------------------------
-INSERT INTO `dealall` VALUES ('500', 'goods-24711.html', 'http://img.52xie.com/images/201408/thumb_img/24711_thumb_G_1479615979.jpg', '1799', '乔丹/Air Jordan 3Lab5 “Metallic Silver” 乔丹AJ5代黑爆裂 599581-003', '1', '24711');
-INSERT INTO `dealall` VALUES ('499', 'goods-23669.html', 'http://img.52xie.com/images/201405/thumb_img/23669_thumb_G_1485993862.jpg', '2299', 'Air Jordan 6 Retro Carmine AJ6 乔6胭脂红情侣款 384664-160', '1', '23669');
-INSERT INTO `dealall` VALUES ('498', 'goods-30067.html', 'http://img.52xie.com/images/201512/thumb_img/30067_thumb_G_1508771393.jpg', '1699', '乔丹/Air Jordan 6 Maroon AJ6 魔力红 384664-116', '1', '30067');
-INSERT INTO `dealall` VALUES ('497', 'goods-28915.html', 'http://img.52xie.com/images/201509/thumb_img/28915_thumb_G_1535994534.jpg', '1749', '乔丹/Air Jordan 6 Low 黑银男鞋 304401-003', '1', '28915');
-INSERT INTO `dealall` VALUES ('496', 'goods-22724.html', 'http://img.52xie.com/images/201402/thumb_img/22724_thumb_G_1466001629.jpg', '1599', '乔丹/Air Jordan 6 Infrared AJ6 乔6白红樱木 情侣限量 384664-123', '1', '22724');
-INSERT INTO `dealall` VALUES ('495', 'goods-23320.html', 'http://img.52xie.com/images/201404/thumb_img/23308_thumb_G_1480074621.jpg', '1699', '乔丹/Jordan True Flight AJ7+ 乔7加强版 342964-023', '1', '23320');
-INSERT INTO `dealall` VALUES ('494', 'goods-31250.html', 'http://img.52xie.com/images/201601/thumb_img/31250_thumb_G_1465873675.jpg', '1999', '乔丹/Air Jordan 4 White Cement AJ4 白水泥 840606-192 308496-104', '1', '31250');
-INSERT INTO `dealall` VALUES ('493', 'goods-12147.html', 'http://img.52xie.com/images/201211/thumb_img/12147_thumb_G_1352339254749.jpg', '1499', 'Air Jordan 7 Retro olympic 乔丹7代奥运2012复刻情侣 篮球鞋 304775-135', '1', '12147');
-INSERT INTO `dealall` VALUES ('492', 'goods-21829.html', 'http://img.52xie.com/images/201309/thumb_img/21829_thumb_G_1461421640.jpg', '1899', '乔丹/Air Jordan 5 Retro AJ5 白红黑火焰红 情侣款 136027-120', '1', '21829');
-INSERT INTO `dealall` VALUES ('491', 'goods-30822.html', 'http://img.52xie.com/images/201512/thumb_img/30822_thumb_G_1500093069.jpg', '1099', '乔丹/JORDAN JUMPMAN TEAM II 乔13鞋底 819175-101', '1', '30822');
-INSERT INTO `dealall` VALUES ('490', 'goods-28561.html', 'http://img.52xie.com/images/201507/thumb_img/28561_thumb_G_1465614887.jpg', '1399', '乔丹/Air Jordan 7 Bordeaux AJ7 波尔多 情侣款 304775-034', '1', '28561');
-INSERT INTO `dealall` VALUES ('489', 'goods-27272.html', 'http://img.52xie.com/images/201504/thumb_img/27272_thumb_G_1480132073.jpg', '1499', '乔丹/Air Jordan XX9 Playoff Pack 乔29季后赛套 黑蓝 749143-014', '1', '27272');
-INSERT INTO `dealall` VALUES ('488', 'goods-26813.html', 'http://img.52xie.com/images/201503/thumb_img/26813_thumb_G_1455011250.jpg', '1599', '乔丹/Air Jordan 10 Bull Over Broad way 乔10情侣大红 705178-601', '1', '26813');
-INSERT INTO `dealall` VALUES ('487', 'goods-25190.html', 'http://img.52xie.com/images/201409/thumb_img/25190_thumb_G_1436476896.jpg', '1599', '乔丹/Air Jordan XX9 AJ29 Gym Red 乔29爆裂原色 695515-023', '1', '25190');
-INSERT INTO `dealall` VALUES ('486', 'goods-27275.html', 'http://img.52xie.com/images/201504/thumb_img/27275_thumb_G_1443950804.jpg', '1899', '乔丹/Air Jordan 11 Low AJ11 乔11 乔11乔治城情侣 528895-007', '1', '27275');
-INSERT INTO `dealall` VALUES ('485', 'goods-15612.html', 'http://img.52xie.com/images/201212/thumb_img/15612_thumb_G_1356658344956.jpg', '4099', 'Air Jordan 11 Retro 乔丹11黑红2012复刻情侣 篮球鞋 378037-010', '1', '15612');
-INSERT INTO `dealall` VALUES ('484', 'goods-22478.html', 'http://img.52xie.com/images/201312/thumb_img/22478_thumb_G_1475071953.jpg', '1999', '乔丹/Air Jordan Retro 11 Gamma 乔11 情侣款伽马蓝 378037-006', '1', '22478');
-INSERT INTO `dealall` VALUES ('483', 'goods-23405.html', 'http://img.52xie.com/images/201405/thumb_img/23405_thumb_G_1409962662.jpg', '2699', '乔丹/Air Jordan 11 Low Concord AJ11 LOW 乔11低帮白黑情侣 528895-153', '1', '23405');
-INSERT INTO `dealall` VALUES ('482', 'goods-26300.html', 'http://img.52xie.com/images/201412/thumb_img/26300_thumb_G_1484106942.jpg', '2099', '乔丹/Air Jordan11Legend Blue 乔11传奇蓝 378037-117', '1', '26300');
-INSERT INTO `dealall` VALUES ('481', 'goods-30391.html', 'http://img.52xie.com/images/201511/thumb_img/30391_thumb_G_1516243161.jpg', '1599', '乔丹/Air Jordan 7 Nothing But Net AJ7 白紫毛衣情侣款 304775-142', '1', '30391');
-INSERT INTO `dealall` VALUES ('480', 'goods-30892.html', 'http://img.52xie.com/images/201512/thumb_img/30892_thumb_G_1463749169.jpg', '1599', '乔丹/Air Jordan 5 Low Alternate 90 AJ5 黑红 819171-001', '1', '30892');
-INSERT INTO `dealall` VALUES ('479', 'goods-23271.html', 'http://img.52xie.com/images/201404/thumb_img/23271_thumb_G_1493308499.jpg', '1399', 'AIR JORDAN 2 RETRO 乔丹2代篮球鞋 黑爆裂 情侣款385475-023', '1', '23271');
-INSERT INTO `dealall` VALUES ('478', 'goods-26560.html', 'http://img.52xie.com/images/201601/thumb_img/26560_thumb_G_1498933619.jpg', '1599', '乔丹/Air Jordan XX9 AJ29 Gym Red 乔29黑红爆裂 695515-001', '1', '26560');
-INSERT INTO `dealall` VALUES ('477', 'goods-24442.html', 'http://img.52xie.com/images/201407/thumb_img/24442_thumb_G_1498706144.jpg', '539', '乔丹/Air Jordan CP3.VII AE 保罗7代篮球鞋 季后赛涂鸦 669612-070', '1', '24442');
-INSERT INTO `dealall` VALUES ('476', 'goods-30726.html', 'http://img.52xie.com/images/201512/thumb_img/30726_thumb_G_1533992840.jpg', '1649', '乔丹/AIR JORDAN XX9 RW 威少限定 男子篮球鞋 827175-160', '1', '30726');
-INSERT INTO `dealall` VALUES ('475', 'goods-30073.html', 'http://img.52xie.com/images/201510/thumb_img/30073_thumb_G_1506239887.jpg', '1599', '乔丹/Air Jordan XX9 Hornets AJ29 风水黄蜂 822227-154', '1', '30073');
-INSERT INTO `dealall` VALUES ('474', 'goods-23273.html', 'http://img.52xie.com/images/201404/thumb_img/23273_thumb_G_1399948163.jpg', '2499', 'Air Jordan 11 Low Green Snake 乔11低帮绿蛇 528895-033', '1', '23273');
-INSERT INTO `dealall` VALUES ('473', 'goods-25699.html', 'http://img.52xie.com/images/201410/thumb_img/25699_thumb_G_1440858299.jpg', '1999', '乔丹/Air Jordan XX9 29 River Walk AJ29 乔丹29代篮球鞋 695515-625', '1', '25699');
-INSERT INTO `dealall` VALUES ('472', 'goods-31407.html', 'http://img.52xie.com/images/201601/thumb_img/31407_thumb_G_1553384201.jpg', '1999', '预售 乔丹/Air Jordan XXX AJ30 首发 白灰黑 篮球鞋 811006-101', '1', '31407');
-INSERT INTO `dealall` VALUES ('471', 'goods-28843.html', 'http://img.52xie.com/images/201507/thumb_img/28843_thumb_G_1452893242.jpg', '899', '乔丹/AIR JORDAN CP3.VIII AE X 保罗8代 篮球鞋 725212-064', '1', '28843');
-INSERT INTO `dealall` VALUES ('470', 'goods-24060.html', 'http://img.52xie.com/images/201406/thumb_img/24060_thumb_G_1432256119.jpg', '2199', '乔丹/Air Jordan 11 Low AJ11 乔11低帮黑红外线 528895-023', '1', '24060');
-INSERT INTO `dealall` VALUES ('469', 'goods-27719.html', 'http://img.52xie.com/images/201505/thumb_img/27719_thumb_G_1502012163.jpg', '1899', '乔丹/Air Jordan 11 Low Bred 乔11黑红低帮 528895-012', '1', '27719');
-INSERT INTO `dealall` VALUES ('468', 'goods-28035.html', 'http://img.52xie.com/images/201505/thumb_img/28035_thumb_G_1465252793.jpg', '1599', '乔丹/Air Jordan 20 Playoffs 乔20季后赛奥利奥 310455-003', '1', '28035');
-INSERT INTO `dealall` VALUES ('467', 'goods-28920.html', 'http://img.52xie.com/images/201508/thumb_img/28920_thumb_G_1512520485.jpg', '1499', '乔丹/Air Jordan 7 Marvin The Martian 乔7火星人马文 304775-029', '1', '28920');
-INSERT INTO `dealall` VALUES ('466', 'goods-26994.html', 'http://img.52xie.com/images/201503/thumb_img/26994_thumb_G_1460953495.jpg', '1799', '乔丹/Air Jordan 7 Retro AJ7 火星人马文巴塞罗那之夜 705350-007', '1', '26994');
-INSERT INTO `dealall` VALUES ('465', 'goods-30817.html', 'http://img.52xie.com/images/201601/thumb_img/30817_thumb_G_1478208235.jpg', '1499', '乔丹/Air Jordan 8 chrome AJ8 乔8黑银 305381-003', '1', '30817');
-INSERT INTO `dealall` VALUES ('464', 'goods-29677.html', 'http://img.52xie.com/images/201601/thumb_img/29677_thumb_G_1482645512.jpg', '799', '乔丹/Air Jordan 1 Mid 乔1中帮白灰 554724-112', '1', '29677');
-INSERT INTO `dealall` VALUES ('463', 'goods-25787.html', 'http://img.52xie.com/images/201410/thumb_img/25787_thumb_G_1475870156.jpg', '3299', '乔丹/AIR JORDAN 6 SLAM DUNK AJ6 乔6灌篮高手樱木花道 717302-600', '1', '25787');
-INSERT INTO `dealall` VALUES ('462', 'goods-27751.html', 'http://img.52xie.com/images/201505/thumb_img/27751_thumb_G_1454521982.jpg', '699', '乔丹/Air Jordan Cp3.VIII X 保罗8季后赛 加强 篮球鞋 725212-101', '1', '27751');
-INSERT INTO `dealall` VALUES ('461', 'goods-30531.html', 'http://img.52xie.com/images/201512/thumb_img/30531_thumb_G_1545435601.jpg', '2699', '乔丹/Air Jordan 11 Retro 72-10 乔11大魔王情侣 378037-002', '1', '30531');
-INSERT INTO `dealall` VALUES ('820', 'goods-24882.html', 'http://img.52xie.com/images/201407/thumb_img/24882_thumb_G_1459607220.jpg', '1199', '耐克/Nike Kobe IX 9 EM XDR 科比9青花瓷 蓝金 646701-414', '2', '24882');
-INSERT INTO `dealall` VALUES ('819', 'goods-30594.html', 'http://img.52xie.com/images/201512/thumb_img/30594_thumb_G_1455310166.jpg', '1299', '耐克/Nike Kobe 10 High EXT White Gum 科比10 全白 822950-100', '2', '30594');
-INSERT INTO `dealall` VALUES ('818', 'goods-26597.html', 'http://img.52xie.com/images/201505/thumb_img/26597_thumb_G_1493061840.jpg', '599', '耐克/NIKE KB MENTALITY 科比简版篮球鞋 704942-400', '2', '26597');
-INSERT INTO `dealall` VALUES ('817', 'goods-29020.html', 'http://img.52xie.com/images/201508/thumb_img/29020_thumb_G_1529448945.jpg', '1399', '耐克/Nike Kobe 10 Elite Low Dark Atomic 科比10精英 747212-303', '2', '29020');
-INSERT INTO `dealall` VALUES ('816', 'goods-30285.html', 'http://img.52xie.com/images/201510/thumb_img/30285_thumb_G_1490153155.jpg', '799', '耐克/NIKE ZOOM KOBE Venomenon 5 EP 科比毒液5 815757-604', '2', '30285');
-INSERT INTO `dealall` VALUES ('815', 'goods-27186.html', 'http://img.52xie.com/images/201503/thumb_img/27186_thumb_G_1431369952.jpg', '999', '耐克/Kobe 10 Poison Green Vino ZK10 科比10毒液 745334-333', '2', '27186');
-INSERT INTO `dealall` VALUES ('814', 'goods-22746.html', 'http://img.52xie.com/images/201402/thumb_img/22746_thumb_G_1421373038.jpg', '2999', '耐克/Nike Kobe 9 Elite ALL STAR 科比9代篮球鞋 全明星夜光 630847-002', '2', '22746');
-INSERT INTO `dealall` VALUES ('813', 'goods-30614.html', 'http://img.52xie.com/images/201511/thumb_img/30614_thumb_G_1513170030.jpg', '1499', '耐克/Nike Kobe10 Elite USA 科比10 美国配色 718763-614', '2', '30614');
-INSERT INTO `dealall` VALUES ('812', 'goods-27278.html', 'http://img.52xie.com/images/201510/thumb_img/27278_thumb_G_1542266624.jpg', '899', '耐克/Nike Kobe 10 Silk Road 科比10 丝绸之路705317-676  745334-676', '2', '27278');
-INSERT INTO `dealall` VALUES ('811', 'goods-27923.html', 'http://img.52xie.com/images/201505/thumb_img/27923_thumb_G_1519516828.jpg', '599', '耐克/Nike KB MENTALITY 科比简版曼巴精神冰橙 704942-007', '2', '27923');
-INSERT INTO `dealall` VALUES ('810', 'goods-30526.html', 'http://img.52xie.com/images/201511/thumb_img/30526_thumb_G_1510713231.jpg', '1499', '耐克/Nike Kobe10 Elite Coda 科比10 开赛夜  802762-707', '2', '30526');
-INSERT INTO `dealall` VALUES ('809', 'goods-30127.html', 'http://img.52xie.com/images/201511/thumb_img/30127_thumb_G_1501915889.jpg', '1399', '耐克/Nike Kobe 10 Elite Low 科比10精英 开赛夜 747212-505 747212-515', '2', '30127');
-INSERT INTO `dealall` VALUES ('808', 'goods-26598.html', 'http://img.52xie.com/images/201505/thumb_img/26598_thumb_G_1468214936.jpg', '499', '耐克/NIKE KB MENTALITY 科比简版篮球鞋 小丑配色704942-601', '2', '26598');
-INSERT INTO `dealall` VALUES ('807', 'goods-25116.html', 'http://img.52xie.com/images/201411/thumb_img/25116_thumb_G_1440871869.jpg', '999', '耐克/NIKE KOBE 9 EM BRIGHT MANGO ZK9火焰科比9火花 653972-880', '2', '25116');
-INSERT INTO `dealall` VALUES ('806', 'goods-23613.html', 'http://img.52xie.com/images/201405/thumb_img/23613_thumb_G_1452134820.jpg', '1199', '耐克/NIKE KOBE IX科比9 ZK9精英酷彩篮球鞋641714-005', '2', '23613');
-INSERT INTO `dealall` VALUES ('805', 'goods-27153.html', 'http://img.52xie.com/images/201503/thumb_img/27153_thumb_G_1485660252.jpg', '499', '耐克/Nike Kobe KB Mentality 科比简版篮球鞋 704942-401', '2', '27153');
-INSERT INTO `dealall` VALUES ('804', 'goods-25279.html', 'http://img.52xie.com/images/201410/thumb_img/25279_thumb_G_1480037986.jpg', '999', '耐克/Nike Kobe 9 Mid EXT “Black Snakeskin” 科比9黑曼巴 704286-001', '2', '25279');
-INSERT INTO `dealall` VALUES ('803', 'goods-26140.html', 'http://img.52xie.com/images/201411/thumb_img/26140_thumb_G_1498650080.jpg', '1699', '耐克/Nike Kobe 9 Elite EXT Snakeskin 科比9蛇皮 716616-001', '2', '26140');
-INSERT INTO `dealall` VALUES ('802', 'goods-26815.html', 'http://img.52xie.com/images/201502/thumb_img/26815_thumb_G_1488687797.jpg', '899', '耐克/Nike Kobe 10 All Star 科比10全明星 742546-097', '2', '26815');
-INSERT INTO `dealall` VALUES ('801', 'goods-29376.html', 'http://img.52xie.com/images/201509/thumb_img/29376_thumb_G_1500296277.jpg', '1199', '耐克/NIKE Kobe 10“Overcome”科比10 745334-305 705317-305', '2', '29376');
-INSERT INTO `dealall` VALUES ('800', 'goods-26505.html', 'http://img.52xie.com/images/201501/thumb_img/26505_thumb_G_1449136159.jpg', '1199', '耐克/Nike Kobe 9 Silk EM 科比9丝绸之路 653972-676', '2', '26505');
-INSERT INTO `dealall` VALUES ('799', 'goods-27152.html', 'http://img.52xie.com/images/201503/thumb_img/27152_thumb_G_1500839684.jpg', '469', '耐克/Nike Kobe KB Mentality 科比简版篮球鞋 704942-300', '2', '27152');
-INSERT INTO `dealall` VALUES ('798', 'goods-31371.html', 'http://img.52xie.com/images/201601/thumb_img/31371_thumb_G_1537550372.jpg', '1449', '耐克/nike zoom huarache 2k4 2016 复刻 全明星配色 308475-100', '2', '31371');
-INSERT INTO `dealall` VALUES ('797', 'goods-30927.html', 'http://img.52xie.com/images/201601/thumb_img/30927_thumb_G_1519742890.jpg', '1399', '耐克/Nike KOBE11 ZP XI 科比11代低帮篮球鞋 822675-670', '2', '30927');
-INSERT INTO `dealall` VALUES ('796', 'goods-30952.html', 'http://img.52xie.com/images/201601/thumb_img/30952_thumb_G_1502630300.jpg', '1699', '耐克/Nike Kobe 10 Elite Low 科比10 圣诞 802560-076', '2', '30952');
-INSERT INTO `dealall` VALUES ('795', 'goods-30947.html', 'http://img.52xie.com/images/201601/thumb_img/30947_thumb_G_1510622337.jpg', '1699', '耐克/Nike Kobe 10 What The Kobe10 科比10鸳鸯 815810-900', '2', '30947');
-INSERT INTO `dealall` VALUES ('794', 'goods-28283.html', 'http://img.52xie.com/images/201506/thumb_img/28283_thumb_G_1521810321.jpg', '599', '耐克/NIKE ZOOM KOBE Venomenon 5 科比毒液5 815757-706', '2', '28283');
-INSERT INTO `dealall` VALUES ('793', 'goods-31254.html', 'http://img.52xie.com/images/201601/thumb_img/31254_thumb_G_1462267060.jpg', '1499', '耐克/Nike Kobe 11 Elite Low BHM 科比11 黑人月 822522-914', '2', '31254');
-INSERT INTO `dealall` VALUES ('792', 'goods-22480.html', 'http://img.52xie.com/images/201312/thumb_img/22480_thumb_G_1419953448.jpg', '5499', '耐克/Nike Zoom Kobe 1 Prelude ZK1 科比1 复刻 蛇纹 640221-001', '2', '22480');
-INSERT INTO `dealall` VALUES ('791', 'goods-29118.html', 'http://img.52xie.com/images/201509/thumb_img/29118_thumb_G_1508392219.jpg', '1399', '耐克/Nike Kobe10 Elite Low 科比10 黑粉刺客 747212-010', '2', '29118');
-INSERT INTO `dealall` VALUES ('790', 'goods-31273.html', 'http://img.52xie.com/images/201601/thumb_img/31273_thumb_G_1513662702.jpg', '1399', '耐克/Nike Kobe 11 Elite Low 科比11黑灰配色 822675-105', '2', '31273');
-INSERT INTO `dealall` VALUES ('789', 'goods-28627.html', 'http://img.52xie.com/images/201507/thumb_img/28627_thumb_G_1443208428.jpg', '999', '耐克/Nike Kobe 10 ZK10 科比10篮球鞋 鸽子灰 745334-001 705317-001', '2', '28627');
-INSERT INTO `dealall` VALUES ('788', 'goods-27814.html', 'http://img.52xie.com/images/201506/thumb_img/27814_thumb_G_1512865630.jpg', '899', '耐克/Nike Kobe X EP Flight Pack 科比10篮球鞋 745334-308', '2', '27814');
-INSERT INTO `dealall` VALUES ('787', 'goods-28284.html', 'http://img.52xie.com/images/201508/thumb_img/28284_thumb_G_1484903658.jpg', '599', '耐克/NIKE ZOOM KOBE Venomenon 5 EP 科比毒液5 815757-001', '2', '28284');
-INSERT INTO `dealall` VALUES ('786', 'goods-31417.html', 'http://img.52xie.com/images/201602/thumb_img/31417_thumb_G_1454531889665.jpg', '1599', '耐克/NIKE KOBE 11 ELITE AS 科比11 ZK11 全明星 822521-305', '2', '31417');
-INSERT INTO `dealall` VALUES ('785', 'goods-23337.html', 'http://img.52xie.com/images/201407/thumb_img/23337_thumb_G_1433815211.jpg', '2799', '耐克/NIKE KOBE IX ELTE 科比9 愚人节 630847-300', '2', '23337');
-INSERT INTO `dealall` VALUES ('784', 'goods-28628.html', 'http://img.52xie.com/images/201601/thumb_img/28628_thumb_G_1532665084.jpg', '1299', '耐克/Nike Kobe 10 Elite Sunset 科比10飞线 日落 747212-818', '2', '28628');
-INSERT INTO `dealall` VALUES ('783', 'goods-27346.html', 'http://img.52xie.com/images/201506/thumb_img/27346_thumb_G_1479916652.jpg', '1099', '耐克/Nike Kobe X Elite 科10 精英紫 科比 718763-505', '2', '27346');
-INSERT INTO `dealall` VALUES ('782', 'goods-26967.html', 'http://img.52xie.com/images/201503/thumb_img/26967_thumb_G_1505025108.jpg', '899', '耐克/Nike Kobe 10 Blue Lagoon ZK10 科比10代篮球鞋 745334-005 705317-005', '2', '26967');
-INSERT INTO `dealall` VALUES ('781', 'goods-30593.html', 'http://img.52xie.com/images/201512/thumb_img/30593_thumb_G_1461342254.jpg', '1099', '耐克/Nike Kobe 10 red KOBE10 科比10 大红 745334-616', '2', '30593');
+INSERT INTO `dealall` VALUES ('1110', 'goods-22735.html', 'http://img.52xie.com/images/201404/thumb_img/22735_thumb_G_1484425482.jpg', '2499', 'Air Jordan 6 Retro TORO AJ6 乔丹6代篮球鞋 大红情侣款 384664-623', '1', '22735');
+INSERT INTO `dealall` VALUES ('1109', 'goods-30401.html', 'http://img.52xie.com/images/201511/thumb_img/30401_thumb_G_1456972850.jpg', '5999', '乔丹/Air Jordan 13 Doernbecher AJ13 慈善 836405-305', '1', '30401');
+INSERT INTO `dealall` VALUES ('1108', 'goods-30391.html', 'http://img.52xie.com/images/201511/thumb_img/30391_thumb_G_1516243161.jpg', '1799', '乔丹/Air Jordan 7 Nothing But Net AJ7 白紫毛衣情侣款 304775-142', '1', '30391');
+INSERT INTO `dealall` VALUES ('1107', 'goods-22724.html', 'http://img.52xie.com/images/201402/thumb_img/22724_thumb_G_1466001629.jpg', '1699', '乔丹/Air Jordan 6 Infrared AJ6 乔6白红樱木 情侣限量 384664-123', '1', '22724');
+INSERT INTO `dealall` VALUES ('1106', 'goods-31407.html', 'http://img.52xie.com/images/201602/thumb_img/31407_thumb_G_1554070442.jpg', '1799', '乔丹/Air Jordan XXX AJ30 首发 白灰黑 篮球鞋 811006-101', '1', '31407');
+INSERT INTO `dealall` VALUES ('1105', 'goods-30531.html', 'http://img.52xie.com/images/201512/thumb_img/30531_thumb_G_1545435601.jpg', '2699', '乔丹/Air Jordan 11 Retro 72-10 乔11大魔王情侣 378037-002', '1', '30531');
+INSERT INTO `dealall` VALUES ('1104', 'goods-23273.html', 'http://img.52xie.com/images/201404/thumb_img/23273_thumb_G_1399948163.jpg', '2499', 'Air Jordan 11 Low Green Snake 乔11低帮绿蛇 528895-033', '1', '23273');
+INSERT INTO `dealall` VALUES ('1103', 'goods-30436.html', 'http://img.52xie.com/images/201511/thumb_img/30436_thumb_G_1486180790.jpg', '1799', '乔丹/Air Jordan 13 CP3 PE Home AJ13 保罗主场 807504-107', '1', '30436');
+INSERT INTO `dealall` VALUES ('1102', 'goods-31626.html', 'http://img.52xie.com/images/201603/thumb_img/31626_thumb_G_1459767539.jpg', '1799', '预售/乔丹/Air Jordan 4 Dunk From Above AJ4 蓝黄 308497-425', '1', '31626');
+INSERT INTO `dealall` VALUES ('1101', 'goods-2153.html', 'http://img.52xie.com/images/201309/thumb_img/2153_thumb_G_1409959991.jpg', '3299', 'Air Jordan 11 Retro 乔丹11代黑红08套装复刻篮球鞋 136046-062', '1', '2153');
+INSERT INTO `dealall` VALUES ('1100', 'goods-31226.html', 'http://img.52xie.com/images/201601/thumb_img/31226_thumb_G_1479782869.jpg', '1299', '乔丹/Air Jordan SUPER.FLY 4 PO China 格里芬中国 风筝 840476-060', '1', '31226');
+INSERT INTO `dealall` VALUES ('1099', 'goods-24060.html', 'http://img.52xie.com/images/201406/thumb_img/24060_thumb_G_1432256119.jpg', '2199', '乔丹/Air Jordan 11 Low AJ11 乔11低帮黑红外线 528895-023', '1', '24060');
+INSERT INTO `dealall` VALUES ('1098', 'goods-31441.html', 'http://img.52xie.com/images/201603/thumb_img/31441_thumb_G_1484471697.jpg', '1899', '预售/乔丹/Air Jordan 12 French Blue AJ12 法国蓝 130690-113', '1', '31441');
+INSERT INTO `dealall` VALUES ('1097', 'goods-22206.html', 'http://img.52xie.com/images/201311/thumb_img/22206_thumb_G_1383269795202.jpg', '1499', '乔丹/AIR JORDAN 5 Laney AJ5 乔丹5代 兰尼情侣配色 136027-189', '1', '22206');
+INSERT INTO `dealall` VALUES ('1096', 'goods-28663.html', 'http://img.52xie.com/images/201512/thumb_img/28663_thumb_G_1511123580.jpg', '899', '乔丹/AIR JORDAN WESTBROOK 0 BLACK 威斯布鲁克黑色篮球鞋 812877-025', '1', '28663');
+INSERT INTO `dealall` VALUES ('1095', 'goods-25787.html', 'http://img.52xie.com/images/201410/thumb_img/25787_thumb_G_1475870156.jpg', '3299', '乔丹/AIR JORDAN 6 SLAM DUNK AJ6 乔6灌篮高手樱木花道 717302-600', '1', '25787');
+INSERT INTO `dealall` VALUES ('1094', 'goods-25699.html', 'http://img.52xie.com/images/201410/thumb_img/25699_thumb_G_1440858299.jpg', '1999', '乔丹/Air Jordan XX9 29 River Walk AJ29 乔丹29代篮球鞋 695515-625', '1', '25699');
+INSERT INTO `dealall` VALUES ('1093', 'goods-28762.html', 'http://img.52xie.com/images/201507/thumb_img/28762_thumb_G_1465038848.jpg', '1499', '乔丹/Nike Air Jordan 1 KO Bred 黑红 638471-001', '1', '28762');
+INSERT INTO `dealall` VALUES ('1092', 'goods-30046.html', 'http://img.52xie.com/images/201511/thumb_img/30046_thumb_G_1472356970.jpg', '1399', '乔丹/Air Jordan 8 Three Peat AJ8 乔8三连冠 305381-142', '1', '30046');
+INSERT INTO `dealall` VALUES ('1091', 'goods-29932.html', 'http://img.52xie.com/images/201509/thumb_img/29932_thumb_G_1496321526.jpg', '1299', '乔丹/Air Jordan 11 Low IE “Croc”AJ11 黑蟒蛇 306008-013', '1', '29932');
+INSERT INTO `dealall` VALUES ('1090', 'goods-31623.html', 'http://img.52xie.com/images/201603/thumb_img/31623_thumb_G_1545195356.jpg', '1399', '乔丹/Air Jordan 5 Low Fire Red AJ5 火焰红 819171-101', '1', '31623');
+INSERT INTO `dealall` VALUES ('1089', 'goods-22821.html', 'http://img.52xie.com/images/201403/thumb_img/22821_thumb_G_1425298256.jpg', '799', '乔丹/Air Jordan CP3.VII X CP3 保罗7篮球鞋 616805-306 622270-306', '1', '22821');
+INSERT INTO `dealall` VALUES ('1088', 'goods-22869.html', 'http://img.52xie.com/images/201404/thumb_img/22869_thumb_G_1491618288.jpg', '799', '乔丹/Air Jordan CP3.VII 保罗7代 篮球鞋 616805-008', '1', '22869');
+INSERT INTO `dealall` VALUES ('1087', 'goods-31400.html', 'http://img.52xie.com/images/201601/thumb_img/31400_thumb_G_1499052253.jpg', '1399', '乔丹/Air Jordan 5 Low AJ5 低帮白海军蓝 819171-135', '1', '31400');
+INSERT INTO `dealall` VALUES ('1086', 'goods-31130.html', 'http://img.52xie.com/images/201601/thumb_img/31130_thumb_G_1465444745.jpg', '1899', '乔丹/Air Jordan 5 Low China AJ5 中国 风筝 840475-060', '1', '31130');
+INSERT INTO `dealall` VALUES ('1085', 'goods-30821.html', 'http://img.52xie.com/images/201512/thumb_img/30821_thumb_G_1484857502.jpg', '999', '乔丹/AIR JORDAN HORIZON AJ13未来 休闲大红编织 823581-600', '1', '30821');
+INSERT INTO `dealall` VALUES ('1084', 'goods-24957.html', 'http://img.52xie.com/images/201409/thumb_img/24957_thumb_G_1481236191.jpg', '1599', '乔丹/Air Jordan 6 Sport Blue 乔6白蓝情侣款 384664-107', '1', '24957');
+INSERT INTO `dealall` VALUES ('1083', 'goods-31057.html', 'http://img.52xie.com/images/201512/thumb_img/31057_thumb_G_1454949175.jpg', '1099', '乔丹/Air Jordan 1 Retro High Nouv AJ1 乔1 黑白金钩 819176-104', '1', '31057');
+INSERT INTO `dealall` VALUES ('1082', 'goods-26808.html', 'http://img.52xie.com/images/201502/thumb_img/26808_thumb_G_1434540796.jpg', '1699', '乔丹/Air Jordan 1 OG Laser 乔1镭射30周年 705289-100', '1', '26808');
+INSERT INTO `dealall` VALUES ('1081', 'goods-30820.html', 'http://img.52xie.com/images/201512/thumb_img/30820_thumb_G_1521862464.jpg', '899', '乔丹/AIR JORDAN HORIZON AJ13未来 休闲黑编织 823581-010', '1', '30820');
+INSERT INTO `dealall` VALUES ('1080', 'goods-7157.html', 'http://img.52xie.com/images/201112/thumb_img/7157_thumb_G_1343269041.jpg', '1999', 'Air Jordan XXII 乔丹22原色篮球鞋 315299-161', '1', '7157');
+INSERT INTO `dealall` VALUES ('1079', 'goods-2155.html', 'http://img.52xie.com/images/201309/thumb_img/2155_thumb_G_1448653112.jpg', '2599', 'Air Jordan 12 Retro 乔丹12套装08复刻白黑金扣篮球鞋 130690-109', '1', '2155');
+INSERT INTO `dealall` VALUES ('1078', 'goods-30424.html', 'http://img.52xie.com/images/201511/thumb_img/30424_thumb_G_1480160161.jpg', '1049', '乔丹/Air Jordan 1 Mid Winterized Black  AJ1 黑水泥 811124-035', '1', '30424');
+INSERT INTO `dealall` VALUES ('1077', 'goods-405.html', 'http://img.52xie.com/images/201103/thumb_img/405_thumb_G_1339161398.jpg', '799', 'Air Jordan 1 Retro Premier 乔丹1代篮球鞋白编织 353899-101', '1', '405');
+INSERT INTO `dealall` VALUES ('1076', 'goods-26979.html', 'http://img.52xie.com/images/201503/thumb_img/26979_thumb_G_1471728366.jpg', '1599', '乔丹/Air Jordan XX RETRO AJ20 黑红 15年复刻款 310455-002', '1', '26979');
+INSERT INTO `dealall` VALUES ('1075', 'goods-22478.html', 'http://img.52xie.com/images/201312/thumb_img/22478_thumb_G_1475071953.jpg', '1999', '乔丹/Air Jordan Retro 11 Gamma 乔11 情侣款伽马蓝 378037-006', '1', '22478');
+INSERT INTO `dealall` VALUES ('1074', 'goods-29862.html', 'http://img.52xie.com/images/201509/thumb_img/29862_thumb_G_1476063526.jpg', '549', '乔丹/Air Jordan zoom Eclipse Roshe Run 乔丹跑鞋 724010-407', '1', '29862');
+INSERT INTO `dealall` VALUES ('1073', 'goods-30248.html', 'http://img.52xie.com/images/201510/thumb_img/30248_thumb_G_1510196475.jpg', '999', '乔丹/Air Jordan CP3.IX  保罗9 黑蓝快船配色篮球鞋 829217-406', '1', '30248');
+INSERT INTO `dealall` VALUES ('1072', 'goods-31411.html', 'http://img.52xie.com/images/201603/thumb_img/31411_thumb_G_1459925617.jpg', '2399', '乔丹/Air Jordan 12 The Master AJ12 黑金 130690-013', '1', '31411');
+INSERT INTO `dealall` VALUES ('1071', 'goods-29861.html', 'http://img.52xie.com/images/201509/thumb_img/29861_thumb_G_1472560482.jpg', '549', '乔丹/Air Jordan zoom Eclipse Roshe Run 民族风 724010-035', '1', '29861');
+INSERT INTO `dealall` VALUES ('1070', 'goods-30285.html', 'http://img.52xie.com/images/201510/thumb_img/30285_thumb_G_1490153155.jpg', '799', '耐克/NIKE ZOOM KOBE Venomenon 5 EP 科比毒液5 815757-604', '2', '30285');
+INSERT INTO `dealall` VALUES ('1069', 'goods-31254.html', 'http://img.52xie.com/images/201601/thumb_img/31254_thumb_G_1462267060.jpg', '1499', '耐克/Nike Kobe 11 Elite Low BHM 科比11 黑人月 822522-914', '2', '31254');
+INSERT INTO `dealall` VALUES ('1068', 'goods-30530.html', 'http://img.52xie.com/images/201512/thumb_img/30530_thumb_G_1545058630.jpg', '1099', '耐克/NIKE KOBE X 10 EXT Liquid Gold  Kobe10 限量金色 802366-700', '2', '30530');
+INSERT INTO `dealall` VALUES ('1067', 'goods-27186.html', 'http://img.52xie.com/images/201503/thumb_img/27186_thumb_G_1431369952.jpg', '999', '耐克/Kobe 10 Poison Green Vino ZK10 科比10毒液 745334-333', '2', '27186');
+INSERT INTO `dealall` VALUES ('1066', 'goods-31417.html', 'http://img.52xie.com/images/201602/thumb_img/31417_thumb_G_1534612320.jpg', '1599', '耐克/NIKE KOBE 11 ELITE AS 科比11 ZK11 全明星 822521-305', '2', '31417');
+INSERT INTO `dealall` VALUES ('1065', 'goods-23337.html', 'http://img.52xie.com/images/201407/thumb_img/23337_thumb_G_1433815211.jpg', '2999', '耐克/NIKE KOBE IX ELTE 科比9 愚人节 630847-300', '2', '23337');
+INSERT INTO `dealall` VALUES ('1064', 'goods-26505.html', 'http://img.52xie.com/images/201501/thumb_img/26505_thumb_G_1449136159.jpg', '1199', '耐克/Nike Kobe 9 Silk EM 科比9丝绸之路 653972-676', '2', '26505');
+INSERT INTO `dealall` VALUES ('1063', 'goods-28366.html', 'http://img.52xie.com/images/201507/thumb_img/28366_thumb_G_1473436607.jpg', '949', '耐克/NIKE VENOMENON 5 科比 毒液5 篮球鞋 紫色 815757-585', '2', '28366');
+INSERT INTO `dealall` VALUES ('1062', 'goods-29118.html', 'http://img.52xie.com/images/201509/thumb_img/29118_thumb_G_1508392219.jpg', '1699', '耐克/Nike Kobe10 Elite Low 科比10 黑粉刺客 747212-010', '2', '29118');
+INSERT INTO `dealall` VALUES ('1061', 'goods-30947.html', 'http://img.52xie.com/images/201601/thumb_img/30947_thumb_G_1510622337.jpg', '1699', '耐克/Nike Kobe 10 What The Kobe10 科比10鸳鸯 815810-900', '2', '30947');
+INSERT INTO `dealall` VALUES ('1060', 'goods-31583.html', 'http://img.52xie.com/images/201603/thumb_img/31583_thumb_G_1539604926.jpg', '1399', '耐克/Nike Kobe 11 Elite 科比11 李小龙 822675-706', '2', '31583');
+INSERT INTO `dealall` VALUES ('1059', 'goods-31273.html', 'http://img.52xie.com/images/201601/thumb_img/31273_thumb_G_1513662702.jpg', '1299', '耐克/Nike Kobe 11 Elite Low 科比11黑灰配色 822675-105', '2', '31273');
+INSERT INTO `dealall` VALUES ('1058', 'goods-28628.html', 'http://img.52xie.com/images/201601/thumb_img/28628_thumb_G_1532665084.jpg', '1299', '耐克/Nike Kobe 10 Elite Sunset 科比10飞线 日落 747212-818', '2', '28628');
+INSERT INTO `dealall` VALUES ('1057', 'goods-30927.html', 'http://img.52xie.com/images/201601/thumb_img/30927_thumb_G_1519742890.jpg', '1499', '耐克/Nike KOBE11 ZP XI 科比11代低帮篮球鞋 822675-670', '2', '30927');
+INSERT INTO `dealall` VALUES ('1056', 'goods-22163.html', 'http://img.52xie.com/images/201310/thumb_img/22163_thumb_G_1430224623.jpg', '4599', '耐克/Nike Kobe 8 System What the Kobe 科比8鸳鸯夜光超限量 635438-800', '2', '22163');
+INSERT INTO `dealall` VALUES ('1055', 'goods-26603.html', 'http://img.52xie.com/images/201501/thumb_img/26603_thumb_G_1510337538.jpg', '1599', '耐克/Nike Kobe9 What The KOBE 科比9彩虹鸳鸯 678301-904', '2', '26603');
+INSERT INTO `dealall` VALUES ('1054', 'goods-28368.html', 'http://img.52xie.com/images/201507/thumb_img/28368_thumb_G_1470778552.jpg', '869', '耐克/NIKE VENOMENON 5 科比 毒液5 篮球鞋 815757-050', '2', '28368');
+INSERT INTO `dealall` VALUES ('1053', 'goods-31664.html', 'http://img.52xie.com/images/201603/thumb_img/31664_thumb_G_1527891574.jpg', '1599', '耐克/Nike Zoom Huarache MPLS 2K4 科比 灰狼 308475-002', '2', '31664');
+INSERT INTO `dealall` VALUES ('1052', 'goods-31772.html', 'http://img.52xie.com/images/201603/thumb_img/31772_thumb_G_1507886876.jpg', '799', '耐克/Nike Kb Mentality II 科比 曼巴精神2 818953-003', '2', '31772');
+INSERT INTO `dealall` VALUES ('1051', 'goods-31580.html', 'http://img.52xie.com/images/201603/thumb_img/31580_thumb_G_1508376894.jpg', '1399', '耐克/Nike Kobe 11 Elite Low 科比11 822675-510', '2', '31580');
+INSERT INTO `dealall` VALUES ('1050', 'goods-29376.html', 'http://img.52xie.com/images/201509/thumb_img/29376_thumb_G_1500296277.jpg', '1199', '耐克/NIKE Kobe 10“Overcome”科比10 745334-305 705317-305', '2', '29376');
+INSERT INTO `dealall` VALUES ('1049', 'goods-30819.html', 'http://img.52xie.com/images/201512/thumb_img/30819_thumb_G_1523059623.jpg', '699', '耐克/NIKE KB MENTALITY II 科比简版2代 红曼巴 818953-002', '2', '30819');
+INSERT INTO `dealall` VALUES ('1048', 'goods-30526.html', 'http://img.52xie.com/images/201511/thumb_img/30526_thumb_G_1510713231.jpg', '1399', '耐克/Nike Kobe10 Elite Coda 科比10 开赛夜  802762-707', '2', '30526');
+INSERT INTO `dealall` VALUES ('1047', 'goods-31705.html', 'http://img.52xie.com/images/201603/thumb_img/31705_thumb_G_1542489382.jpg', '1899', '耐克/NIKE KOBE XI ELITE 4KB 科比11 彩虹 824463-199', '2', '31705');
+INSERT INTO `dealall` VALUES ('1046', 'goods-31158.html', 'http://img.52xie.com/images/201601/thumb_img/31158_thumb_G_1495245581.jpg', '1099', '耐克/Nike Zoom Kobe Icon EXT 科比休闲 黑白 818583-001', '2', '31158');
+INSERT INTO `dealall` VALUES ('1045', 'goods-31371.html', 'http://img.52xie.com/images/201601/thumb_img/31371_thumb_G_1537550372.jpg', '1549', '耐克/nike zoom huarache 2k4 2016 复刻 全明星配色 308475-100', '2', '31371');
+INSERT INTO `dealall` VALUES ('1044', 'goods-26598.html', 'http://img.52xie.com/images/201505/thumb_img/26598_thumb_G_1468214936.jpg', '499', '耐克/NIKE KB MENTALITY 科比简版篮球鞋 小丑配色704942-601', '2', '26598');
+INSERT INTO `dealall` VALUES ('1043', 'goods-27346.html', 'http://img.52xie.com/images/201506/thumb_img/27346_thumb_G_1479916652.jpg', '1099', '耐克/Nike Kobe X Elite 科10 精英紫 科比 718763-505', '2', '27346');
+INSERT INTO `dealall` VALUES ('1042', 'goods-28283.html', 'http://img.52xie.com/images/201506/thumb_img/28283_thumb_G_1521810321.jpg', '799', '耐克/NIKE ZOOM KOBE Venomenon 5 科比毒液5 815757-706', '2', '28283');
+INSERT INTO `dealall` VALUES ('1041', 'goods-30614.html', 'http://img.52xie.com/images/201511/thumb_img/30614_thumb_G_1513170030.jpg', '1599', '耐克/Nike Kobe10 Elite USA 科比10 美国配色 718763-614', '2', '30614');
+INSERT INTO `dealall` VALUES ('1040', 'goods-28888.html', 'http://img.52xie.com/images/201508/thumb_img/28888_thumb_G_1441159162.jpg', '899', '耐克/Nike Venomenon 5 LMTD RISE 科比毒液打出名堂 815819-690', '2', '28888');
+INSERT INTO `dealall` VALUES ('1039', 'goods-26967.html', 'http://img.52xie.com/images/201503/thumb_img/26967_thumb_G_1505025108.jpg', '899', '耐克/Nike Kobe 10 Blue Lagoon ZK10 科比10代篮球鞋 745334-005 705317-005', '2', '26967');
+INSERT INTO `dealall` VALUES ('1038', 'goods-24882.html', 'http://img.52xie.com/images/201407/thumb_img/24882_thumb_G_1459607220.jpg', '1299', '耐克/Nike Kobe IX 9 EM XDR 科比9青花瓷 蓝金 646701-414', '2', '24882');
+INSERT INTO `dealall` VALUES ('1037', 'goods-28405.html', 'http://img.52xie.com/images/201507/thumb_img/28405_thumb_G_1475720829.jpg', '1299', '耐克/Nike KOBE10 USA zk10代 独立日 美国配色 745334-604 705317-604', '2', '28405');
+INSERT INTO `dealall` VALUES ('1036', 'goods-25947.html', 'http://img.52xie.com/images/201412/thumb_img/25947_thumb_G_1484031396.jpg', '1599', '耐克/Nike Kobe 9 Elite “Restored”胜利勇士 630847-077 641714-077', '2', '25947');
+INSERT INTO `dealall` VALUES ('1035', 'goods-30127.html', 'http://img.52xie.com/images/201511/thumb_img/30127_thumb_G_1501915889.jpg', '1399', '耐克/Nike Kobe 10 Elite Low 科比10精英 开赛夜 747212-505 747212-515', '2', '30127');
+INSERT INTO `dealall` VALUES ('1034', 'goods-28627.html', 'http://img.52xie.com/images/201507/thumb_img/28627_thumb_G_1443208428.jpg', '999', '耐克/Nike Kobe 10 ZK10 科比10篮球鞋 鸽子灰 745334-001 705317-001', '2', '28627');
+INSERT INTO `dealall` VALUES ('1033', 'goods-30594.html', 'http://img.52xie.com/images/201512/thumb_img/30594_thumb_G_1455310166.jpg', '1299', '耐克/Nike Kobe 10 High EXT White Gum 科比10 全白 822950-100', '2', '30594');
+INSERT INTO `dealall` VALUES ('1032', 'goods-30952.html', 'http://img.52xie.com/images/201601/thumb_img/30952_thumb_G_1502630300.jpg', '1699', '耐克/Nike Kobe 10 Elite Low 科比10 圣诞 802560-076', '2', '30952');
+INSERT INTO `dealall` VALUES ('1031', 'goods-25116.html', 'http://img.52xie.com/images/201411/thumb_img/25116_thumb_G_1440871869.jpg', '999', '耐克/NIKE KOBE 9 EM BRIGHT MANGO ZK9火焰科比9火花 653972-880', '2', '25116');
 INSERT INTO `dealall` VALUES ('780', 'goods-22620.html', 'http://img.52xie.com/images/201401/thumb_img/22620_thumb_G_1486767481.jpg', '1199', '耐克/NIKE LEBRON XI 詹姆斯 橘色 熔岩 LBJ11 626374-800  616175-800', '3', '22620');
 INSERT INTO `dealall` VALUES ('779', 'goods-26035.html', 'http://img.52xie.com/images/201412/thumb_img/26035_thumb_G_1435860225.jpg', '1499', '耐克/NIKE LEBRON 12 LBJ12 詹12狮王雄心情侣款 684593-601 707781-601', '3', '26035');
 INSERT INTO `dealall` VALUES ('778', 'goods-28150.html', 'http://img.52xie.com/images/201506/thumb_img/28150_thumb_G_1471800732.jpg', '999', '耐克/Nike Zoom Soldier IX Premium EP 战士9迷彩 749491-303', '3', '28150');
@@ -330,7 +330,7 @@ CREATE TABLE `dealcoll` (
   `dealid` char(255) default NULL,
   `nickname` char(255) default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of dealcoll
@@ -338,6 +338,11 @@ CREATE TABLE `dealcoll` (
 INSERT INTO `dealcoll` VALUES ('11', '26967', 'xiaoxiao');
 INSERT INTO `dealcoll` VALUES ('3', '26967', 'xiaohua');
 INSERT INTO `dealcoll` VALUES ('5', '30593', 'xiaohua');
+INSERT INTO `dealcoll` VALUES ('18', '25787', 'xiaoxiao');
+INSERT INTO `dealcoll` VALUES ('19', '28403', '闫佳博');
+INSERT INTO `dealcoll` VALUES ('16', '26412', 'xiaoxiao');
+INSERT INTO `dealcoll` VALUES ('17', '30818', 'huangwen');
+INSERT INTO `dealcoll` VALUES ('13', '28403', 'xiaoxiao');
 
 -- ----------------------------
 -- Table structure for `durant`
@@ -505,46 +510,46 @@ CREATE TABLE `jordan` (
 -- ----------------------------
 -- Records of jordan
 -- ----------------------------
-INSERT INTO `jordan` VALUES ('1', 'goods-25787.html', 'http://img.52xie.com/images/201410/thumb_img/25787_thumb_G_1475870156.jpg', '3299', '乔丹/AIR JORDAN 6 SLAM DUNK AJ6 乔6灌篮高手樱木花道 717302-600', '1', '25787');
-INSERT INTO `jordan` VALUES ('2', 'goods-30531.html', 'http://img.52xie.com/images/201512/thumb_img/30531_thumb_G_1545435601.jpg', '2699', '乔丹/Air Jordan 11 Retro 72-10 乔11大魔王情侣 378037-002', '1', '30531');
-INSERT INTO `jordan` VALUES ('3', 'goods-29677.html', 'http://img.52xie.com/images/201601/thumb_img/29677_thumb_G_1482645512.jpg', '799', '乔丹/Air Jordan 1 Mid 乔1中帮白灰 554724-112', '1', '29677');
-INSERT INTO `jordan` VALUES ('4', 'goods-27751.html', 'http://img.52xie.com/images/201505/thumb_img/27751_thumb_G_1454521982.jpg', '699', '乔丹/Air Jordan Cp3.VIII X 保罗8季后赛 加强 篮球鞋 725212-101', '1', '27751');
-INSERT INTO `jordan` VALUES ('5', 'goods-23271.html', 'http://img.52xie.com/images/201404/thumb_img/23271_thumb_G_1493308499.jpg', '1399', 'AIR JORDAN 2 RETRO 乔丹2代篮球鞋 黑爆裂 情侣款385475-023', '1', '23271');
-INSERT INTO `jordan` VALUES ('6', 'goods-28561.html', 'http://img.52xie.com/images/201507/thumb_img/28561_thumb_G_1465614887.jpg', '1399', '乔丹/Air Jordan 7 Bordeaux AJ7 波尔多 情侣款 304775-034', '1', '28561');
-INSERT INTO `jordan` VALUES ('7', 'goods-26560.html', 'http://img.52xie.com/images/201601/thumb_img/26560_thumb_G_1498933619.jpg', '1599', '乔丹/Air Jordan XX9 AJ29 Gym Red 乔29黑红爆裂 695515-001', '1', '26560');
-INSERT INTO `jordan` VALUES ('8', 'goods-25190.html', 'http://img.52xie.com/images/201409/thumb_img/25190_thumb_G_1436476896.jpg', '1599', '乔丹/Air Jordan XX9 AJ29 Gym Red 乔29爆裂原色 695515-023', '1', '25190');
-INSERT INTO `jordan` VALUES ('9', 'goods-22478.html', 'http://img.52xie.com/images/201312/thumb_img/22478_thumb_G_1475071953.jpg', '1999', '乔丹/Air Jordan Retro 11 Gamma 乔11 情侣款伽马蓝 378037-006', '1', '22478');
-INSERT INTO `jordan` VALUES ('10', 'goods-28843.html', 'http://img.52xie.com/images/201507/thumb_img/28843_thumb_G_1452893242.jpg', '899', '乔丹/AIR JORDAN CP3.VIII AE X 保罗8代 篮球鞋 725212-064', '1', '28843');
-INSERT INTO `jordan` VALUES ('11', 'goods-27272.html', 'http://img.52xie.com/images/201504/thumb_img/27272_thumb_G_1480132073.jpg', '1499', '乔丹/Air Jordan XX9 Playoff Pack 乔29季后赛套 黑蓝 749143-014', '1', '27272');
-INSERT INTO `jordan` VALUES ('12', 'goods-30817.html', 'http://img.52xie.com/images/201601/thumb_img/30817_thumb_G_1478208235.jpg', '1499', '乔丹/Air Jordan 8 chrome AJ8 乔8黑银 305381-003', '1', '30817');
-INSERT INTO `jordan` VALUES ('13', 'goods-31250.html', 'http://img.52xie.com/images/201601/thumb_img/31250_thumb_G_1465873675.jpg', '1999', '乔丹/Air Jordan 4 White Cement AJ4 白水泥 840606-192 308496-104', '1', '31250');
-INSERT INTO `jordan` VALUES ('14', 'goods-26994.html', 'http://img.52xie.com/images/201503/thumb_img/26994_thumb_G_1460953495.jpg', '1799', '乔丹/Air Jordan 7 Retro AJ7 火星人马文巴塞罗那之夜 705350-007', '1', '26994');
-INSERT INTO `jordan` VALUES ('15', 'goods-28920.html', 'http://img.52xie.com/images/201508/thumb_img/28920_thumb_G_1512520485.jpg', '1499', '乔丹/Air Jordan 7 Marvin The Martian 乔7火星人马文 304775-029', '1', '28920');
-INSERT INTO `jordan` VALUES ('16', 'goods-27719.html', 'http://img.52xie.com/images/201505/thumb_img/27719_thumb_G_1502012163.jpg', '1899', '乔丹/Air Jordan 11 Low Bred 乔11黑红低帮 528895-012', '1', '27719');
-INSERT INTO `jordan` VALUES ('17', 'goods-24060.html', 'http://img.52xie.com/images/201406/thumb_img/24060_thumb_G_1432256119.jpg', '2199', '乔丹/Air Jordan 11 Low AJ11 乔11低帮黑红外线 528895-023', '1', '24060');
-INSERT INTO `jordan` VALUES ('18', 'goods-15612.html', 'http://img.52xie.com/images/201212/thumb_img/15612_thumb_G_1356658344956.jpg', '4099', 'Air Jordan 11 Retro 乔丹11黑红2012复刻情侣 篮球鞋 378037-010', '1', '15612');
-INSERT INTO `jordan` VALUES ('19', 'goods-27275.html', 'http://img.52xie.com/images/201504/thumb_img/27275_thumb_G_1443950804.jpg', '1899', '乔丹/Air Jordan 11 Low AJ11 乔11 乔11乔治城情侣 528895-007', '1', '27275');
-INSERT INTO `jordan` VALUES ('20', 'goods-24442.html', 'http://img.52xie.com/images/201407/thumb_img/24442_thumb_G_1498706144.jpg', '539', '乔丹/Air Jordan CP3.VII AE 保罗7代篮球鞋 季后赛涂鸦 669612-070', '1', '24442');
-INSERT INTO `jordan` VALUES ('21', 'goods-30822.html', 'http://img.52xie.com/images/201512/thumb_img/30822_thumb_G_1500093069.jpg', '1099', '乔丹/JORDAN JUMPMAN TEAM II 乔13鞋底 819175-101', '1', '30822');
-INSERT INTO `jordan` VALUES ('22', 'goods-21829.html', 'http://img.52xie.com/images/201309/thumb_img/21829_thumb_G_1461421640.jpg', '1899', '乔丹/Air Jordan 5 Retro AJ5 白红黑火焰红 情侣款 136027-120', '1', '21829');
-INSERT INTO `jordan` VALUES ('23', 'goods-30892.html', 'http://img.52xie.com/images/201512/thumb_img/30892_thumb_G_1463749169.jpg', '1599', '乔丹/Air Jordan 5 Low Alternate 90 AJ5 黑红 819171-001', '1', '30892');
-INSERT INTO `jordan` VALUES ('24', 'goods-30391.html', 'http://img.52xie.com/images/201511/thumb_img/30391_thumb_G_1516243161.jpg', '1599', '乔丹/Air Jordan 7 Nothing But Net AJ7 白紫毛衣情侣款 304775-142', '1', '30391');
-INSERT INTO `jordan` VALUES ('25', 'goods-26300.html', 'http://img.52xie.com/images/201412/thumb_img/26300_thumb_G_1484106942.jpg', '2099', '乔丹/Air Jordan11Legend Blue 乔11传奇蓝 378037-117', '1', '26300');
-INSERT INTO `jordan` VALUES ('26', 'goods-23405.html', 'http://img.52xie.com/images/201405/thumb_img/23405_thumb_G_1409962662.jpg', '2699', '乔丹/Air Jordan 11 Low Concord AJ11 LOW 乔11低帮白黑情侣 528895-153', '1', '23405');
-INSERT INTO `jordan` VALUES ('27', 'goods-23273.html', 'http://img.52xie.com/images/201404/thumb_img/23273_thumb_G_1399948163.jpg', '2499', 'Air Jordan 11 Low Green Snake 乔11低帮绿蛇 528895-033', '1', '23273');
-INSERT INTO `jordan` VALUES ('28', 'goods-28035.html', 'http://img.52xie.com/images/201505/thumb_img/28035_thumb_G_1465252793.jpg', '1599', '乔丹/Air Jordan 20 Playoffs 乔20季后赛奥利奥 310455-003', '1', '28035');
-INSERT INTO `jordan` VALUES ('29', 'goods-30073.html', 'http://img.52xie.com/images/201510/thumb_img/30073_thumb_G_1506239887.jpg', '1599', '乔丹/Air Jordan XX9 Hornets AJ29 风水黄蜂 822227-154', '1', '30073');
-INSERT INTO `jordan` VALUES ('30', 'goods-30726.html', 'http://img.52xie.com/images/201512/thumb_img/30726_thumb_G_1533992840.jpg', '1649', '乔丹/AIR JORDAN XX9 RW 威少限定 男子篮球鞋 827175-160', '1', '30726');
-INSERT INTO `jordan` VALUES ('31', 'goods-26813.html', 'http://img.52xie.com/images/201503/thumb_img/26813_thumb_G_1455011250.jpg', '1599', '乔丹/Air Jordan 10 Bull Over Broad way 乔10情侣大红 705178-601', '1', '26813');
-INSERT INTO `jordan` VALUES ('32', 'goods-31407.html', 'http://img.52xie.com/images/201601/thumb_img/31407_thumb_G_1553384201.jpg', '1999', '预售 乔丹/Air Jordan XXX AJ30 首发 白灰黑 篮球鞋 811006-101', '1', '31407');
-INSERT INTO `jordan` VALUES ('33', 'goods-25699.html', 'http://img.52xie.com/images/201410/thumb_img/25699_thumb_G_1440858299.jpg', '1999', '乔丹/Air Jordan XX9 29 River Walk AJ29 乔丹29代篮球鞋 695515-625', '1', '25699');
-INSERT INTO `jordan` VALUES ('34', 'goods-23320.html', 'http://img.52xie.com/images/201404/thumb_img/23308_thumb_G_1480074621.jpg', '1699', '乔丹/Jordan True Flight AJ7+ 乔7加强版 342964-023', '1', '23320');
-INSERT INTO `jordan` VALUES ('35', 'goods-12147.html', 'http://img.52xie.com/images/201211/thumb_img/12147_thumb_G_1352339254749.jpg', '1499', 'Air Jordan 7 Retro olympic 乔丹7代奥运2012复刻情侣 篮球鞋 304775-135', '1', '12147');
-INSERT INTO `jordan` VALUES ('36', 'goods-28915.html', 'http://img.52xie.com/images/201509/thumb_img/28915_thumb_G_1535994534.jpg', '1749', '乔丹/Air Jordan 6 Low 黑银男鞋 304401-003', '1', '28915');
-INSERT INTO `jordan` VALUES ('37', 'goods-30067.html', 'http://img.52xie.com/images/201512/thumb_img/30067_thumb_G_1508771393.jpg', '1699', '乔丹/Air Jordan 6 Maroon AJ6 魔力红 384664-116', '1', '30067');
-INSERT INTO `jordan` VALUES ('38', 'goods-22724.html', 'http://img.52xie.com/images/201402/thumb_img/22724_thumb_G_1466001629.jpg', '1599', '乔丹/Air Jordan 6 Infrared AJ6 乔6白红樱木 情侣限量 384664-123', '1', '22724');
-INSERT INTO `jordan` VALUES ('39', 'goods-23669.html', 'http://img.52xie.com/images/201405/thumb_img/23669_thumb_G_1485993862.jpg', '2299', 'Air Jordan 6 Retro Carmine AJ6 乔6胭脂红情侣款 384664-160', '1', '23669');
-INSERT INTO `jordan` VALUES ('40', 'goods-24711.html', 'http://img.52xie.com/images/201408/thumb_img/24711_thumb_G_1479615979.jpg', '1799', '乔丹/Air Jordan 3Lab5 “Metallic Silver” 乔丹AJ5代黑爆裂 599581-003', '1', '24711');
+INSERT INTO `jordan` VALUES ('1', 'goods-31226.html', 'http://img.52xie.com/images/201601/thumb_img/31226_thumb_G_1479782869.jpg', '1299', '乔丹/Air Jordan SUPER.FLY 4 PO China 格里芬中国 风筝 840476-060', '1', '31226');
+INSERT INTO `jordan` VALUES ('2', 'goods-31411.html', 'http://img.52xie.com/images/201603/thumb_img/31411_thumb_G_1459925617.jpg', '2399', '乔丹/Air Jordan 12 The Master AJ12 黑金 130690-013', '1', '31411');
+INSERT INTO `jordan` VALUES ('3', 'goods-30248.html', 'http://img.52xie.com/images/201510/thumb_img/30248_thumb_G_1510196475.jpg', '999', '乔丹/Air Jordan CP3.IX  保罗9 黑蓝快船配色篮球鞋 829217-406', '1', '30248');
+INSERT INTO `jordan` VALUES ('4', 'goods-29862.html', 'http://img.52xie.com/images/201509/thumb_img/29862_thumb_G_1476063526.jpg', '549', '乔丹/Air Jordan zoom Eclipse Roshe Run 乔丹跑鞋 724010-407', '1', '29862');
+INSERT INTO `jordan` VALUES ('5', 'goods-29861.html', 'http://img.52xie.com/images/201509/thumb_img/29861_thumb_G_1472560482.jpg', '549', '乔丹/Air Jordan zoom Eclipse Roshe Run 民族风 724010-035', '1', '29861');
+INSERT INTO `jordan` VALUES ('6', 'goods-28663.html', 'http://img.52xie.com/images/201512/thumb_img/28663_thumb_G_1511123580.jpg', '899', '乔丹/AIR JORDAN WESTBROOK 0 BLACK 威斯布鲁克黑色篮球鞋 812877-025', '1', '28663');
+INSERT INTO `jordan` VALUES ('7', 'goods-22478.html', 'http://img.52xie.com/images/201312/thumb_img/22478_thumb_G_1475071953.jpg', '1999', '乔丹/Air Jordan Retro 11 Gamma 乔11 情侣款伽马蓝 378037-006', '1', '22478');
+INSERT INTO `jordan` VALUES ('8', 'goods-22206.html', 'http://img.52xie.com/images/201311/thumb_img/22206_thumb_G_1383269795202.jpg', '1499', '乔丹/AIR JORDAN 5 Laney AJ5 乔丹5代 兰尼情侣配色 136027-189', '1', '22206');
+INSERT INTO `jordan` VALUES ('9', 'goods-26979.html', 'http://img.52xie.com/images/201503/thumb_img/26979_thumb_G_1471728366.jpg', '1599', '乔丹/Air Jordan XX RETRO AJ20 黑红 15年复刻款 310455-002', '1', '26979');
+INSERT INTO `jordan` VALUES ('10', 'goods-31441.html', 'http://img.52xie.com/images/201603/thumb_img/31441_thumb_G_1484471697.jpg', '1899', '预售/乔丹/Air Jordan 12 French Blue AJ12 法国蓝 130690-113', '1', '31441');
+INSERT INTO `jordan` VALUES ('11', 'goods-405.html', 'http://img.52xie.com/images/201103/thumb_img/405_thumb_G_1339161398.jpg', '799', 'Air Jordan 1 Retro Premier 乔丹1代篮球鞋白编织 353899-101', '1', '405');
+INSERT INTO `jordan` VALUES ('12', 'goods-24060.html', 'http://img.52xie.com/images/201406/thumb_img/24060_thumb_G_1432256119.jpg', '2199', '乔丹/Air Jordan 11 Low AJ11 乔11低帮黑红外线 528895-023', '1', '24060');
+INSERT INTO `jordan` VALUES ('13', 'goods-30424.html', 'http://img.52xie.com/images/201511/thumb_img/30424_thumb_G_1480160161.jpg', '1049', '乔丹/Air Jordan 1 Mid Winterized Black  AJ1 黑水泥 811124-035', '1', '30424');
+INSERT INTO `jordan` VALUES ('14', 'goods-2155.html', 'http://img.52xie.com/images/201309/thumb_img/2155_thumb_G_1448653112.jpg', '2599', 'Air Jordan 12 Retro 乔丹12套装08复刻白黑金扣篮球鞋 130690-109', '1', '2155');
+INSERT INTO `jordan` VALUES ('15', 'goods-2153.html', 'http://img.52xie.com/images/201309/thumb_img/2153_thumb_G_1409959991.jpg', '3299', 'Air Jordan 11 Retro 乔丹11代黑红08套装复刻篮球鞋 136046-062', '1', '2153');
+INSERT INTO `jordan` VALUES ('16', 'goods-7157.html', 'http://img.52xie.com/images/201112/thumb_img/7157_thumb_G_1343269041.jpg', '1999', 'Air Jordan XXII 乔丹22原色篮球鞋 315299-161', '1', '7157');
+INSERT INTO `jordan` VALUES ('17', 'goods-31057.html', 'http://img.52xie.com/images/201512/thumb_img/31057_thumb_G_1454949175.jpg', '1099', '乔丹/Air Jordan 1 Retro High Nouv AJ1 乔1 黑白金钩 819176-104', '1', '31057');
+INSERT INTO `jordan` VALUES ('18', 'goods-26808.html', 'http://img.52xie.com/images/201502/thumb_img/26808_thumb_G_1434540796.jpg', '1699', '乔丹/Air Jordan 1 OG Laser 乔1镭射30周年 705289-100', '1', '26808');
+INSERT INTO `jordan` VALUES ('19', 'goods-30821.html', 'http://img.52xie.com/images/201512/thumb_img/30821_thumb_G_1484857502.jpg', '999', '乔丹/AIR JORDAN HORIZON AJ13未来 休闲大红编织 823581-600', '1', '30821');
+INSERT INTO `jordan` VALUES ('20', 'goods-30820.html', 'http://img.52xie.com/images/201512/thumb_img/30820_thumb_G_1521862464.jpg', '899', '乔丹/AIR JORDAN HORIZON AJ13未来 休闲黑编织 823581-010', '1', '30820');
+INSERT INTO `jordan` VALUES ('21', 'goods-31130.html', 'http://img.52xie.com/images/201601/thumb_img/31130_thumb_G_1465444745.jpg', '1899', '乔丹/Air Jordan 5 Low China AJ5 中国 风筝 840475-060', '1', '31130');
+INSERT INTO `jordan` VALUES ('22', 'goods-31400.html', 'http://img.52xie.com/images/201601/thumb_img/31400_thumb_G_1499052253.jpg', '1399', '乔丹/Air Jordan 5 Low AJ5 低帮白海军蓝 819171-135', '1', '31400');
+INSERT INTO `jordan` VALUES ('23', 'goods-22869.html', 'http://img.52xie.com/images/201404/thumb_img/22869_thumb_G_1491618288.jpg', '799', '乔丹/Air Jordan CP3.VII 保罗7代 篮球鞋 616805-008', '1', '22869');
+INSERT INTO `jordan` VALUES ('24', 'goods-22821.html', 'http://img.52xie.com/images/201403/thumb_img/22821_thumb_G_1425298256.jpg', '799', '乔丹/Air Jordan CP3.VII X CP3 保罗7篮球鞋 616805-306 622270-306', '1', '22821');
+INSERT INTO `jordan` VALUES ('25', 'goods-31623.html', 'http://img.52xie.com/images/201603/thumb_img/31623_thumb_G_1545195356.jpg', '1399', '乔丹/Air Jordan 5 Low Fire Red AJ5 火焰红 819171-101', '1', '31623');
+INSERT INTO `jordan` VALUES ('26', 'goods-22735.html', 'http://img.52xie.com/images/201404/thumb_img/22735_thumb_G_1484425482.jpg', '2499', 'Air Jordan 6 Retro TORO AJ6 乔丹6代篮球鞋 大红情侣款 384664-623', '1', '22735');
+INSERT INTO `jordan` VALUES ('27', 'goods-29932.html', 'http://img.52xie.com/images/201509/thumb_img/29932_thumb_G_1496321526.jpg', '1299', '乔丹/Air Jordan 11 Low IE “Croc”AJ11 黑蟒蛇 306008-013', '1', '29932');
+INSERT INTO `jordan` VALUES ('28', 'goods-30046.html', 'http://img.52xie.com/images/201511/thumb_img/30046_thumb_G_1472356970.jpg', '1399', '乔丹/Air Jordan 8 Three Peat AJ8 乔8三连冠 305381-142', '1', '30046');
+INSERT INTO `jordan` VALUES ('29', 'goods-28762.html', 'http://img.52xie.com/images/201507/thumb_img/28762_thumb_G_1465038848.jpg', '1499', '乔丹/Nike Air Jordan 1 KO Bred 黑红 638471-001', '1', '28762');
+INSERT INTO `jordan` VALUES ('30', 'goods-25787.html', 'http://img.52xie.com/images/201410/thumb_img/25787_thumb_G_1475870156.jpg', '3299', '乔丹/AIR JORDAN 6 SLAM DUNK AJ6 乔6灌篮高手樱木花道 717302-600', '1', '25787');
+INSERT INTO `jordan` VALUES ('31', 'goods-31626.html', 'http://img.52xie.com/images/201603/thumb_img/31626_thumb_G_1459767539.jpg', '1799', '预售/乔丹/Air Jordan 4 Dunk From Above AJ4 蓝黄 308497-425', '1', '31626');
+INSERT INTO `jordan` VALUES ('32', 'goods-31407.html', 'http://img.52xie.com/images/201602/thumb_img/31407_thumb_G_1554070442.jpg', '1799', '乔丹/Air Jordan XXX AJ30 首发 白灰黑 篮球鞋 811006-101', '1', '31407');
+INSERT INTO `jordan` VALUES ('33', 'goods-30436.html', 'http://img.52xie.com/images/201511/thumb_img/30436_thumb_G_1486180790.jpg', '1799', '乔丹/Air Jordan 13 CP3 PE Home AJ13 保罗主场 807504-107', '1', '30436');
+INSERT INTO `jordan` VALUES ('34', 'goods-22724.html', 'http://img.52xie.com/images/201402/thumb_img/22724_thumb_G_1466001629.jpg', '1699', '乔丹/Air Jordan 6 Infrared AJ6 乔6白红樱木 情侣限量 384664-123', '1', '22724');
+INSERT INTO `jordan` VALUES ('35', 'goods-23273.html', 'http://img.52xie.com/images/201404/thumb_img/23273_thumb_G_1399948163.jpg', '2499', 'Air Jordan 11 Low Green Snake 乔11低帮绿蛇 528895-033', '1', '23273');
+INSERT INTO `jordan` VALUES ('36', 'goods-30391.html', 'http://img.52xie.com/images/201511/thumb_img/30391_thumb_G_1516243161.jpg', '1799', '乔丹/Air Jordan 7 Nothing But Net AJ7 白紫毛衣情侣款 304775-142', '1', '30391');
+INSERT INTO `jordan` VALUES ('37', 'goods-30531.html', 'http://img.52xie.com/images/201512/thumb_img/30531_thumb_G_1545435601.jpg', '2699', '乔丹/Air Jordan 11 Retro 72-10 乔11大魔王情侣 378037-002', '1', '30531');
+INSERT INTO `jordan` VALUES ('38', 'goods-30401.html', 'http://img.52xie.com/images/201511/thumb_img/30401_thumb_G_1456972850.jpg', '5999', '乔丹/Air Jordan 13 Doernbecher AJ13 慈善 836405-305', '1', '30401');
+INSERT INTO `jordan` VALUES ('39', 'goods-24957.html', 'http://img.52xie.com/images/201409/thumb_img/24957_thumb_G_1481236191.jpg', '1599', '乔丹/Air Jordan 6 Sport Blue 乔6白蓝情侣款 384664-107', '1', '24957');
+INSERT INTO `jordan` VALUES ('40', 'goods-25699.html', 'http://img.52xie.com/images/201410/thumb_img/25699_thumb_G_1440858299.jpg', '1999', '乔丹/Air Jordan XX9 29 River Walk AJ29 乔丹29代篮球鞋 695515-625', '1', '25699');
 
 -- ----------------------------
 -- Table structure for `jorge`
@@ -604,46 +609,46 @@ CREATE TABLE `kobe` (
 -- ----------------------------
 -- Records of kobe
 -- ----------------------------
-INSERT INTO `kobe` VALUES ('1', 'goods-30593.html', 'http://img.52xie.com/images/201512/thumb_img/30593_thumb_G_1461342254.jpg', '1099', '耐克/Nike Kobe 10 red KOBE10 科比10 大红 745334-616', '2', '30593');
-INSERT INTO `kobe` VALUES ('2', 'goods-26967.html', 'http://img.52xie.com/images/201503/thumb_img/26967_thumb_G_1505025108.jpg', '899', '耐克/Nike Kobe 10 Blue Lagoon ZK10 科比10代篮球鞋 745334-005 705317-005', '2', '26967');
-INSERT INTO `kobe` VALUES ('3', 'goods-28628.html', 'http://img.52xie.com/images/201601/thumb_img/28628_thumb_G_1532665084.jpg', '1299', '耐克/Nike Kobe 10 Elite Sunset 科比10飞线 日落 747212-818', '2', '28628');
-INSERT INTO `kobe` VALUES ('4', 'goods-23337.html', 'http://img.52xie.com/images/201407/thumb_img/23337_thumb_G_1433815211.jpg', '2799', '耐克/NIKE KOBE IX ELTE 科比9 愚人节 630847-300', '2', '23337');
-INSERT INTO `kobe` VALUES ('5', 'goods-31417.html', 'http://img.52xie.com/images/201602/thumb_img/31417_thumb_G_1454531889665.jpg', '1599', '耐克/NIKE KOBE 11 ELITE AS 科比11 ZK11 全明星 822521-305', '2', '31417');
-INSERT INTO `kobe` VALUES ('6', 'goods-28284.html', 'http://img.52xie.com/images/201508/thumb_img/28284_thumb_G_1484903658.jpg', '599', '耐克/NIKE ZOOM KOBE Venomenon 5 EP 科比毒液5 815757-001', '2', '28284');
-INSERT INTO `kobe` VALUES ('7', 'goods-27814.html', 'http://img.52xie.com/images/201506/thumb_img/27814_thumb_G_1512865630.jpg', '899', '耐克/Nike Kobe X EP Flight Pack 科比10篮球鞋 745334-308', '2', '27814');
-INSERT INTO `kobe` VALUES ('8', 'goods-28627.html', 'http://img.52xie.com/images/201507/thumb_img/28627_thumb_G_1443208428.jpg', '999', '耐克/Nike Kobe 10 ZK10 科比10篮球鞋 鸽子灰 745334-001 705317-001', '2', '28627');
-INSERT INTO `kobe` VALUES ('9', 'goods-31273.html', 'http://img.52xie.com/images/201601/thumb_img/31273_thumb_G_1513662702.jpg', '1399', '耐克/Nike Kobe 11 Elite Low 科比11黑灰配色 822675-105', '2', '31273');
-INSERT INTO `kobe` VALUES ('10', 'goods-29118.html', 'http://img.52xie.com/images/201509/thumb_img/29118_thumb_G_1508392219.jpg', '1399', '耐克/Nike Kobe10 Elite Low 科比10 黑粉刺客 747212-010', '2', '29118');
-INSERT INTO `kobe` VALUES ('11', 'goods-22480.html', 'http://img.52xie.com/images/201312/thumb_img/22480_thumb_G_1419953448.jpg', '5499', '耐克/Nike Zoom Kobe 1 Prelude ZK1 科比1 复刻 蛇纹 640221-001', '2', '22480');
-INSERT INTO `kobe` VALUES ('12', 'goods-30947.html', 'http://img.52xie.com/images/201601/thumb_img/30947_thumb_G_1510622337.jpg', '1699', '耐克/Nike Kobe 10 What The Kobe10 科比10鸳鸯 815810-900', '2', '30947');
-INSERT INTO `kobe` VALUES ('13', 'goods-30927.html', 'http://img.52xie.com/images/201601/thumb_img/30927_thumb_G_1519742890.jpg', '1399', '耐克/Nike KOBE11 ZP XI 科比11代低帮篮球鞋 822675-670', '2', '30927');
-INSERT INTO `kobe` VALUES ('14', 'goods-27346.html', 'http://img.52xie.com/images/201506/thumb_img/27346_thumb_G_1479916652.jpg', '1099', '耐克/Nike Kobe X Elite 科10 精英紫 科比 718763-505', '2', '27346');
-INSERT INTO `kobe` VALUES ('15', 'goods-30952.html', 'http://img.52xie.com/images/201601/thumb_img/30952_thumb_G_1502630300.jpg', '1699', '耐克/Nike Kobe 10 Elite Low 科比10 圣诞 802560-076', '2', '30952');
-INSERT INTO `kobe` VALUES ('16', 'goods-31254.html', 'http://img.52xie.com/images/201601/thumb_img/31254_thumb_G_1462267060.jpg', '1499', '耐克/Nike Kobe 11 Elite Low BHM 科比11 黑人月 822522-914', '2', '31254');
-INSERT INTO `kobe` VALUES ('17', 'goods-28283.html', 'http://img.52xie.com/images/201506/thumb_img/28283_thumb_G_1521810321.jpg', '599', '耐克/NIKE ZOOM KOBE Venomenon 5 科比毒液5 815757-706', '2', '28283');
-INSERT INTO `kobe` VALUES ('18', 'goods-27152.html', 'http://img.52xie.com/images/201503/thumb_img/27152_thumb_G_1500839684.jpg', '469', '耐克/Nike Kobe KB Mentality 科比简版篮球鞋 704942-300', '2', '27152');
-INSERT INTO `kobe` VALUES ('19', 'goods-26505.html', 'http://img.52xie.com/images/201501/thumb_img/26505_thumb_G_1449136159.jpg', '1199', '耐克/Nike Kobe 9 Silk EM 科比9丝绸之路 653972-676', '2', '26505');
-INSERT INTO `kobe` VALUES ('20', 'goods-29376.html', 'http://img.52xie.com/images/201509/thumb_img/29376_thumb_G_1500296277.jpg', '1199', '耐克/NIKE Kobe 10“Overcome”科比10 745334-305 705317-305', '2', '29376');
-INSERT INTO `kobe` VALUES ('21', 'goods-26815.html', 'http://img.52xie.com/images/201502/thumb_img/26815_thumb_G_1488687797.jpg', '899', '耐克/Nike Kobe 10 All Star 科比10全明星 742546-097', '2', '26815');
-INSERT INTO `kobe` VALUES ('22', 'goods-31371.html', 'http://img.52xie.com/images/201601/thumb_img/31371_thumb_G_1537550372.jpg', '1449', '耐克/nike zoom huarache 2k4 2016 复刻 全明星配色 308475-100', '2', '31371');
-INSERT INTO `kobe` VALUES ('23', 'goods-26140.html', 'http://img.52xie.com/images/201411/thumb_img/26140_thumb_G_1498650080.jpg', '1699', '耐克/Nike Kobe 9 Elite EXT Snakeskin 科比9蛇皮 716616-001', '2', '26140');
+INSERT INTO `kobe` VALUES ('1', 'goods-26967.html', 'http://img.52xie.com/images/201503/thumb_img/26967_thumb_G_1505025108.jpg', '899', '耐克/Nike Kobe 10 Blue Lagoon ZK10 科比10代篮球鞋 745334-005 705317-005', '2', '26967');
+INSERT INTO `kobe` VALUES ('2', 'goods-25947.html', 'http://img.52xie.com/images/201412/thumb_img/25947_thumb_G_1484031396.jpg', '1599', '耐克/Nike Kobe 9 Elite “Restored”胜利勇士 630847-077 641714-077', '2', '25947');
+INSERT INTO `kobe` VALUES ('3', 'goods-30952.html', 'http://img.52xie.com/images/201601/thumb_img/30952_thumb_G_1502630300.jpg', '1699', '耐克/Nike Kobe 10 Elite Low 科比10 圣诞 802560-076', '2', '30952');
+INSERT INTO `kobe` VALUES ('4', 'goods-30285.html', 'http://img.52xie.com/images/201510/thumb_img/30285_thumb_G_1490153155.jpg', '799', '耐克/NIKE ZOOM KOBE Venomenon 5 EP 科比毒液5 815757-604', '2', '30285');
+INSERT INTO `kobe` VALUES ('5', 'goods-26505.html', 'http://img.52xie.com/images/201501/thumb_img/26505_thumb_G_1449136159.jpg', '1199', '耐克/Nike Kobe 9 Silk EM 科比9丝绸之路 653972-676', '2', '26505');
+INSERT INTO `kobe` VALUES ('6', 'goods-31158.html', 'http://img.52xie.com/images/201601/thumb_img/31158_thumb_G_1495245581.jpg', '1099', '耐克/Nike Zoom Kobe Icon EXT 科比休闲 黑白 818583-001', '2', '31158');
+INSERT INTO `kobe` VALUES ('7', 'goods-26598.html', 'http://img.52xie.com/images/201505/thumb_img/26598_thumb_G_1468214936.jpg', '499', '耐克/NIKE KB MENTALITY 科比简版篮球鞋 小丑配色704942-601', '2', '26598');
+INSERT INTO `kobe` VALUES ('8', 'goods-30594.html', 'http://img.52xie.com/images/201512/thumb_img/30594_thumb_G_1455310166.jpg', '1299', '耐克/Nike Kobe 10 High EXT White Gum 科比10 全白 822950-100', '2', '30594');
+INSERT INTO `kobe` VALUES ('9', 'goods-26603.html', 'http://img.52xie.com/images/201501/thumb_img/26603_thumb_G_1510337538.jpg', '1599', '耐克/Nike Kobe9 What The KOBE 科比9彩虹鸳鸯 678301-904', '2', '26603');
+INSERT INTO `kobe` VALUES ('10', 'goods-30947.html', 'http://img.52xie.com/images/201601/thumb_img/30947_thumb_G_1510622337.jpg', '1699', '耐克/Nike Kobe 10 What The Kobe10 科比10鸳鸯 815810-900', '2', '30947');
+INSERT INTO `kobe` VALUES ('11', 'goods-28627.html', 'http://img.52xie.com/images/201507/thumb_img/28627_thumb_G_1443208428.jpg', '999', '耐克/Nike Kobe 10 ZK10 科比10篮球鞋 鸽子灰 745334-001 705317-001', '2', '28627');
+INSERT INTO `kobe` VALUES ('12', 'goods-30127.html', 'http://img.52xie.com/images/201511/thumb_img/30127_thumb_G_1501915889.jpg', '1399', '耐克/Nike Kobe 10 Elite Low 科比10精英 开赛夜 747212-505 747212-515', '2', '30127');
+INSERT INTO `kobe` VALUES ('13', 'goods-28366.html', 'http://img.52xie.com/images/201507/thumb_img/28366_thumb_G_1473436607.jpg', '949', '耐克/NIKE VENOMENON 5 科比 毒液5 篮球鞋 紫色 815757-585', '2', '28366');
+INSERT INTO `kobe` VALUES ('14', 'goods-31664.html', 'http://img.52xie.com/images/201603/thumb_img/31664_thumb_G_1527891574.jpg', '1599', '耐克/Nike Zoom Huarache MPLS 2K4 科比 灰狼 308475-002', '2', '31664');
+INSERT INTO `kobe` VALUES ('15', 'goods-31772.html', 'http://img.52xie.com/images/201603/thumb_img/31772_thumb_G_1507886876.jpg', '799', '耐克/Nike Kb Mentality II 科比 曼巴精神2 818953-003', '2', '31772');
+INSERT INTO `kobe` VALUES ('16', 'goods-31705.html', 'http://img.52xie.com/images/201603/thumb_img/31705_thumb_G_1542489382.jpg', '1899', '耐克/NIKE KOBE XI ELITE 4KB 科比11 彩虹 824463-199', '2', '31705');
+INSERT INTO `kobe` VALUES ('17', 'goods-30819.html', 'http://img.52xie.com/images/201512/thumb_img/30819_thumb_G_1523059623.jpg', '699', '耐克/NIKE KB MENTALITY II 科比简版2代 红曼巴 818953-002', '2', '30819');
+INSERT INTO `kobe` VALUES ('18', 'goods-28628.html', 'http://img.52xie.com/images/201601/thumb_img/28628_thumb_G_1532665084.jpg', '1299', '耐克/Nike Kobe 10 Elite Sunset 科比10飞线 日落 747212-818', '2', '28628');
+INSERT INTO `kobe` VALUES ('19', 'goods-31580.html', 'http://img.52xie.com/images/201603/thumb_img/31580_thumb_G_1508376894.jpg', '1399', '耐克/Nike Kobe 11 Elite Low 科比11 822675-510', '2', '31580');
+INSERT INTO `kobe` VALUES ('20', 'goods-31273.html', 'http://img.52xie.com/images/201601/thumb_img/31273_thumb_G_1513662702.jpg', '1299', '耐克/Nike Kobe 11 Elite Low 科比11黑灰配色 822675-105', '2', '31273');
+INSERT INTO `kobe` VALUES ('21', 'goods-22163.html', 'http://img.52xie.com/images/201310/thumb_img/22163_thumb_G_1430224623.jpg', '4599', '耐克/Nike Kobe 8 System What the Kobe 科比8鸳鸯夜光超限量 635438-800', '2', '22163');
+INSERT INTO `kobe` VALUES ('22', 'goods-30927.html', 'http://img.52xie.com/images/201601/thumb_img/30927_thumb_G_1519742890.jpg', '1499', '耐克/Nike KOBE11 ZP XI 科比11代低帮篮球鞋 822675-670', '2', '30927');
+INSERT INTO `kobe` VALUES ('23', 'goods-28888.html', 'http://img.52xie.com/images/201508/thumb_img/28888_thumb_G_1441159162.jpg', '899', '耐克/Nike Venomenon 5 LMTD RISE 科比毒液打出名堂 815819-690', '2', '28888');
 INSERT INTO `kobe` VALUES ('24', 'goods-25116.html', 'http://img.52xie.com/images/201411/thumb_img/25116_thumb_G_1440871869.jpg', '999', '耐克/NIKE KOBE 9 EM BRIGHT MANGO ZK9火焰科比9火花 653972-880', '2', '25116');
-INSERT INTO `kobe` VALUES ('25', 'goods-27153.html', 'http://img.52xie.com/images/201503/thumb_img/27153_thumb_G_1485660252.jpg', '499', '耐克/Nike Kobe KB Mentality 科比简版篮球鞋 704942-401', '2', '27153');
-INSERT INTO `kobe` VALUES ('26', 'goods-25279.html', 'http://img.52xie.com/images/201410/thumb_img/25279_thumb_G_1480037986.jpg', '999', '耐克/Nike Kobe 9 Mid EXT “Black Snakeskin” 科比9黑曼巴 704286-001', '2', '25279');
-INSERT INTO `kobe` VALUES ('27', 'goods-23613.html', 'http://img.52xie.com/images/201405/thumb_img/23613_thumb_G_1452134820.jpg', '1199', '耐克/NIKE KOBE IX科比9 ZK9精英酷彩篮球鞋641714-005', '2', '23613');
-INSERT INTO `kobe` VALUES ('28', 'goods-30127.html', 'http://img.52xie.com/images/201511/thumb_img/30127_thumb_G_1501915889.jpg', '1399', '耐克/Nike Kobe 10 Elite Low 科比10精英 开赛夜 747212-505 747212-515', '2', '30127');
-INSERT INTO `kobe` VALUES ('29', 'goods-30526.html', 'http://img.52xie.com/images/201511/thumb_img/30526_thumb_G_1510713231.jpg', '1499', '耐克/Nike Kobe10 Elite Coda 科比10 开赛夜  802762-707', '2', '30526');
-INSERT INTO `kobe` VALUES ('30', 'goods-27923.html', 'http://img.52xie.com/images/201505/thumb_img/27923_thumb_G_1519516828.jpg', '599', '耐克/Nike KB MENTALITY 科比简版曼巴精神冰橙 704942-007', '2', '27923');
-INSERT INTO `kobe` VALUES ('31', 'goods-30614.html', 'http://img.52xie.com/images/201511/thumb_img/30614_thumb_G_1513170030.jpg', '1499', '耐克/Nike Kobe10 Elite USA 科比10 美国配色 718763-614', '2', '30614');
-INSERT INTO `kobe` VALUES ('32', 'goods-26598.html', 'http://img.52xie.com/images/201505/thumb_img/26598_thumb_G_1468214936.jpg', '499', '耐克/NIKE KB MENTALITY 科比简版篮球鞋 小丑配色704942-601', '2', '26598');
-INSERT INTO `kobe` VALUES ('33', 'goods-27186.html', 'http://img.52xie.com/images/201503/thumb_img/27186_thumb_G_1431369952.jpg', '999', '耐克/Kobe 10 Poison Green Vino ZK10 科比10毒液 745334-333', '2', '27186');
-INSERT INTO `kobe` VALUES ('34', 'goods-22746.html', 'http://img.52xie.com/images/201402/thumb_img/22746_thumb_G_1421373038.jpg', '2999', '耐克/Nike Kobe 9 Elite ALL STAR 科比9代篮球鞋 全明星夜光 630847-002', '2', '22746');
-INSERT INTO `kobe` VALUES ('35', 'goods-27278.html', 'http://img.52xie.com/images/201510/thumb_img/27278_thumb_G_1542266624.jpg', '899', '耐克/Nike Kobe 10 Silk Road 科比10 丝绸之路705317-676  745334-676', '2', '27278');
-INSERT INTO `kobe` VALUES ('36', 'goods-24882.html', 'http://img.52xie.com/images/201407/thumb_img/24882_thumb_G_1459607220.jpg', '1199', '耐克/Nike Kobe IX 9 EM XDR 科比9青花瓷 蓝金 646701-414', '2', '24882');
-INSERT INTO `kobe` VALUES ('37', 'goods-30285.html', 'http://img.52xie.com/images/201510/thumb_img/30285_thumb_G_1490153155.jpg', '799', '耐克/NIKE ZOOM KOBE Venomenon 5 EP 科比毒液5 815757-604', '2', '30285');
-INSERT INTO `kobe` VALUES ('38', 'goods-29020.html', 'http://img.52xie.com/images/201508/thumb_img/29020_thumb_G_1529448945.jpg', '1399', '耐克/Nike Kobe 10 Elite Low Dark Atomic 科比10精英 747212-303', '2', '29020');
-INSERT INTO `kobe` VALUES ('39', 'goods-26597.html', 'http://img.52xie.com/images/201505/thumb_img/26597_thumb_G_1493061840.jpg', '599', '耐克/NIKE KB MENTALITY 科比简版篮球鞋 704942-400', '2', '26597');
-INSERT INTO `kobe` VALUES ('40', 'goods-30594.html', 'http://img.52xie.com/images/201512/thumb_img/30594_thumb_G_1455310166.jpg', '1299', '耐克/Nike Kobe 10 High EXT White Gum 科比10 全白 822950-100', '2', '30594');
+INSERT INTO `kobe` VALUES ('25', 'goods-27346.html', 'http://img.52xie.com/images/201506/thumb_img/27346_thumb_G_1479916652.jpg', '1099', '耐克/Nike Kobe X Elite 科10 精英紫 科比 718763-505', '2', '27346');
+INSERT INTO `kobe` VALUES ('26', 'goods-30614.html', 'http://img.52xie.com/images/201511/thumb_img/30614_thumb_G_1513170030.jpg', '1599', '耐克/Nike Kobe10 Elite USA 科比10 美国配色 718763-614', '2', '30614');
+INSERT INTO `kobe` VALUES ('27', 'goods-24882.html', 'http://img.52xie.com/images/201407/thumb_img/24882_thumb_G_1459607220.jpg', '1299', '耐克/Nike Kobe IX 9 EM XDR 科比9青花瓷 蓝金 646701-414', '2', '24882');
+INSERT INTO `kobe` VALUES ('28', 'goods-28405.html', 'http://img.52xie.com/images/201507/thumb_img/28405_thumb_G_1475720829.jpg', '1299', '耐克/Nike KOBE10 USA zk10代 独立日 美国配色 745334-604 705317-604', '2', '28405');
+INSERT INTO `kobe` VALUES ('29', 'goods-28283.html', 'http://img.52xie.com/images/201506/thumb_img/28283_thumb_G_1521810321.jpg', '799', '耐克/NIKE ZOOM KOBE Venomenon 5 科比毒液5 815757-706', '2', '28283');
+INSERT INTO `kobe` VALUES ('30', 'goods-29118.html', 'http://img.52xie.com/images/201509/thumb_img/29118_thumb_G_1508392219.jpg', '1699', '耐克/Nike Kobe10 Elite Low 科比10 黑粉刺客 747212-010', '2', '29118');
+INSERT INTO `kobe` VALUES ('31', 'goods-31583.html', 'http://img.52xie.com/images/201603/thumb_img/31583_thumb_G_1539604926.jpg', '1399', '耐克/Nike Kobe 11 Elite 科比11 李小龙 822675-706', '2', '31583');
+INSERT INTO `kobe` VALUES ('32', 'goods-31417.html', 'http://img.52xie.com/images/201602/thumb_img/31417_thumb_G_1534612320.jpg', '1599', '耐克/NIKE KOBE 11 ELITE AS 科比11 ZK11 全明星 822521-305', '2', '31417');
+INSERT INTO `kobe` VALUES ('33', 'goods-31371.html', 'http://img.52xie.com/images/201601/thumb_img/31371_thumb_G_1537550372.jpg', '1549', '耐克/nike zoom huarache 2k4 2016 复刻 全明星配色 308475-100', '2', '31371');
+INSERT INTO `kobe` VALUES ('34', 'goods-30526.html', 'http://img.52xie.com/images/201511/thumb_img/30526_thumb_G_1510713231.jpg', '1399', '耐克/Nike Kobe10 Elite Coda 科比10 开赛夜  802762-707', '2', '30526');
+INSERT INTO `kobe` VALUES ('35', 'goods-29376.html', 'http://img.52xie.com/images/201509/thumb_img/29376_thumb_G_1500296277.jpg', '1199', '耐克/NIKE Kobe 10“Overcome”科比10 745334-305 705317-305', '2', '29376');
+INSERT INTO `kobe` VALUES ('36', 'goods-27186.html', 'http://img.52xie.com/images/201503/thumb_img/27186_thumb_G_1431369952.jpg', '999', '耐克/Kobe 10 Poison Green Vino ZK10 科比10毒液 745334-333', '2', '27186');
+INSERT INTO `kobe` VALUES ('37', 'goods-28368.html', 'http://img.52xie.com/images/201507/thumb_img/28368_thumb_G_1470778552.jpg', '869', '耐克/NIKE VENOMENON 5 科比 毒液5 篮球鞋 815757-050', '2', '28368');
+INSERT INTO `kobe` VALUES ('38', 'goods-30530.html', 'http://img.52xie.com/images/201512/thumb_img/30530_thumb_G_1545058630.jpg', '1099', '耐克/NIKE KOBE X 10 EXT Liquid Gold  Kobe10 限量金色 802366-700', '2', '30530');
+INSERT INTO `kobe` VALUES ('39', 'goods-31254.html', 'http://img.52xie.com/images/201601/thumb_img/31254_thumb_G_1462267060.jpg', '1499', '耐克/Nike Kobe 11 Elite Low BHM 科比11 黑人月 822522-914', '2', '31254');
+INSERT INTO `kobe` VALUES ('40', 'goods-23337.html', 'http://img.52xie.com/images/201407/thumb_img/23337_thumb_G_1433815211.jpg', '2999', '耐克/NIKE KOBE IX ELTE 科比9 愚人节 630847-300', '2', '23337');
 
 -- ----------------------------
 -- Table structure for `morestar`
@@ -717,21 +722,28 @@ CREATE TABLE `user_info` (
   PRIMARY KEY  (`id`),
   UNIQUE KEY `id` (`id`),
   KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of user_info
 -- ----------------------------
-INSERT INTO `user_info` VALUES ('1', 'sky', 'hubcarl@126.com', 'E10ADC3949BA59ABBE56E057F20F883E', '0');
 INSERT INTO `user_info` VALUES ('2', 'xiao', '123@qq.com', 'E10ADC3949BA59ABBE56E057F20F883E', '0');
 INSERT INTO `user_info` VALUES ('3', 'hua', '123@qq.com', 'E10ADC3949BA59ABBE56E057F20F883E', '0');
-INSERT INTO `user_info` VALUES ('4', 'xiaohua', 'xiaohua@126.com', 'E10ADC3949BA59ABBE56E057F20F883E', '0');
-INSERT INTO `user_info` VALUES ('5', 'zhengxiaohua', 'xiaohua@126.com', 'E10ADC3949BA59ABBE56E057F20F883E', '0');
+INSERT INTO `user_info` VALUES ('4', 'xiaohua', 'xiaohua@126.com', 'E10ADC3949BA59ABBE56E057F20F883E', '1');
+INSERT INTO `user_info` VALUES ('5', 'zhengxiaohua', 'xiaohua@126.com', 'E10ADC3949BA59ABBE56E057F20F883E', '1');
 INSERT INTO `user_info` VALUES ('6', 'huangwen', 'wen@qq.com', 'E10ADC3949BA59ABBE56E057F20F883E', '0');
 INSERT INTO `user_info` VALUES ('7', 'xuxiangqian', '123@qq.com', 'E10ADC3949BA59ABBE56E057F20F883E', '0');
 INSERT INTO `user_info` VALUES ('8', 'angela', 'baby@qq.com', 'E10ADC3949BA59ABBE56E057F20F883E', '0');
 INSERT INTO `user_info` VALUES ('9', 'huangxiaoming', '123@qq.com', 'E10ADC3949BA59ABBE56E057F20F883E', '0');
 INSERT INTO `user_info` VALUES ('10', 'zhangsan', '123@qq.com', 'E10ADC3949BA59ABBE56E057F20F883E', '0');
-INSERT INTO `user_info` VALUES ('11', 'xiaoxiao', 'xiao@qq.com', 'E10ADC3949BA59ABBE56E057F20F883E', '0');
+INSERT INTO `user_info` VALUES ('11', 'xiaoxiao', 'xiao@qq.com', 'E10ADC3949BA59ABBE56E057F20F883E', '1');
 INSERT INTO `user_info` VALUES ('12', 'tiantian', '123@qq.com', 'E10ADC3949BA59ABBE56E057F20F883E', '0');
 INSERT INTO `user_info` VALUES ('13', 'yanjiabo', '123@qq.com', 'E10ADC3949BA59ABBE56E057F20F883E', '0');
+INSERT INTO `user_info` VALUES ('14', 'shifu', 'shifu@qq.com', 'E10ADC3949BA59ABBE56E057F20F883E', '0');
+INSERT INTO `user_info` VALUES ('15', '郑晓华', 'xiaohua@qq.com', 'E10ADC3949BA59ABBE56E057F20F883E', '1');
+INSERT INTO `user_info` VALUES ('16', '黄文', 'wen@163.com', 'E10ADC3949BA59ABBE56E057F20F883E', '0');
+INSERT INTO `user_info` VALUES ('17', '闫佳博', 'bo@163.com', 'E10ADC3949BA59ABBE56E057F20F883E', '0');
+INSERT INTO `user_info` VALUES ('18', '晓晓', 'xiaoxiao@gmail.com', 'E10ADC3949BA59ABBE56E057F20F883E', '1');
+INSERT INTO `user_info` VALUES ('19', '陈希明', 'ming@qq.com', 'E10ADC3949BA59ABBE56E057F20F883E', '0');
+INSERT INTO `user_info` VALUES ('20', '丁睿', 'rui@qq.com', 'E10ADC3949BA59ABBE56E057F20F883E', '0');
+INSERT INTO `user_info` VALUES ('21', '许向前', 'qian@gmail.com', 'E10ADC3949BA59ABBE56E057F20F883E', '0');

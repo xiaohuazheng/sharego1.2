@@ -27,7 +27,7 @@ a:hover, a:focus {
     padding: 0;
 }
 #sidebar ul{margin:20px 0;}
-#sidebar ul.sidebar_info{border-bottom: 1px solid #fff;}
+#sidebar ul.sidebar_info{border-bottom: 1px solid #ec1611;}
 #sidebar ul li{margin:20px 10px;list-style: none;font: 14px "microsoft yahei";color: #c7000b;}
 #sidebar ul li a{font: bold 14px "microsoft yahei";color: #c7000b;}
 #sidebar ul li a:hover{text-decoration: underline;}

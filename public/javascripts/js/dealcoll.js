@@ -1,5 +1,6 @@
 $(function () {
 
+	$('#sidebar').hide();
 	//收藏页 deal鼠标hover
 	$('.deal .con').mouseenter(function(){
 		$(this).find('.deleColl').show();

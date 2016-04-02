@@ -19,19 +19,18 @@ a:hover, a:focus {
     top: 120px;
     left: 10px;
     width: 160px;
-    background-color: #ec1611;
-    opacity: 0.9;
-    min-height: 400px;
+    background: url(image/sidebar_new.png) no-repeat #fff;
+    height: 360px;
     z-index: 10000;
     visibility: visible;
     margin: 0;
     padding: 0;
-    font-size: 12px;
-    font-family: "microsoft yahei";
-    color: #ffffff;
 }
-
-
+#sidebar ul{margin:20px 0;}
+#sidebar ul.sidebar_info{border-bottom: 1px solid #fff;}
+#sidebar ul li{margin:20px 10px;list-style: none;font: 14px "microsoft yahei";color: #c7000b;}
+#sidebar ul li a{font: bold 14px "microsoft yahei";color: #c7000b;}
+#sidebar ul li a:hover{text-decoration: underline;}
 header {
     background-color:#f2f2f2;
     box-shadow: 0 -1px 2px #111111;

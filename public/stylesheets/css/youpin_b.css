@@ -103,7 +103,7 @@ body { background-color: #f6f6f6; overflow-x: hidden; }
     #seclevel .seclevelinner, .yugaoDeals .area{width: 1200px;}
     .dealHtml{width: 1202px;}
     .dealHtml .dealbox{width: 1220px;}
-    .you-deal{width: 275px; height: 304px;padding: 7px;margin-right: 13px;}
+    .you-deal{width: 275px; height: 304px;padding: 7px;margin-right: 13px;z-index: 1;}
     .you-deal .bd img { width: 275px; height: 275px; }
     .you-deal .crawlerBtn .info .price .now_Price_two_f, .you-deal .crawlerBtn .info .price .now_Price_two_l{font-size: 34px;}
     .you-deal .crawlerBtn .info{padding: 2px 10px 6px 10px;}

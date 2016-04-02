@@ -64,8 +64,16 @@ $(function () {
     	window.location.href = loginUrl; 
     });
 
+    //导航栏跟随
+    var scrollFun = function() {
+    	var scrollHeight = $('.dealbox').offset().top;
+    	if($(window).scrollTop() > scrollHeight) {
+    		$('#head_nav').addClass('head_nav_fix');
+    	} else {
+    		$('#head_nav').removeClass('head_nav_fix');
+    	}
+    }
 
-
-
+    $(window).scroll(scrollFun);
 
 });	

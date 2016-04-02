@@ -113,6 +113,7 @@ header .header_con .stuts span {
     line-height: 34px;
     font-family: "微软雅黑";
 }
+.head_nav_fix {position: fixed;top: 0;opacity: 0.8;z-index: 9999;}
 .head_nav{
     margin: 0 auto;
     width: 980px;

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<% include ../common/head %>
+		
+</head>
+
+<body>
+	<header  style="margin-bottom: 35px;">
+		<% include ../common/header %>	
+		<div id="head_nav">
+  		<div class="head_nav area">
+    		<div class="l">
+    			<a class="" href="/">首页<i></i></a>
+		        <a class="" href="/jordan">乔丹<i></i></a>     
+		        <a class="" href="/kobe">科比<i></i></a>
+	      		<a class="" href="/james">詹姆斯<i></i></a>
+		        <a class="" href="/durant">杜兰特<i></i></a>
+		        <a class="" href="/paul">保罗<i></i></a>
+	        	<a class="" href="curry">欧文<i></i></a>
+		        <a class="" href="/harden">哈登<i></i></a>
+	     	    <a class="" href="/morestar">更多...<i></i></a>
+    	  </div>   
+  		</div>
+		</div>   
+	</header><!-- /header -->
+
+	<div class="youbanner jodan_brand_banner" style="margin-bottom: 14px;height:320px;"></div>
+
+    <div class="title area">
+      <div class="count">        
+          乔丹，凡事无绝对        
+      </div>
+    </div>
+
+<% if(data.length) { %>
+	<div class="area ">
+	    <div class="dealbox">
+	    	<% include ../common/deals %>
+	 	</div>       
+	</div>	
+<% } else { %>	
+	<div class="mcol6">
+      <div class="my_favo_msg">
+        <span class="noCollection_pic"></span> 
+        <span class="noCollection_msg">
+          <p>哎哟,乔老爷这儿卖光咯~</p>
+          <p>去别的地方看看吧~</p>
+          <p><a href="/">或者，跟我去逛逛&gt;&gt;</a></p>
+        </span>
+      </div>
+    </div>
+<% } %>
+
+
+<% include ../common/footer %>		
+</body>
+</html>

@@ -9,6 +9,7 @@
 .irving_banner{background: url('image/irving_banner.png') top center no-repeat #0a063d;}
 .harden_banner{background: url('image/harden_banner.png') top center no-repeat #0a063d;}
 .more_banner{background: url('image/more_banner.png') top center no-repeat #0a063d;}
+.jodan_brand_banner{background: url('image/jordan_brand.jpg') top center no-repeat #0a063d;}
 
 /*默认deal样式*/
 .deal .con:hover{border:1px solid #ec6060;}
@@ -83,4 +84,23 @@
 .mcol6 .my_favo_msg span.noCollection_msg p a {
     color: rgb(0, 153, 204);
     font: 14px "微软雅黑";
+}
+
+.title {
+    height: 1px;
+    background: #ccc;
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+.title .count {
+    position: relative;
+    display: inline-block;
+    color: #666;
+    top: -18px;
+    padding: 0 20px;
+    background: #f6f6f6;
+    font: 26px  "微软雅黑";
 }

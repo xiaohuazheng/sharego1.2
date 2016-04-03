@@ -91,3 +91,11 @@ exports.search = function(req, res){
     res.render('shoes/search',{user:req.session.user,data:result});
   });
 };
+
+//乔丹，凡事无绝对
+exports.jordan_brand = function(req, res){
+  var name = '%乔丹%';
+  StarDeal.querysearch(name, function(result) {
+    res.render('shoes/jordan_brand',{user:req.session.user,data:result});
+  });
+};

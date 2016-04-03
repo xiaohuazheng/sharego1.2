@@ -89,6 +89,7 @@ app.get('/dealpage',deal.dealpage);
 //搜索页
 app.get('/search',deal.search);
 app.get('/jordan_brand',deal.jordan_brand);
+app.get('/naike_brand',deal.naike_brand);
 
 app.use('/', routes.index);
 

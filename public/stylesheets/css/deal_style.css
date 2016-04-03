@@ -9,7 +9,8 @@
 .irving_banner{background: url('image/irving_banner.png') top center no-repeat #0a063d;}
 .harden_banner{background: url('image/harden_banner.png') top center no-repeat #0a063d;}
 .more_banner{background: url('image/more_banner.png') top center no-repeat #0a063d;}
-.jodan_brand_banner{background: url('image/jordan_brand.jpg') top center no-repeat #0a063d;}
+.jodan_brand_banner{background: url('image/jordan_brand.png') top center no-repeat #0a063d;}
+.naike_brand_banner{background: url('image/naike_brand.png') top center no-repeat #0a063d;}
 
 /*默认deal样式*/
 .deal .con:hover{border:1px solid #ec6060;}

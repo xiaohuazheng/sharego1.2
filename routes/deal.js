@@ -99,3 +99,11 @@ exports.jordan_brand = function(req, res){
     res.render('shoes/jordan_brand',{user:req.session.user,data:result});
   });
 };
+
+//耐克，just do it
+exports.naike_brand = function(req, res){
+  var name = '%耐克%';
+  StarDeal.querysearch(name, function(result) {
+    res.render('shoes/naike_brand',{user:req.session.user,data:result});
+  });
+};

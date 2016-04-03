@@ -64,26 +64,30 @@ $(function () {
     	window.location.href = loginUrl; 
     });
 
-    //导航栏跟随   
-    var scrollFun = function() {
-    	var scrollHeight = $('.dealbox').offset().top;
+    //导航栏跟随 
+    if((window.location.href).indexOf('dealpage') == -1) {  
+	    var scrollFun = function() {
+	    	var scrollHeight = $('.dealbox').offset().top;
 
-    	if($(window).scrollTop() > scrollHeight) {
-    		$('.to_top').show();
-    		$('#head_nav').addClass('head_nav_fix');
-    	} else {
-    		$('.to_top').hide();
-    		$('#head_nav').removeClass('head_nav_fix');
-    	}
-    }
+	    	if($(window).scrollTop() > scrollHeight) {
+	    		$('.to_top').show();
+	    		$('#head_nav').addClass('head_nav_fix');
+	    	} else {
+	    		$('.to_top').hide();
+	    		$('#head_nav').removeClass('head_nav_fix');
+	    	}
+	    }
 
-    $(window).scroll(scrollFun);
-   
-    //点击回顶部
-    $('.to_top').on('click', function() {
-    	$('html, body').animate({
-    		scrollTop: 0
-    	},600);
-    });
+	    $(window).scroll(scrollFun);
+	   
+	    //点击回顶部
+	    $('.to_top').on('click', function() {
+	    	$('html, body').animate({
+	    		scrollTop: 0
+	    	},600);
+	    });
+	} else {
+		$('#sidebar').hide();
+	}
 
 });	

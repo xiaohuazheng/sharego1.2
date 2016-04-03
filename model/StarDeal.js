@@ -2,7 +2,7 @@ var MySQLUtil = require('../utils/mysql');
 
 //all deal数据库
 exports.queryall = function (callback) {
-  MySQLUtil.query('select id, href, picsrc, price, name, dealid from dealall order by price', [], function (rows, fields) {
+  MySQLUtil.query('select id, href, picsrc, price, name, dealid from dealall order by price asc', [], function (rows, fields) {
     callback(rows);
   });
 };
@@ -274,9 +274,16 @@ exports.querysearch = function (name, callback) {
 };
 
 //low price
-// exports.querylow = function (callback) {
-//   MySQLUtil.query('select id, href, picsrc, price, name, dealid from dealall order by price acs limit 40', [], function (rows, fields) {
-//     callback(rows);
-//   });
-// };
+exports.querylow = function (callback) {
+  MySQLUtil.query('select id, href, picsrc, price, name, dealid from dealall order by price asc limit 40', [], function (rows, fields) {
+    callback(rows);
+  });
+};
+
+//low price
+exports.queryhigh = function (callback) {
+  MySQLUtil.query('select id, href, picsrc, price, name, dealid from dealall order by price desc limit 40', [], function (rows, fields) {
+    callback(rows);
+  });
+};
 

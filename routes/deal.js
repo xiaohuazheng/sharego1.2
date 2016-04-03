@@ -109,15 +109,15 @@ exports.naike_brand = function(req, res){
 };
 
 //物美价廉
-// exports.low_price_brand = function(req, res){
-//   StarDeal.querylow(function(result) {
-//     res.render('shoes/low_price_brand',{user:req.session.user,data:result});
-//   });
-// };
-
-//就要奢侈
-/*exports.low_price_brand = function(req, res){
+exports.low_price_brand = function(req, res){
   StarDeal.querylow(function(result) {
     res.render('shoes/low_price_brand',{user:req.session.user,data:result});
   });
-};*/
+};
+
+//就要奢侈
+exports.high_price_brand = function(req, res){
+  StarDeal.queryhigh(function(result) {
+    res.render('shoes/high_price_brand',{user:req.session.user,data:result});
+  });
+};

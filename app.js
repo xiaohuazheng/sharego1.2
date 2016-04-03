@@ -88,10 +88,11 @@ app.get('/dealpage',deal.dealpage);
 
 //搜索页
 app.get('/search',deal.search);
-app.get('/jordan_brand',deal.jordan_brand);
-app.get('/naike_brand',deal.naike_brand);
-// app.get('/low_price_brand',deal.low_price_brand);
-// app.get('/high_price_brand',deal.high_price_brand);
+//recommend
+app.use('/jordan_brand',deal.jordan_brand);
+app.use('/naike_brand',deal.naike_brand);
+app.use('/low_price_brand',deal.low_price_brand);
+app.use('/high_price_brand',deal.high_price_brand);
 
 app.use('/', routes.index);
 

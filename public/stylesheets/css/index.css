@@ -14,7 +14,7 @@
 
 /* all deal */
 .area {width: 980px;margin: 0 auto;position: relative;}
-.canvas_bg{width: 980px;margin: 0 auto;position: relative;background: url('image/action.png') top center no-repeat #fff;}
+.canvas_bg{width: 980px;margin: 0 auto;position: relative;background: url('image/action.png') top center no-repeat #fff;margin-bottom: 20px;}
 .brand_category_tit {position: relative;margin-bottom: 10px;}
 .brand_category_tit p.bct_dividing {height: 1px;background: #ccc;width: 100%;position: absolute;top: 14px;left: 0;z-index: -1;}
 .bct_info{text-align: center;}

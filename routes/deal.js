@@ -107,3 +107,17 @@ exports.naike_brand = function(req, res){
     res.render('shoes/naike_brand',{user:req.session.user,data:result});
   });
 };
+
+//物美价廉
+// exports.low_price_brand = function(req, res){
+//   StarDeal.querylow(function(result) {
+//     res.render('shoes/low_price_brand',{user:req.session.user,data:result});
+//   });
+// };
+
+//就要奢侈
+/*exports.low_price_brand = function(req, res){
+  StarDeal.querylow(function(result) {
+    res.render('shoes/low_price_brand',{user:req.session.user,data:result});
+  });
+};*/

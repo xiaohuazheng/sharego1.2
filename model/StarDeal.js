@@ -273,3 +273,10 @@ exports.querysearch = function (name, callback) {
   });
 };
 
+//low price
+// exports.querylow = function (callback) {
+//   MySQLUtil.query('select id, href, picsrc, price, name, dealid from dealall order by price acs limit 40', [], function (rows, fields) {
+//     callback(rows);
+//   });
+// };
+

@@ -1,3 +1,7 @@
+/*
+* author:zhengxiaohua 20151130;
+* decri:商品样式，banner样式等;
+*/
 @charset "utf-8";
 .dealHtml {margin: 20px auto; width: 982px}
 a { outline: none; }
@@ -46,7 +50,7 @@ a { outline: none; }
 .new_youpin_a{display: block;position: absolute; top: 0px;left: 0px;width: 100%;height: 100%;z-index: 100;}
 
 /**
- * 新品单独展示区相关样式
+ * 收藏相关样式
  */
 .youpinRecommDeal { margin-top: 20px; background: #fff; position: relative; border: 1px solid #f6f6f6; font-family: '微软雅黑'; width: 980px;padding: 20px 0;}
 .youpinRecommDeal:hover { border: 1px solid #c80812; }
@@ -73,29 +77,7 @@ h3.rd-goodsCtrl .rd-goodsColl { font-size: 18px; color: #fff; background: #c7000
 h3.rd-goodsCtrl .rd-goodsBuy:hover { color: #fff; text-decoration: none; }
 h2.rd-goodsDesc a { color: #666; }
 
-
-/*覆盖样式*/
-body { background-color: #f6f6f6; overflow-x: hidden; }
-#seclevel{background: none;position: relative;top: 10px;}
-#seclevel .seclevelinner{border-top:0;}
-#seclevel .seclevelinner a{font-size: 15px;font-family: '微软雅黑';padding: 0 22px 0 0;}
-#seclevel a.on, #seclevel a.on:hover,#seclevel .seclevelinner a:hover{color: #c90000;}
-.side_nav{top: 400px;}
-
-/*下一页*/
-.dealbox .next_img{margin-right: 0;border: 1px solid #eaeaea;}
-.dealbox .next_img, .dealbox .next_img a{width: 233px!important;height: 342px!important;}
-.dealbox .next_img img{width: 235px;height: 235px;padding-top: 70px;}
-.dealbox .next_img_over{border:1px solid #c7000b;padding: 1px;}
-
 .subscript{position: absolute;top: 0;left:0;z-index: 102;}
-.icon_new, .icon_star_yph{ width: 68px; height: 52px;}
-.icon_new{background-position: 0 -80px;background: url(http://z5.tuanimg.com/v2/ju/img/jrsx.png) no-repeat 0 0}
-.icon_star_yph{background-position: 0 -140px;background: url(image/mssp.png) no-repeat 0 0}
-/*89729增加满减和直减角标*/
-.icon_zhijian, .icon_manjian {width: 68px;height: 48px;padding-top: 2px;text-align: center;font: 12px/18px "宋体";color: #fff;background: url(http://z5.tuanimg.com/v2/ju/img/youpin_icons2.png);}
-.icon_zhijian .zhijian_price, .icon_manjian .manjian_price {display: block;}
-.icon_xianshiqiang{width: 68px;height: 50px;background: url(http://z5.tuanimg.com/v2/ju/img/youpin_icons2.png) 0 -60px;display: block;}
 
 @media (min-width: 1280px){
     .dealbox .next_img, .dealbox .next_img a{width: 285px!important;height: 417px!important;}

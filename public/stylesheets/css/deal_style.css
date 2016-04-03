@@ -1,4 +1,8 @@
- 
+/*
+* author:zhengxiaohua 20151125;
+* decri:商品样式，banner样式等;
+*/
+
 .youbanner {margin-top: 10px;height: 240px;}
 .dealbox{width: 1200px;}
 .jordan_banner{background: url('image/jordan_banner.png') top center no-repeat #0a063d;}
@@ -24,7 +28,7 @@
 .deal img.bdg_img{height: 30px; position: absolute; left: 1px; bottom: 98px; margin-bottom: 0;z-index: 10;}
 .deal .dealon img.bdg_img{left: 0px;bottom: 97px;}
 .deal img::after{content: ""; height: 20px; width: 20px; display: block;}
-.deal h3{padding:0px 0px 5px 10px; height:20px;overflow: hidden; text-align:left;font:14px/20px "microsoft yahei";white-space: nowrap;text-overflow:ellipsis;width: 194px;background-color: #fff;}
+.deal h3{padding:0px 0px 5px 10px; height:20px;overflow: hidden; text-align:left;font:14px/20px "microsoft yahei";white-space: nowrap;text-overflow:ellipsis;width: 194px;background-color: #fff;cursor: pointer;}
 .deal h3 b{display: none;}
 .deal h4{display: inline-block;height:30px;padding:0 0 0 10px;overflow: hidden; text-align:right;background: #fff;line-height: 30px;}
 .deal h4 span{width: 110px; float:left;color:#e02f2f;font-family: "tahoma"; line-height: 13px;font-size: 12px;text-align: left;}
@@ -48,62 +52,21 @@
 
 
 .deal .con>a{outline: medium none;display: inline-block;}
-/*品牌团首页商品样式*/
+/*收藏商品样式*/
 .dealstyle_brand_index h4 span u{display:block;color: #c7000b;padding:5px 0;}
 .dealstyle_brand_index .dtype{position: absolute; font: 16px/60px "microsoft yahei"; color: #bd0100; right: 15px; bottom: 32px; display: block; overflow: auto;}
 .dealstyle_brand_index .dtype span{color: #a80058;}
-.dealstyle_brand_index .dtype .e4{background: url(http://z5.tuanimg.com/v2/core/img/shouye_new_img.png) no-repeat -674px -5px; _background-image: url(http://z5.tuanimg.com/v2/ju/img/ju_icons6.png); width: 21px; height: 16px; display: block; float: left;}
+.dealstyle_brand_index .dtype .e4{background: url('image/shouye_new_img.png') no-repeat -674px -5px; width: 21px; height: 16px; display: block; float: left;}
 .dealstyle_brand_index .sold{ position: absolute; font: 12px/12px "microsoft yahei";*line-height: 15px; color: #666666; right: 14px; bottom: 21px;*bottom: 19px; display: block;}
 .dealstyle_brand_index .sold a{color: #666666;text-decoration: none;}
 
 
-.mcol6 {
-    padding-bottom: 30px;
-}
-.mcol6 .my_favo_msg {
-    height: 120px;
-    width: 778px;
-    padding-left: 530px;
-    padding-top: 48px;
-}
-.mcol6 .my_favo_msg span.noCollection_pic {
-    display: inline-block;
-    width: 49px;
-    height: 60px;
-    margin-right: 16px;
-    background: url('image/nocollection.png') no-repeat 0 0;
-}
-.mcol6 .my_favo_msg span.noCollection_msg {
-    display: inline-block;
-    width: 250px;
-    height: 60px;
-    text-align: left;
-}
-.mcol6 .my_favo_msg span.noCollection_msg p {
-    color: rgb(102, 102, 102);
-    margin-bottom: 5px;
-    font: 14px/19px "微软雅黑";
-}
-.mcol6 .my_favo_msg span.noCollection_msg p a {
-    color: rgb(0, 153, 204);
-    font: 14px "微软雅黑";
-}
+.mcol6 {padding-bottom: 30px;}
+.mcol6 .my_favo_msg {height: 120px;width: 778px;padding-left: 530px;padding-top: 48px;}
+.mcol6 .my_favo_msg span.noCollection_pic {display: inline-block;width: 49px;height: 60px;margin-right: 16px;background: url('image/nocollection.png') no-repeat 0 0;}
+.mcol6 .my_favo_msg span.noCollection_msg {display: inline-block;width: 250px;height: 60px;text-align: left;}
+.mcol6 .my_favo_msg span.noCollection_msg p {color: rgb(102, 102, 102);margin-bottom: 5px;font: 14px/19px "微软雅黑";}
+.mcol6 .my_favo_msg span.noCollection_msg p a {color: rgb(0, 153, 204);font: 14px "微软雅黑";}
 
-.title {
-    height: 1px;
-    background: #ccc;
-    position: relative;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 14px;
-}
-.title .count {
-    position: relative;
-    display: inline-block;
-    color: #666;
-    top: -18px;
-    padding: 0 20px;
-    background: #f6f6f6;
-    font: 26px  "微软雅黑";
-}
+.title {height: 1px;background: #ccc;position: relative;text-align: center;margin-top: 30px;margin-bottom: 30px;font-size: 14px;}
+.title .count {position: relative;display: inline-block;color: #666;top: -18px;padding: 0 20px;background: #f6f6f6;font: 26px  "微软雅黑";}

@@ -1,3 +1,8 @@
+/*
+* author:zhengxiaohua 20151125;
+* decri:商品样式，banner样式等;
+*/
+
 /*顶部banner栏css样式*/
 .head_banner{width: 1360px;height: 240px;margin:0 auto;margin-bottom: 10px;background: #0a063d;}
 #banner {width:980px;height:240px;float:left;margin: 0 auto;position:relative;overflow:hidden;margin-left: 184px;margin-top: 0;}

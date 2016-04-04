@@ -56,6 +56,9 @@ exports.updateuser = function(req, res){
 };
 
 //账号信息
-exports.personal = function(req, res){	
-	res.render('person/personal', {user:req.session.user});
+exports.personal = function(req, res){
+	var locals = res.locals;
+	User.userinfo(req.session.user, function(result) {
+		res.render('person/personal', {user:req.session.user, data:result});			
+	});		
 }

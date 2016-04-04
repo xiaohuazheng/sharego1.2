@@ -78,3 +78,10 @@ exports.updateuser = function (nickname, callback) {
     callback(rows);
   });
 };
+
+//用户信息
+exports.userinfo = function (nickname, callback) {
+  MySQLUtil.query('select nickname, email from user_info where nickname=?', [nickname], function (rows, fields) {
+    callback(rows);
+  });
+};

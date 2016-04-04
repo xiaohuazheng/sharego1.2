@@ -54,34 +54,52 @@ header .header_con .stuts span {font-size:22px;font-weight:bold;margin-left:5px;
 #container aside.left {
     width: 140px;
     text-align: left;
-    padding: 10px 0 20px;
+    padding: 20px 0 20px;
     min-height: 500px;
     height: auto;
     font: 12px '微软雅黑';
     display: inline;
     float: left;
+    background: #D9D5D5;
 }
 .sidePanel_user_rank {
     margin: 10px 0;
 }
 #container aside.left h3 {
-    font: 14px/28px "微软雅黑";
-    color: #E02F2F;
+    font: 16px/28px "微软雅黑";
+    color: #000;
     padding-left: 30px;
 }
 #container aside.left ul {
     margin-bottom: 10px;
     list-style: none;
+    padding-left: 50px;
 }
 #container aside.left ul li {
     height: 28px;
     line-height: 28px;
     list-style: none;
+    font: 14px "微软雅黑";
+}
+.pi_on{color: #ec1611;}
+.set_box .item label {
+    margin-left: -100px;
+    text-align: right;
+    float: left;
+    width: 112px;
+    height: 36px;
+    font: 15px/36px "微软雅黑";
+    display: inline;
+    color: #333;
+}
+.set_box .item span{
+	font: 15px/36px "微软雅黑";
+    color: #333;
 }
 .p_box {
     width: 800px;
     float: left;
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 .bindinghd {
     text-align: left;
@@ -117,6 +135,9 @@ header .header_con .stuts span {font-size:22px;font-weight:bold;margin-left:5px;
 .navtag ul li.cur {
     background: #dd0001;
     border-color: #dd0001;
+}
+.navtag ul li span{
+    color: #fff;
 }
 .profile_info {
     padding-left: 104px;

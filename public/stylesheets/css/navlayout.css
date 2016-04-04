@@ -48,189 +48,39 @@ header .header_con .stuts span {font-size:22px;font-weight:bold;margin-left:5px;
 .about h1 {padding-top: 20px;height: 50px;text-align: center;font: 14px "微软雅黑";}
 
 /* personal */
-#container {
-    background: url(image/bgy1.png) repeat-y top left;
-}
-#container aside.left {
-    width: 140px;
-    text-align: left;
-    padding: 20px 0 20px;
-    min-height: 500px;
-    height: auto;
-    font: 12px '微软雅黑';
-    display: inline;
-    float: left;
-    background: #D9D5D5;
-}
-.sidePanel_user_rank {
-    margin: 10px 0;
-}
-#container aside.left h3 {
-    font: 16px/28px "微软雅黑";
-    color: #000;
-    padding-left: 15px;
-}
-#container aside.left ul {
-    margin-bottom: 10px;
-    list-style: none;
-}
-#container aside.left ul li {
-    height: 28px;
-    line-height: 28px;
-    list-style: none;
-    font: 14px "微软雅黑";
-}
-#container aside.left ul li a {
-    color: gray;
-    display: block;
-    border-left: 2px solid #D9D5D5;
-    padding-left: 28px;
-}
-#container aside.left ul li.cur a, #container aside.left ul li a:hover {
-    border-left-color: #bababa;
-    background: #f2f2f2;
-    text-decoration: none;
-}
+#container {background: url(image/bgy1.png) repeat-y top left;}
+#container aside.left {width: 140px;text-align: left;padding: 20px 0 20px;min-height: 500px;height: auto;font: 12px '微软雅黑';display: inline;float: left;background: #D9D5D5;}
+.sidePanel_user_rank {margin: 10px 0;}
+#container aside.left h3 {font: 16px/28px "微软雅黑";color: #000;padding-left: 15px;}
+#container aside.left ul {margin-bottom: 10px;list-style: none;}
+#container aside.left ul li {height: 28px;line-height: 28px;list-style: none;font: 14px "微软雅黑";}
+#container aside.left ul li a {color: gray;display: block;border-left: 2px solid #D9D5D5;padding-left: 28px;}
+#container aside.left ul li.cur a, #container aside.left ul li a:hover {border-left-color: #bababa;background: #f2f2f2;text-decoration: none;}
 
-.set_box .item label {
-    margin-left: -100px;
-    text-align: right;
-    float: left;
-    width: 112px;
-    height: 36px;
-    font: 15px/36px "微软雅黑";
-    display: inline;
-    color: #333;
-}
-.set_box .item span{
-	font: 15px/36px "微软雅黑";
-    color: #333;
-}
-.p_box {
-    width: 800px;
-    float: left;
-    padding: 20px 20px;
-}
-.bindinghd {
-    text-align: left;
-    line-height: 30px;
-    color: #999;
-}
-.bindinghd h2 {
-    text-align: left;
-    font: 800 14px/30px "";
-    color: #333;
-    margin: 0 0 10px;
-}
-.navtag {
-    height: 28px;
-    border-radius: 2px 2px 0 0;
-    line-height: 28px;
-    text-align: center;
-    overflow: hidden;
-    border-bottom: 2px solid #dd0001;
-    margin: 0 0 20px;
-}
-.navtag ul {
-    margin-right: -1px;
-    float: left;
-}
+.set_box .item label {margin-left: -100px;text-align: right;float: left;width: 112px;height: 36px;font: 15px/36px "微软雅黑";display: inline;color: #333;}
+.set_box .item span{font: 15px/36px "微软雅黑";color: #333;}
+.p_box {width: 800px;float: left;padding: 20px 20px;}
+.bindinghd {text-align: left;line-height: 30px;color: #999;}
+.bindinghd h2 {text-align: left;font: 800 14px/30px "";color: #333;margin: 0 0 10px;}
+.navtag {height: 28px;border-radius: 2px 2px 0 0;line-height: 28px;text-align: center;overflow: hidden;border-bottom: 2px solid #dd0001;margin: 0 0 20px;}
+.navtag ul {margin-right: -1px;float: left;}
+.navtag ul li {width: 80px;float: left;border: 1px solid #e4e4e4;margin: 0 10px 0 0;}
+.navtag ul li.cur {background: #dd0001;border-color: #dd0001;}
+.navtag ul li span{color: #fff;}
+.profile_info {padding-left: 104px;width: 696px;}
+.set_box {text-align: left;width: 696px;float: left;}
+.set_box .item {padding: 0 0 20px 100px;position: relative;width: 565px;line-height: 30px;}
+.profile_info .set_box .uname {line-height: 36px;}
 
-.navtag ul li {
-    width: 80px;
-    float: left;
-    border: 1px solid #e4e4e4;
-    margin: 0 10px 0 0;
-}
-.navtag ul li.cur {
-    background: #dd0001;
-    border-color: #dd0001;
-}
-.navtag ul li span{
-    color: #fff;
-}
-.profile_info {
-    padding-left: 104px;
-    width: 696px;
-}
-.set_box {
-    text-align: left;
-    width: 696px;
-    float: left;
-}
-.set_box .item {
-    padding: 0 0 20px 100px;
-    position: relative;
-    width: 565px;
-    line-height: 30px;
-}
-.profile_info .set_box .uname {
-    line-height: 36px;
-}
-
-.securityul {
-    text-align: left;
-    width: 800px;
-    float: left;
-    margin: 15px 0 0;
-    list-style: none;
-}
-.securityul li {
-    width: 778px;
-    float: left;
-    padding: 10px;
-    border: 1px solid #dbdbdb;
-    color: #333;
-    line-height: 20px;
-}
-.infobox {
-    width: 798px;
-    float: left;
-    margin: 8px -10px 0 -10px;
-    position: relative;
-    padding: 10px 0;
-}
-.infobox .ul_list {
-    padding: 10px 0;
-}
-.infobox .ul_list dd {
-    width: 538px;
-    float: left;
-    line-height: 32px;
-    padding: 6px 0 6px 260px;
-}
-.infobox .ul_list dd label {
-    width: 260px;
-    float: left;
-    text-align: right;
-    margin: 0 0 0 -260px;
-    position: relative;
-}
-.infobox .ul_list dd .set1 {
-    width: 250px;
-    height: 30px;
-    float: left;
-    line-height: 30px;
-    text-indent: 5px;
-    border: 1px solid #e0e0e0;
-}
-.infobox .ul_list dd span {
-    color: #e02f2f;
-    margin: 0 10px;
-}
-.infobox .btn {
-    width: 115px;
-    height: 35px;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    background: url(image/probg.png) no-repeat;
-    line-height: 35px;
-    color: #fff;
-    font-size: 14px;
-    text-align: center;
-}
-
+.securityul {text-align: left;width: 800px;float: left;margin: 15px 0 0;list-style: none;}
+.securityul li {width: 778px;float: left;padding: 10px;border: 1px solid #dbdbdb;color: #333;line-height: 20px;}
+.infobox {width: 798px;float: left;margin: 8px -10px 0 -10px;position: relative;padding: 10px 0;}
+.infobox .ul_list {padding: 10px 0;}
+.infobox .ul_list dd {width: 538px;float: left;line-height: 32px;padding: 6px 0 6px 260px;}
+.infobox .ul_list dd label {width: 260px;float: left;text-align: right;margin: 0 0 0 -260px;position: relative;}
+.infobox .ul_list dd .set1 {width: 250px;height: 30px;float: left;line-height: 30px;text-indent: 5px;border: 1px solid #e0e0e0;}
+.infobox .ul_list dd span {color: #e02f2f;margin: 0 10px;}
+.infobox .btn {width: 115px;height: 35px;display: inline-block;text-decoration: none;cursor: pointer;background: url(image/probg.png) no-repeat;line-height: 35px;color: #fff;font-size: 14px;text-align: center;}
 
 
 

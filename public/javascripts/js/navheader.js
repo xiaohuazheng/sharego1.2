@@ -65,7 +65,7 @@ $(function () {
     });
 
     //导航栏跟随 
-    if((window.location.href).indexOf('dealpage') == -1) {  
+    if($('.dealbox').length) {  
 	    var scrollFun = function() {
 	    	var scrollHeight = $('.dealbox').offset().top;
 

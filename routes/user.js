@@ -62,3 +62,11 @@ exports.personal = function(req, res){
 		res.render('person/personal', {user:req.session.user, data:result});			
 	});		
 }
+
+//密码修改
+exports.modifypw = function(req, res){
+	// var locals = res.locals;
+	// User.modifypw(req.session.user, function(result) {
+		res.render('person/modifypw', {user:req.session.user});			
+	// });		
+}

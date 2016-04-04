@@ -68,12 +68,11 @@ header .header_con .stuts span {font-size:22px;font-weight:bold;margin-left:5px;
 #container aside.left h3 {
     font: 16px/28px "微软雅黑";
     color: #000;
-    padding-left: 30px;
+    padding-left: 15px;
 }
 #container aside.left ul {
     margin-bottom: 10px;
     list-style: none;
-    padding-left: 50px;
 }
 #container aside.left ul li {
     height: 28px;
@@ -81,7 +80,18 @@ header .header_con .stuts span {font-size:22px;font-weight:bold;margin-left:5px;
     list-style: none;
     font: 14px "微软雅黑";
 }
-.pi_on{color: #ec1611;}
+#container aside.left ul li a {
+    color: gray;
+    display: block;
+    border-left: 2px solid #ebebeb;
+    padding-left: 28px;
+}
+#container aside.left ul li.cur a, #container aside.left ul li a:hover {
+    border-left-color: #bababa;
+    background: #f2f2f2;
+    text-decoration: none;
+}
+
 .set_box .item label {
     margin-left: -100px;
     text-align: right;
@@ -157,13 +167,62 @@ header .header_con .stuts span {font-size:22px;font-weight:bold;margin-left:5px;
 .profile_info .set_box .uname {
     line-height: 36px;
 }
-.set_box input {
-    vertical-align: middle;
+
+.securityul {
+    text-align: left;
+    width: 800px;
+    float: left;
+    margin: 15px 0 0;
+    list-style: none;
 }
-.set_box .btn {
+.securityul li {
+    width: 778px;
+    float: left;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    color: #333;
+    line-height: 20px;
+}
+.infobox {
+    width: 798px;
+    float: left;
+    margin: 8px -10px 0 -10px;
+    position: relative;
+    padding: 10px 0;
+}
+.infobox .ul_list {
+    padding: 10px 0;
+}
+.infobox .ul_list dd {
+    width: 538px;
+    float: left;
+    line-height: 32px;
+    padding: 6px 0 6px 260px;
+}
+.infobox .ul_list dd label {
+    width: 260px;
+    float: left;
+    text-align: right;
+    margin: 0 0 0 -260px;
+    position: relative;
+}
+.infobox .ul_list dd .set1 {
+    width: 250px;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    text-indent: 5px;
+    border: 1px solid #e0e0e0;
+}
+.infobox .ul_list dd span {
+    color: #e02f2f;
+    margin: 0 10px;
+}
+.infobox .btn {
     width: 115px;
     height: 35px;
-    border: 0;
+    display: inline-block;
+    text-decoration: none;
     cursor: pointer;
     background: url(image/probg.png) no-repeat;
     line-height: 35px;

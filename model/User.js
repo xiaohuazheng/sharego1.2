@@ -85,3 +85,10 @@ exports.userinfo = function (nickname, callback) {
     callback(rows);
   });
 };
+
+//原始密码
+exports.modifypw = function (nickname, callback) {
+  MySQLUtil.query('select password from user_info where nickname=?', [nickname], function (rows, fields) {
+    callback(rows);
+  });
+};

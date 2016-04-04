@@ -30,11 +30,11 @@
   		<aside class="left">
 			<h3>账户信息</h3>
 			<ul>
-			   	<li class="cur"><a href="javascript:void(0);">基本资料</a></li>
+			   	<li><a href="personal">基本资料</a></li>
 			</ul>
 			<h3>安全中心</h3>
 			<ul>
-			  <li><a href="modifypw">修改密码</a></li>
+			  <li class="cur"><a href="javascript:void(0);">修改密码</a></li>
 			</ul>
 			<h3>我的点赞</h3>
 			<ul>
@@ -48,27 +48,43 @@
 
   		<section class="p_box">
 		    <div class="bindinghd">
-		      <h2>账户信息</h2>
+		      <h2>安全中心</h2>
 		    </div>
 		    <div class="navtag">
 		      <ul>
 		        <li class="cur">
-		          <span>基本资料</span>
+		          <span>修改密码</span>
 		        </li>
 		      </ul>
 		    </div>
-		    <div class="profile_info" id="profile_form">    
-		      <div class="set_box">
-		        <div class="item uname">
-		          <label>昵称：</label>
-		            <span><%= data[0].nickname %></span>
-		        </div>
-		        <div class="item uname">
-		          <label>邮箱：</label>
-		          	<span><%= data[0].email %></span>
-		        </div>
-		      </div>
-		    </div>
+			<ul class="securityul passwdSetup">
+		        <li>
+		          <div class="infobox">
+		            <dl class="ul_list clear">
+		              <dd>
+		                <label>原密码：</label>
+		                <input type="password" class="set1" id="oldPw">
+		                <span class="pwnotice"></span>
+		              </dd>
+		              <dd>
+		                <label>新密码：</label>
+		                <input type="password" class="set1" id="pw">
+		                <span class="pwnotice"></span>
+		              </dd>
+		              <dd>
+		                <label>确认新密码：</label>
+		                <input type="password" class="set1" id="newPw">
+		                <span class="pwnotice"></span>
+		              </dd>
+		              <dd>
+		                <a href="javascript:;" class="btn submitPw">修&nbsp;改</a>
+		                <a href="javascript:;" class="btn resetPw">重新输入</a>
+		                <input id="success_return_to" name="success_return_to" type="hidden">
+		              </dd>
+		            </dl>
+		          </div>
+		        </li>
+		    </ul>
   		</section>
 	</article>
 <% include ../common/footer %>		

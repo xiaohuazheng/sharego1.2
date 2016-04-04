@@ -87,8 +87,8 @@ exports.userinfo = function (nickname, callback) {
 };
 
 //原始密码
-exports.modifypw = function (nickname, callback) {
-  MySQLUtil.query('select password from user_info where nickname=?', [nickname], function (rows, fields) {
+exports.modifypw = function (password, nickname, callback) {
+  MySQLUtil.query('update user_info set password = ? where nickname=?', [password, nickname], function (rows, fields) {
     callback(rows);
   });
 };

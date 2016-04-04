@@ -176,5 +176,23 @@ app.post('/doregister', function(req, res) {
   });
 });
 
+//用户注册
+app.post('/newpassword', function(req, res) {
+  var oldPw = req.body.oldPw,
+      newPw = req.body.newPw,
+      nickname = req.session.user,
+      encryptPassword1 = Encrypt.md5(oldPw).toUpperCase(),
+      encryptPassword2 = Encrypt.md5(newPw).toUpperCase();  
+  User.loginByEmail(nickname, encryptPassword1, function(status, userInfo){    
+    if(status == message.login.success){
+      User.modifypw(encryptPassword2, nickname, function(result) {
+        console.log('修改密码成功');
+        res.send(200);
+      });           
+    }else{
+      res.send(404);
+    }
+  });
+});
 
 module.exports = app;

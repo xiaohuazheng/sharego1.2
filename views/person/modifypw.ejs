@@ -2,6 +2,7 @@
 <html>
 <head>	
 	<% include ../common/head %>
+	<link rel="stylesheet" type="text/css" href="stylesheets/css/login.css" />
 	<script type="text/javascript" src="javascripts/js/personal.js"></script>	
 </head>
 
@@ -64,17 +65,17 @@
 		              <dd>
 		                <label>原密码：</label>
 		                <input type="password" class="set1" id="oldPw">
-		                <span class="pwnotice"></span>
+		                <span class="pwnotice1"></span>
 		              </dd>
 		              <dd>
 		                <label>新密码：</label>
 		                <input type="password" class="set1" id="pw">
-		                <span class="pwnotice"></span>
+		                <span class="pwnotice2"></span>
 		              </dd>
 		              <dd>
 		                <label>确认新密码：</label>
 		                <input type="password" class="set1" id="newPw">
-		                <span class="pwnotice"></span>
+		                <span class="pwnotice3"></span>
 		              </dd>
 		              <dd>
 		                <a href="javascript:;" class="btn submitPw">修&nbsp;改</a>
@@ -87,6 +88,16 @@
 		    </ul>
   		</section>
 	</article>
+<div id="loading">
+	<p>加载中</p>
+</div>
+
+<div id="success">
+	<p>成功</p>
+</div>
+<div id="error">
+	<p>错误</p>
+</div>
 <% include ../common/footer %>		
 </body>
 </html>

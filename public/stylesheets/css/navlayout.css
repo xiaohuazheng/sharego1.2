@@ -8,7 +8,7 @@ body {background-color:#f2f2f2;}
 a {outline: none;color: #666;text-decoration: none;}
 a:hover, a:focus {color: #ec1611;}
 
-#sidebar {position: fixed;top: 120px;left: 10px;width: 160px;background: url(image/sidebar_new.png) no-repeat #fff;height: 360px;z-index: 10000;visibility: visible;margin: 0;padding: 0;}
+#sidebar {position: fixed;top: 120px;left: 10px;width: 160px;background: url(image/sidebar_new.png) no-repeat #fff;height: 360px;z-index: 10000;visibility: visible;margin: 0;padding: 0;border-top: 4px solid #ec1611;}
 #sidebar ul{margin:20px 0;}
 #sidebar ul.sidebar_info{border-bottom: 1px solid #ec1611;}
 #sidebar ul li{margin:20px 10px;list-style: none;font: 14px "microsoft yahei";color: #c7000b;}

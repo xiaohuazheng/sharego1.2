@@ -55,3 +55,7 @@ exports.updateuser = function(req, res){
   });
 };
 
+//账号信息
+exports.personal = function(req, res){	
+	res.render('person/personal', {user:req.session.user});
+}

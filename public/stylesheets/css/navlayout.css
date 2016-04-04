@@ -46,3 +46,113 @@ header .header_con .stuts span {font-size:22px;font-weight:bold;margin-left:5px;
 /* 底部 */
 .about {position: relative;border-top: 3px solid #E02F2F;background: #fff;margin-top: 20px;clear: both;}
 .about h1 {padding-top: 20px;height: 50px;text-align: center;font: 14px "微软雅黑";}
+
+/* personal */
+#container {
+    background: url(image/bgy1.png) repeat-y top left;
+}
+#container aside.left {
+    width: 140px;
+    text-align: left;
+    padding: 10px 0 20px;
+    min-height: 500px;
+    height: auto;
+    font: 12px '微软雅黑';
+    display: inline;
+    float: left;
+}
+.sidePanel_user_rank {
+    margin: 10px 0;
+}
+#container aside.left h3 {
+    font: 14px/28px "微软雅黑";
+    color: #E02F2F;
+    padding-left: 30px;
+}
+#container aside.left ul {
+    margin-bottom: 10px;
+    list-style: none;
+}
+#container aside.left ul li {
+    height: 28px;
+    line-height: 28px;
+    list-style: none;
+}
+.p_box {
+    width: 800px;
+    float: left;
+    padding: 10px 20px;
+}
+.bindinghd {
+    text-align: left;
+    line-height: 30px;
+    color: #999;
+}
+.bindinghd h2 {
+    text-align: left;
+    font: 800 14px/30px "";
+    color: #333;
+    margin: 0 0 10px;
+}
+.navtag {
+    height: 28px;
+    border-radius: 2px 2px 0 0;
+    line-height: 28px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 2px solid #dd0001;
+    margin: 0 0 20px;
+}
+.navtag ul {
+    margin-right: -1px;
+    float: left;
+}
+
+.navtag ul li {
+    width: 80px;
+    float: left;
+    border: 1px solid #e4e4e4;
+    margin: 0 10px 0 0;
+}
+.navtag ul li.cur {
+    background: #dd0001;
+    border-color: #dd0001;
+}
+.profile_info {
+    padding-left: 104px;
+    width: 696px;
+}
+.set_box {
+    text-align: left;
+    width: 696px;
+    float: left;
+}
+.set_box .item {
+    padding: 0 0 20px 100px;
+    position: relative;
+    width: 565px;
+    line-height: 30px;
+}
+.profile_info .set_box .uname {
+    line-height: 36px;
+}
+.set_box input {
+    vertical-align: middle;
+}
+.set_box .btn {
+    width: 115px;
+    height: 35px;
+    border: 0;
+    cursor: pointer;
+    background: url(image/probg.png) no-repeat;
+    line-height: 35px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+
+
+

@@ -60,6 +60,7 @@ app.use('/loginreg',user.loginreg);
 app.use('/logout',user.logout);
 app.use('/user',user);
 
+app.use('/personal',user.personal);
 app.use('/adminuser',user.adminuser);
 app.use('/useradmin',user.useradmin);
 app.get('/updateadmin',user.updateadmin);

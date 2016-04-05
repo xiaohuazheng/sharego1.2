@@ -135,7 +135,9 @@ exports.kobe_descri = function(req, res){
   });         
 }
 exports.james_descri = function(req, res){
-  res.render('person/james_descri', {user:req.session.user});         
+  User.queryComments(3, function(result) {
+    res.render('person/james_descri', {user:req.session.user,data:result});
+  });         
 }
 exports.durant_descri = function(req, res){
   res.render('person/durant_descri', {user:req.session.user});         

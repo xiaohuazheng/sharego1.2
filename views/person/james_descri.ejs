@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<% include ../common/head %>
+	<script type="text/javascript" src="javascripts/js/personal.js"></script>	
+</head>
+
+<body>
+	<header>
+		<% include ../common/header %>	
+		<div id="head_nav">
+  		<div class="head_nav area">
+    		<div class="l">
+    		<a class="" href="/">首页<i></i></a>
+	        <a class="" href="jordan">乔丹<i></i></a>     
+	        <a class="" href="kobe">科比<i></i></a>
+      		<a class="" href="james">詹姆斯<i></i></a>
+	        <a class="" href="/durant">杜兰特<i></i></a>
+		    <a class="" href="/paul">保罗<i></i></a>
+	        <a class="" href="curry">欧文<i></i></a>
+	        <a class="" href="harden">哈登<i></i></a>
+     	    <a class="" href="morestar">更多...<i></i></a>
+    	  </div>   
+  		</div>
+		</div>   
+	</header><!-- /header -->
+	<div id="subComm" class="subComm">  
+		<div class="tit">温馨提示 <i class="close"></i></div>  
+		<div class="tipinfo">    
+			<span class="icon"></span>    
+			<div class="info">        
+				<p>恭喜，评论成功！</p>  
+			</div>  
+		</div>  
+		<span class="btn">确定</span>
+	</div>
+	<div id="ppIntroduce">
+		<div class="ppTitle area">
+			<div class="ppLogo">
+				<span><img src="images/img/james_descri.png" alt="詹姆斯品牌"></span>
+			</div>
+			<div class="ppName">
+				<h1>詹姆斯的故事</h1>
+		        <p>勒布朗·詹姆斯（LeBron James），1984年12月30日出生在美国·俄亥俄州·阿克伦，美国男子职业篮球运动员，司职小前锋，现效力于克利夫兰骑士队。
+勒布朗·詹姆斯在2003年的NBA选秀大会中，首轮第一顺位被克利夫兰骑士队选中。2003-2010年，詹姆斯在骑士队效力7年，期间获得两届NBA最有价值球员（MVP）。2010年转会至迈阿密热火队，与德怀恩·韦德、克里斯·波什组成“三巨头”阵容。
+2012年，勒布朗·詹姆斯收获了个人在NBA的第三座最有价值球员奖，亦于同年获得了NBA生涯第一个总冠军并加冕总决赛MVP。当年夏天，勒布朗·詹姆斯代表美国男篮获得了伦敦奥运会金牌，追平了迈克尔·乔丹在1992年所创的纪录。2013年，他再度获得NBA总冠军、完成两连冠，并连续两年包揽常规赛和总决赛MVP。2014-15赛季，勒布朗·詹姆斯回归克利夫兰骑士队。</p>
+			    <div class="ppInfor">
+			          <span>			          
+			              <a target="_blank" href="/james">詹姆斯品牌专场&gt;&gt;</a>          
+			          </span>			        
+			    </div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="area ppDetail">
+			<ul class="head" id="JS_brand_com">
+				<li class="tab on">品牌评价</li>
+			</ul>
+			<div class="pane on">
+				<!--评论-->
+				<div id="wyReping" class="area">
+					<div class="commentWrap">
+						<p class="commentNotice">							
+							<span style="display: block;">发表评论，请先登录</span>
+							
+							<b class="notice"></b>
+						</p>
+						<div class="DoComment">							
+							<textarea title="詹姆斯品牌怎么样？詹姆斯故事是怎么样？你的评论可能是给下一个用户提供最宝贵的意见··· (字数长度在5-200个字之间)">詹姆斯品牌怎么样？詹姆斯故事是怎么样？你的评论可能是给下一个用户提供最宝贵的意见··· (字数长度在5-200个字之间)</textarea>
+							<a class="subcom" href="javascript:void(0);">发表评论</a>
+							<p class="limit">剩余字数：200</p>
+							<input name="brand_id" type="hidden" value="3">
+						</div>						
+
+						<p class="descrip">詹姆斯品牌怎么样？看网友如何评价</p>
+						<ul class="comments_list">
+						<% data.forEach(function(item) { %>							
+				            <li class="comments">
+				              <div class="infor">
+				                <span class="time">发表于<i><%=item.com_time %></i></span>
+				                <em><%=item.username %></em>
+				                <p><%=item.content %></p>
+				              </div>
+				            </li>
+				        <% });%>				        				            	        
+						</ul>				      	
+					 </div> 
+				</div>
+			</div>
+		</div>	
+	</div>
+
+<% include ../common/footer %>		
+</body>
+</html>

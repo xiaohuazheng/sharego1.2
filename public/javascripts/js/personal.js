@@ -178,6 +178,8 @@ $(function() {
 				async: true
 			});
 		});
+	}else{
+		$('#wyReping .notice').html('发表评论，请先登录！');
 	}
 
 	var errTip = function(val, oval) { //评论字数错误提醒

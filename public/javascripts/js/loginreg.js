@@ -4,8 +4,7 @@ $(function () {
 	$('.login input').click(function(){	
 		var backurl = $(this).attr('data-id');
 		console.log(username);
-		if ($('#login-form input[name=password]').val().length >= 6) {	
-			$.cookie('sharego_user', 1, { expires: 7, path: '/'});	
+		if ($('#login-form input[name=password]').val().length >= 6) {					
 			$('#loading').css('display','block');
 			$('#loading p').html('正在登录...');
 			console.log($("#login-form").serialize());
@@ -14,6 +13,7 @@ $(function () {
 				url:'dologin',
 				data:$("#login-form").serialize(),
 				success:function(){
+					$.cookie('sharego_user', $('#login-form input[name=username]').val(), { expires: 7, path: '/'});
 					$('#loading').css('display','none');
 					$('#success').css('display', 'block');
 					$('#success p').html('登录成功...');

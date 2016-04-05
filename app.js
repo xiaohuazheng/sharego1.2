@@ -101,6 +101,7 @@ app.use('/high_price_brand',deal.high_price_brand);
 app.use('/jordan_descri',deal.jordan_descri);
 app.use('/kobe_descri',deal.kobe_descri);
 app.use('/james_descri',deal.james_descri);
+app.use('/durant_descri',deal.durant_descri);
 
 app.use('/', routes.index);
 

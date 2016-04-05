@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<% include ../common/head %>
+	<script type="text/javascript" src="javascripts/js/personal.js"></script>	
+</head>
+
+<body>
+	<header>
+		<% include ../common/header %>	
+		<div id="head_nav">
+  		<div class="head_nav area">
+    		<div class="l">
+    		<a class="" href="/">首页<i></i></a>
+	        <a class="" href="jordan">乔丹<i></i></a>     
+	        <a class="" href="kobe">科比<i></i></a>
+      		<a class="" href="james">詹姆斯<i></i></a>
+	        <a class="" href="/durant">杜兰特<i></i></a>
+		    <a class="" href="/paul">保罗<i></i></a>
+	        <a class="" href="curry">欧文<i></i></a>
+	        <a class="" href="harden">哈登<i></i></a>
+     	    <a class="" href="morestar">更多...<i></i></a>
+    	  </div>   
+  		</div>
+		</div>   
+	</header><!-- /header -->
+	<div id="subComm" class="subComm">  
+		<div class="tit">温馨提示 <i class="close"></i></div>  
+		<div class="tipinfo">    
+			<span class="icon"></span>    
+			<div class="info">        
+				<p>恭喜，评论成功！</p>  
+			</div>  
+		</div>  
+		<span class="btn">确定</span>
+	</div>
+	<div id="ppIntroduce">
+		<div class="ppTitle area">
+			<div class="ppLogo">
+				<span><img src="images/img/durant_descri.png" alt="杜兰特品牌"></span>
+			</div>
+			<div class="ppName">
+				<h1>杜兰特的故事</h1>
+		        <p>凯文·杜兰特（Kevin Durant），男，1988年9月29日出生于美国华盛顿哥伦比亚特区，美国职业篮球运动员，司职小前锋，效力于俄克拉荷马雷霆队。
+杜兰特在2007年选秀首轮第二顺位被西雅图超音速队选中[1]  ，2008年随球队搬迁到俄克拉何马州。2010年，21岁的杜兰特成为NBA史上最年轻的得分王[2]  ，之后又连续2个赛季荣膺NBA常规赛得分王。2014年，杜兰特同时获得得分王与NBA常规赛最有价值球员奖（MVP）。</p>
+			    <div class="ppInfor">
+			          <span>			          
+			              <a target="_blank" href="/durant">杜兰特品牌专场&gt;&gt;</a>          
+			          </span>			        
+			    </div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="area ppDetail">
+			<ul class="head" id="JS_brand_com">
+				<li class="tab on">品牌评价</li>
+			</ul>
+			<div class="pane on">
+				<!--评论-->
+				<div id="wyReping" class="area">
+					<div class="commentWrap">
+						<p class="commentNotice">							
+							<span style="display: block;">发表评论，请先登录</span>
+							
+							<b class="notice"></b>
+						</p>
+						<div class="DoComment">							
+							<textarea title="杜兰特品牌怎么样？杜兰特故事是怎么样？你的评论可能是给下一个用户提供最宝贵的意见··· (字数长度在5-200个字之间)">杜兰特品牌怎么样？杜兰特故事是怎么样？你的评论可能是给下一个用户提供最宝贵的意见··· (字数长度在5-200个字之间)</textarea>
+							<a class="subcom" href="javascript:void(0);">发表评论</a>
+							<p class="limit">剩余字数：200</p>
+							<input name="brand_id" type="hidden" value="4">
+						</div>						
+
+						<p class="descrip">杜兰特品牌怎么样？看网友如何评价</p>
+						<ul class="comments_list">
+						<% data.forEach(function(item) { %>							
+				            <li class="comments">
+				              <div class="infor">
+				                <span class="time">发表于<i><%=item.com_time %></i></span>
+				                <em><%=item.username %></em>
+				                <p><%=item.content %></p>
+				              </div>
+				            </li>
+				        <% });%>				        				            	        
+						</ul>				      	
+					 </div> 
+				</div>
+			</div>
+		</div>	
+	</div>
+
+<% include ../common/footer %>		
+</body>
+</html>

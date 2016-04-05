@@ -140,7 +140,9 @@ exports.james_descri = function(req, res){
   });         
 }
 exports.durant_descri = function(req, res){
-  res.render('person/durant_descri', {user:req.session.user});         
+  User.queryComments(4, function(result) {
+    res.render('person/durant_descri', {user:req.session.user,data:result});
+  });         
 }
 exports.paul_descri = function(req, res){
   res.render('person/paul_descri', {user:req.session.user});         

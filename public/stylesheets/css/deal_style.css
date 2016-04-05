@@ -73,4 +73,4 @@
 .title {height: 1px;background: #ccc;position: relative;text-align: center;margin-top: 30px;margin-bottom: 30px;font-size: 14px;}
 .title .count {position: relative;display: inline-block;color: #666;top: -18px;padding: 0 20px;background: #f6f6f6;font: 26px  "微软雅黑";}
 
-.more_comm_icon {position: absolute;right: -26px;top: 5px;display: inline-block;width: 140px;z-index: 10;background: #f2f2f2;}
+.more_comm_icon {position: absolute;right: -26px;top: 5px;display: inline-block;width: 140px;z-index: 10;background: #f2f2f2;font: 16px "楷体";}

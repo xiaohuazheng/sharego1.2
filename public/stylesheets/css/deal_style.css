@@ -74,3 +74,203 @@
 .title .count {position: relative;display: inline-block;color: #666;top: -18px;padding: 0 20px;background: #f6f6f6;font: 26px  "微软雅黑";}
 
 .more_comm_icon {position: absolute;right: -26px;top: 5px;display: inline-block;width: 140px;z-index: 10;background: #f2f2f2;font: 16px "楷体";}
+
+/* 品牌介绍页 */
+#ppIntroduce {
+    overflow: hidden;
+}
+#ppIntroduce .ppTitle {
+    padding: 0;
+    overflow: visible;
+    margin-top: 25px;
+    background-color: #FFF;
+}
+#ppIntroduce .ppTitle .ppLogo {
+	overflow: hidden;
+    float: left;
+    width: 140px;
+    height: 180px;
+    position: relative;
+    border-right: #f3f3f3 1px solid;
+}
+#ppIntroduce .ppTitle .ppLogo span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -60px;
+    margin-top: -60px;
+}
+#ppIntroduce .ppTitle .ppLogo img {
+    width: 120px;
+    height: 120px;
+}
+#ppIntroduce .ppTitle .ppName {
+    padding: 12px 20px;
+    height: auto;
+    width: 798px;
+    overflow: visible;
+    float: left;
+}
+#ppIntroduce .ppTitle .ppName h1 {
+    font: 18px/30px "微软雅黑";
+    color: #333;
+    font-weight: 700;
+    text-align: left;
+}
+#ppIntroduce .ppTitle .ppName p {
+    color: #666;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 1px;
+    font: 16px "楷体";
+}
+#ppIntroduce .ppTitle .ppName .ppInfor {
+	position: relative;
+    font: 12px/25px "微软雅黑";
+    color: #666;
+    overflow: hidden;
+}
+#ppIntroduce .ppTitle .ppName span {
+    float: left;
+}
+#ppIntroduce .ppTitle .ppInfor a {
+    color: #f20000;
+    font-size: 16px;
+}
+#ppIntroduce .ppDetail {
+    margin-top: 25px;
+}
+#ppIntroduce .ppDetail .head {
+    overflow: hidden;
+    display: block;
+}
+#ppIntroduce .ppDetail .head .on {
+    width: 150px;
+    border: 1px solid #FFF;
+    height: 43px;
+    float: left;
+    font: 700 16px/45px "微软雅黑";
+    border-top: 3px solid #e23e3e;
+    background: #fff;
+    padding-left: 25px;
+}
+#ppIntroduce .ppDetail .pane.on {
+    display: block;
+}
+#wyReping .commentWrap {
+    background-color: #FFF;
+}
+#wyReping .commentNotice {
+    margin: 0;
+    padding-top: 15px;
+    line-height: 25px;
+    font: 12px/25px "微软雅黑";
+    text-align: left;
+    overflow: hidden;
+    background: #fbfbfb;
+}
+
+#wyReping .commentNotice span {
+    margin-left: 25px;
+}
+#wyReping .DoComment {
+    overflow: hidden;
+    padding: 10px 0;
+    background: #fbfbfb;
+}
+#wyReping .comments .infor span i {
+    padding-left: 6px;
+    font-style: normal;
+}
+#wyReping .DoComment textarea {
+    width: 840px;
+    height: 80px;
+    float: left;
+    color: #777;
+    outline: 0;
+    resize: none;
+    border: 1px solid #e6e6e6;
+    line-height: 25px;
+    padding: 0 5px;
+    box-shadow: 1px 2px 0 rgba(173,158,155,.1) inset;
+    border-right: 0;
+    margin-left: 25px;
+}
+#wyReping .DoComment a {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    font: 20px/20px "微软雅黑";
+    color: #FFF;
+    background-color: #c1c1c1;
+    float: left;
+    border: 1px solid #e6e6e6;
+}
+#wyReping .DoComment .limit {
+    font: 12px/25px "微软雅黑";
+    color: #999;
+    text-align: left;
+    padding-left: 25px;
+    float: left;
+}
+#wyReping .descrip {
+    background-color: #f7f7f7;
+    text-align: left;
+    font-size: 14px;
+    height: 34px;
+    color: #666;
+    line-height: 34px;
+    padding-left: 0;
+    margin: 0 25px 5px;
+}
+#wyReping ul {
+    overflow: hidden;
+}
+#wyReping .comments {
+    overflow: hidden;
+    padding: 10px 0 5px;
+    border-bottom: 1px solid #f0f0f0;
+    margin: 0 25px;
+}
+#wyReping .comments .infor {
+    width: 848px;
+    float: left;
+    overflow: hidden;
+    text-align: left;
+    display: block;
+}
+#wyReping .comments .infor span {
+    float: right;
+    line-height: 28px;
+    width: 122px;
+    vertical-align: top;
+    font-size: 12px;
+    height: 70px;
+    overflow: hidden;
+}
+#wyReping .comments .infor em {
+    color: #39c;
+    font: 14px/30px "微软雅黑";
+}
+#wyReping .comments .infor p {
+    color: #333;
+    line-height: 25px;
+    width: 684px;
+    font: 16px/30px "楷体";
+}
+.clear{clear: both;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

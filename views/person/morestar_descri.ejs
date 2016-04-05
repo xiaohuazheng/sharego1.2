@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<% include ../common/head %>
+	<script type="text/javascript" src="javascripts/js/personal.js"></script>	
+</head>
+
+<body>
+	<header>
+		<% include ../common/header %>	
+		<div id="head_nav">
+  		<div class="head_nav area">
+    		<div class="l">
+    		<a class="" href="/">首页<i></i></a>
+	        <a class="" href="jordan">乔丹<i></i></a>     
+	        <a class="" href="kobe">科比<i></i></a>
+      		<a class="" href="james">詹姆斯<i></i></a>
+	        <a class="" href="/durant">杜兰特<i></i></a>
+		    <a class="" href="/paul">保罗<i></i></a>
+	        <a class="" href="curry">欧文<i></i></a>
+	        <a class="" href="harden">哈登<i></i></a>
+     	    <a class="" href="morestar">更多...<i></i></a>
+    	  </div>   
+  		</div>
+		</div>   
+	</header><!-- /header -->
+	<div id="subComm" class="subComm">  
+		<div class="tit">温馨提示 <i class="close"></i></div>  
+		<div class="tipinfo">    
+			<span class="icon"></span>    
+			<div class="info">        
+				<p>恭喜，评论成功！</p>  
+			</div>  
+		</div>  
+		<span class="btn">确定</span>
+	</div>
+	<div id="ppIntroduce">
+		<div class="ppTitle area">
+			<div class="ppLogo">
+				<span><img src="images/img/morestar_descri.png" alt="全明星品牌"></span>
+			</div>
+			<div class="ppName">
+				<h1>全明星的故事</h1>
+		        <p>NBA全明星赛（All-Star Game），是由美国国家篮球协会在1951年3月2日首次举行之后演变为每年一度的NBA球星汇集的表演赛。每年由东西部两个地区的最佳球员组成两支球队举行一场比赛决定胜负。经过演变之后，当代的全明星赛已经发展成为“全明星周末”，为期3天。该项比赛是由球迷和教练选举出的24名职业篮球运动员（东部联盟、西部联盟各12名，其中5名先发球员由球迷投票决定，7名替补由各队的主教练选出），组成东部队和西部队进行对抗。NBA全明星赛比赛时双方球员轮流上场，以充分展现当选的每个球员的球技，对胜负要求不大。因此，该项赛事开办以来，吸引了世界广大的球迷观赏。至2016年，共举办了65届全明星赛，其中东部队取胜36次，西部取胜29次。</p>
+			    <div class="ppInfor">
+			          <span>			          
+			              <a target="_blank" href="/morestar">全明星品牌专场&gt;&gt;</a>          
+			          </span>			        
+			    </div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="area ppDetail">
+			<ul class="head" id="JS_brand_com">
+				<li class="tab on">品牌评价</li>
+			</ul>
+			<div class="pane on">
+				<!--评论-->
+				<div id="wyReping" class="area">
+					<div class="commentWrap">
+						<p class="commentNotice">							
+							<span style="display: block;">发表评论，请先登录</span>
+							
+							<b class="notice"></b>
+						</p>
+						<div class="DoComment">							
+							<textarea title="全明星品牌怎么样？全明星故事是怎么样？你的评论可能是给下一个用户提供最宝贵的意见··· (字数长度在5-200个字之间)">全明星品牌怎么样？全明星故事是怎么样？你的评论可能是给下一个用户提供最宝贵的意见··· (字数长度在5-200个字之间)</textarea>
+							<a class="subcom" href="javascript:void(0);">发表评论</a>
+							<p class="limit">剩余字数：200</p>
+							<input name="brand_id" type="hidden" value="8">
+						</div>						
+
+						<p class="descrip">全明星品牌怎么样？看网友如何评价</p>
+						<ul class="comments_list">
+						<% data.forEach(function(item) { %>							
+				            <li class="comments">
+				              <div class="infor">
+				                <span class="time">发表于<i><%=item.com_time %></i></span>
+				                <em><%=item.username %></em>
+				                <p><%=item.content %></p>
+				              </div>
+				            </li>
+				        <% });%>				        				            	        
+						</ul>				      	
+					 </div> 
+				</div>
+			</div>
+		</div>	
+	</div>
+
+<% include ../common/footer %>		
+</body>
+</html>

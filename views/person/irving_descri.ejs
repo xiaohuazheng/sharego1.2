@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<% include ../common/head %>
+	<script type="text/javascript" src="javascripts/js/personal.js"></script>	
+</head>
+
+<body>
+	<header>
+		<% include ../common/header %>	
+		<div id="head_nav">
+  		<div class="head_nav area">
+    		<div class="l">
+    		<a class="" href="/">首页<i></i></a>
+	        <a class="" href="jordan">乔丹<i></i></a>     
+	        <a class="" href="kobe">科比<i></i></a>
+      		<a class="" href="james">詹姆斯<i></i></a>
+	        <a class="" href="/durant">杜兰特<i></i></a>
+		    <a class="" href="/paul">保罗<i></i></a>
+	        <a class="" href="curry">欧文<i></i></a>
+	        <a class="" href="harden">哈登<i></i></a>
+     	    <a class="" href="morestar">更多...<i></i></a>
+    	  </div>   
+  		</div>
+		</div>   
+	</header><!-- /header -->
+	<div id="subComm" class="subComm">  
+		<div class="tit">温馨提示 <i class="close"></i></div>  
+		<div class="tipinfo">    
+			<span class="icon"></span>    
+			<div class="info">        
+				<p>恭喜，评论成功！</p>  
+			</div>  
+		</div>  
+		<span class="btn">确定</span>
+	</div>
+	<div id="ppIntroduce">
+		<div class="ppTitle area">
+			<div class="ppLogo">
+				<span><img src="images/img/irving_descri.png" alt="欧文品牌"></span>
+			</div>
+			<div class="ppName">
+				<h1>欧文的故事</h1>
+		        <p>凯里·欧文（Kyrie Irving），1992年3月23日出生于澳大利亚墨尔本，拥有美国/澳大利亚双重国籍，职业篮球运动员，司职控球后卫，效力于NBA克里夫兰骑士队。
+凯里·欧文2011年以选秀状元身份进入NBA，新秀赛季当选最佳新秀；2014年首次入选全明星正赛先发阵容，并当选最有价值球员；同年代表美国队参加男篮世界杯，获得冠军并当选MVP；2014-15赛季入选最佳阵容第三阵容。</p>
+			    <div class="ppInfor">
+			          <span>			          
+			              <a target="_blank" href="/curry">欧文品牌专场&gt;&gt;</a>          
+			          </span>			        
+			    </div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="area ppDetail">
+			<ul class="head" id="JS_brand_com">
+				<li class="tab on">品牌评价</li>
+			</ul>
+			<div class="pane on">
+				<!--评论-->
+				<div id="wyReping" class="area">
+					<div class="commentWrap">
+						<p class="commentNotice">							
+							<span style="display: block;">发表评论，请先登录</span>
+							
+							<b class="notice"></b>
+						</p>
+						<div class="DoComment">							
+							<textarea title="欧文品牌怎么样？欧文故事是怎么样？你的评论可能是给下一个用户提供最宝贵的意见··· (字数长度在5-200个字之间)">欧文品牌怎么样？欧文故事是怎么样？你的评论可能是给下一个用户提供最宝贵的意见··· (字数长度在5-200个字之间)</textarea>
+							<a class="subcom" href="javascript:void(0);">发表评论</a>
+							<p class="limit">剩余字数：200</p>
+							<input name="brand_id" type="hidden" value="6">
+						</div>						
+
+						<p class="descrip">欧文品牌怎么样？看网友如何评价</p>
+						<ul class="comments_list">
+						<% data.forEach(function(item) { %>							
+				            <li class="comments">
+				              <div class="infor">
+				                <span class="time">发表于<i><%=item.com_time %></i></span>
+				                <em><%=item.username %></em>
+				                <p><%=item.content %></p>
+				              </div>
+				            </li>
+				        <% });%>				        				            	        
+						</ul>				      	
+					 </div> 
+				</div>
+			</div>
+		</div>	
+	</div>
+
+<% include ../common/footer %>		
+</body>
+</html>

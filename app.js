@@ -102,6 +102,10 @@ app.use('/jordan_descri',deal.jordan_descri);
 app.use('/kobe_descri',deal.kobe_descri);
 app.use('/james_descri',deal.james_descri);
 app.use('/durant_descri',deal.durant_descri);
+app.use('/paul_descri',deal.paul_descri);
+app.use('/irving_descri',deal.irving_descri);
+app.use('/harden_descri',deal.harden_descri);
+app.use('/morestar_descri',deal.morestar_descri);
 
 app.use('/', routes.index);
 

@@ -145,14 +145,22 @@ exports.durant_descri = function(req, res){
   });         
 }
 exports.paul_descri = function(req, res){
-  res.render('person/paul_descri', {user:req.session.user});         
+  User.queryComments(5, function(result) {
+    res.render('person/paul_descri', {user:req.session.user,data:result});
+  });         
 }
 exports.irving_descri = function(req, res){
-  res.render('person/irving_descri', {user:req.session.user});         
+  User.queryComments(6, function(result) {
+    res.render('person/irving_descri', {user:req.session.user,data:result});
+  });         
 }
 exports.harden_descri = function(req, res){
-  res.render('person/harden_descri', {user:req.session.user});         
+  User.queryComments(7, function(result) {
+    res.render('person/harden_descri', {user:req.session.user,data:result});
+  });         
 }
 exports.morestar_descri = function(req, res){
-  res.render('person/morestar_descri', {user:req.session.user});         
+  User.queryComments(8, function(result) {
+    res.render('person/morestar_descri', {user:req.session.user,data:result});
+  });         
 }

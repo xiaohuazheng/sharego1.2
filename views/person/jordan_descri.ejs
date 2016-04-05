@@ -53,7 +53,7 @@
 		</div>
 		<div class="area ppDetail">
 			<ul class="head" id="JS_brand_com">
-				<li class="tab on">品牌评价(200)</li>
+				<li class="tab on">品牌评价</li>
 			</ul>
 			<div class="pane on">
 				<!--评论-->
@@ -73,30 +73,15 @@
 
 						<p class="descrip">乔丹品牌怎么样？看网友如何评价</p>
 						<ul>
-							
+						<% data.forEach(function(item) { %>							
 				            <li class="comments">
 				              <div class="infor">
-				                <span class="time">发表于<i>2016-01-14</i></span>
-				                <em>小***1</em>
-				                <p>宝贝收到还没开始用</p>
+				                <span class="time">发表于<i><%=item.com_time %></i></span>
+				                <em><%=item.username %></em>
+				                <p><%=item.content %></p>
 				              </div>
 				            </li>
-				        
-				            <li class="comments">
-				              <div class="infor">
-				                <span class="time">发表于<i>2016-01-14</i></span>
-				                <em>v***0</em>
-				                <p>很好，原先收到的不能固定，上传视频后卖家很快就重新把刷头发过来，很好用</p>
-				              </div>
-				            </li>
-				        
-				            <li class="comments">
-				              <div class="infor">
-				                <span class="time">发表于<i>2016-01-12</i></span>
-				                <em>u***1</em>
-				                <p>好臭，物流就更不敢恭维了</p>
-				              </div>
-				            </li>					        					          					        
+				        <% });%>				        				            	        
 						</ul>				      	
 					 </div> 
 				</div>

@@ -152,7 +152,9 @@ $(function() {
 		$('.subcom').on('click', function() {
 			var val = con.val(),
 				id = docom.find('input[name=brand_id]').attr('value'),
-				oval = con.attr('title');
+				oval = con.attr('title'),
+				mydate = new Date(),
+				time = mydate.toLocaleString();
 
 			val = $.trim(val);
 			errTip(val, oval);
@@ -161,7 +163,8 @@ $(function() {
 				url:'brand_comments',
 				data:{
 					content: val,
-					brand_id: id
+					brand_id: id,
+					com_time: time
 				},
 				success:function() {
 					$('#subComm').show();

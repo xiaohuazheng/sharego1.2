@@ -93,13 +93,20 @@ exports.modifypw = function (password, nickname, callback) {
   });
 };
 
-//用户注册
-exports.insert_comments = function (type, content, callback) {
-  MySQLUtil.query('insert into comments (type, content) values (?,?)',[type, content], function (rows, fields) {
+//添加评论
+exports.insert_comments = function (type, username, content, com_time, callback) {
+  MySQLUtil.query('insert into comments (type, username, content, com_time) values (?,?,?,?)',[type, username, content, com_time], function (rows, fields) {
       if(rows){
         callback(message.login.success, rows);        
       }else{
         callback(message.login.none, null);
       }  
+  });
+};
+
+//查询评论表
+exports.queryComments = function (type, callback) {
+  MySQLUtil.query('select username, content, com_time from comments where type=?', [type], function (rows, fields) {
+    callback(rows);
   });
 };

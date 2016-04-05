@@ -203,8 +203,10 @@ app.post('/newpassword', function(req, res) {
 //用户评论
 app.post('/brand_comments', function(req, res) {
   var content = req.body.content,
-      type = req.body.brand_id; 
-  User.insert_comments(type, content, function(status, userInfo){    
+      type = req.body.brand_id,
+      com_time = req.body.com_time,
+      username = req.session.user;
+  User.insert_comments(type, username, content, com_time, function(status, userInfo){    
     if(status == message.login.success){
       res.send(200);           
     }else{

@@ -2,6 +2,7 @@ var express = require('express');
 var cheerio = require('cheerio');
 var superagent = require('superagent');
 var StarDeal = require('../model/StarDeal');
+var User = require('../model/User');
 
 //商品评论页
 exports.dealpage = function(req, res){
@@ -124,7 +125,9 @@ exports.high_price_brand = function(req, res){
 
 //介绍页
 exports.jordan_descri = function(req, res){
-  res.render('person/jordan_descri', {user:req.session.user});         
+  User.queryComments(1, function(result) {
+    res.render('person/jordan_descri', {user:req.session.user,data:result});
+  });         
 }
 exports.kobe_descri = function(req, res){
   res.render('person/kobe_descri', {user:req.session.user});         

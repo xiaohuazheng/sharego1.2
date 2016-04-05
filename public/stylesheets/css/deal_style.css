@@ -286,7 +286,7 @@
     position: relative;
 }
 .subComm .tit i {
-    background: url(http://z5.tuanimg.com/v2/ju/img/closecomm.png) no-repeat;
+    background: url(image/closecomm.png) no-repeat;
     display: block;
     position: absolute;
     top: 12px;
@@ -304,7 +304,7 @@
     border-top: 1px solid #e5e5e5;
 }
 .subComm .tipinfo .icon {
-    background: url(http://z5.tuanimg.com/v2/ju/img/commok.png) no-repeat;
+    background: url(image/commok.png) no-repeat;
     float: left;
     width: 39px;
     height: 32px;

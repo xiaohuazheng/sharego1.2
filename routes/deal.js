@@ -130,7 +130,9 @@ exports.jordan_descri = function(req, res){
   });         
 }
 exports.kobe_descri = function(req, res){
-  res.render('person/kobe_descri', {user:req.session.user});         
+  User.queryComments(2, function(result) {
+    res.render('person/kobe_descri', {user:req.session.user,data:result});
+  });         
 }
 exports.james_descri = function(req, res){
   res.render('person/james_descri', {user:req.session.user});         

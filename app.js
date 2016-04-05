@@ -99,7 +99,7 @@ app.use('/high_price_brand',deal.high_price_brand);
 
 //介绍页
 app.use('/jordan_descri',deal.jordan_descri);
-
+app.use('/kobe_descri',deal.kobe_descri);
 
 
 app.use('/', routes.index);

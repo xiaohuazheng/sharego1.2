@@ -92,3 +92,14 @@ exports.modifypw = function (password, nickname, callback) {
     callback(rows);
   });
 };
+
+//用户注册
+exports.insert_comments = function (type, content, callback) {
+  MySQLUtil.query('insert into comments (type, content) values (?,?)',[type, content], function (rows, fields) {
+      if(rows){
+        callback(message.login.success, rows);        
+      }else{
+        callback(message.login.none, null);
+      }  
+  });
+};

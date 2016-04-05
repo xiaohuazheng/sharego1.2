@@ -155,18 +155,24 @@ $(function() {
 				oval = con.attr('title');
 
 			val = $.trim(val);
-			errTip(val, oval) && $.post('brand_comments', {
-				'content': val,
-				'brand_id': id
-			}, function(data) {
-				if (data.status == 1) {
+			errTip(val, oval);
+			$.ajax({
+				type:'post',
+				url:'brand_comments',
+				data:{
+					content: val,
+					brand_id: id
+				},
+				success:function() {
 					$('#subComm').show();
-					that.closeTip();
+					closeTip();
 					con.val(oval); //成功后还原为默认值
 					limit.html('剩余字数：200');
-				} else {
-					that.errTip(data);
-				}
+				},
+				error:function() {
+					console.log('error');
+				},
+				async: true
 			});
 		});
 	}

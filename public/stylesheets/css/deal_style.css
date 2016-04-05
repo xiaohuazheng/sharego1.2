@@ -277,6 +277,7 @@
     top: 100px;
     left: 37%;
     z-index: 111;
+    display: none;
 }
 .subComm .tit {
     font: 14px/20px "微软雅黑";

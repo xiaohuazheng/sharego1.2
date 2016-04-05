@@ -97,6 +97,11 @@ app.use('/naike_brand',deal.naike_brand);
 app.use('/low_price_brand',deal.low_price_brand);
 app.use('/high_price_brand',deal.high_price_brand);
 
+//介绍页
+app.use('/jordan_descri',deal.jordan_descri);
+
+
+
 app.use('/', routes.index);
 
 

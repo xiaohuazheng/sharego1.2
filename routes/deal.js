@@ -121,3 +121,29 @@ exports.high_price_brand = function(req, res){
     res.render('shoes/high_price_brand',{user:req.session.user,data:result});
   });
 };
+
+//介绍页
+exports.jordan_descri = function(req, res){
+  res.render('person/jordan_descri', {user:req.session.user});         
+}
+exports.kobe_descri = function(req, res){
+  res.render('person/kobe_descri', {user:req.session.user});         
+}
+exports.james_descri = function(req, res){
+  res.render('person/james_descri', {user:req.session.user});         
+}
+exports.durant_descri = function(req, res){
+  res.render('person/durant_descri', {user:req.session.user});         
+}
+exports.paul_descri = function(req, res){
+  res.render('person/paul_descri', {user:req.session.user});         
+}
+exports.irving_descri = function(req, res){
+  res.render('person/irving_descri', {user:req.session.user});         
+}
+exports.harden_descri = function(req, res){
+  res.render('person/harden_descri', {user:req.session.user});         
+}
+exports.morestar_descri = function(req, res){
+  res.render('person/morestar_descri', {user:req.session.user});         
+}

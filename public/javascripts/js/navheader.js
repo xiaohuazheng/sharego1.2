@@ -1,5 +1,9 @@
 $(function () {	
 
+	$('#logout').on('click', function() {
+		$.cookie('sharego_user', '', {expires: -1}); 
+	});
+
 	//初始化轮播器
 	$('#banner img').attr('opacity',0);
 	$('#banner img').eq(0).attr('opacity',1);

@@ -106,7 +106,7 @@ exports.insert_comments = function (type, username, content, com_time, callback)
 
 //查询评论表
 exports.queryComments = function (type, callback) {
-  MySQLUtil.query('select username, content, com_time from comments where type=?', [type], function (rows, fields) {
+  MySQLUtil.query('select username, content, com_time from comments where type=? order by com_time desc', [type], function (rows, fields) {
     callback(rows);
   });
 };

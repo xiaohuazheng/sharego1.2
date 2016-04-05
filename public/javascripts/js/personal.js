@@ -157,8 +157,7 @@ $(function() {
 				time = mydate.toLocaleString();
 
 			val = $.trim(val);
-			errTip(val, oval);
-			$.ajax({
+			errTip(val, oval) && $.ajax({
 				type:'post',
 				url:'brand_comments',
 				data:{
@@ -167,6 +166,7 @@ $(function() {
 					com_time: time
 				},
 				success:function() {
+					$('.comments_list').eq(0).prepend('<li class="comments"><div class="infor"><span class="time">发表于<i>' + time + '</i></span><em>我</em><p>' + val +'</p></div></li>');
 					$('#subComm').show();
 					closeTip();
 					con.val(oval); //成功后还原为默认值

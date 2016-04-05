@@ -3,7 +3,9 @@ $(function () {
 	//用户登录
 	$('.login input').click(function(){	
 		var backurl = $(this).attr('data-id');
-		if ($('#login-form input[name=password]').val().length >= 6) {		
+		console.log(username);
+		if ($('#login-form input[name=password]').val().length >= 6) {	
+			$.cookie('sharego_user', 1, { expires: 7, path: '/'});	
 			$('#loading').css('display','block');
 			$('#loading p').html('正在登录...');
 			console.log($("#login-form").serialize());

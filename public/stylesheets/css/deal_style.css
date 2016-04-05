@@ -170,6 +170,12 @@
     overflow: hidden;
     background: #fbfbfb;
 }
+#wyReping .commentNotice .notice {
+    float: right;
+    margin-right: 24px;
+    font-weight: 400;
+    color: #ee3838;
+}
 
 #wyReping .commentNotice span {
     margin-left: 25px;
@@ -261,7 +267,64 @@
 }
 .clear{clear: both;}
 
-
+.subComm {
+    border: 1px solid #b1b1b1;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    width: 408px;
+    height: 230px;
+    position: fixed;
+    top: 100px;
+    left: 37%;
+    z-index: 111;
+}
+.subComm .tit {
+    font: 14px/20px "微软雅黑";
+    color: #333;
+    text-align: left;
+    padding: 12px;
+    position: relative;
+}
+.subComm .tit i {
+    background: url(http://z5.tuanimg.com/v2/ju/img/closecomm.png) no-repeat;
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+.subComm .tipinfo {
+    background-color: #fff;
+    padding: 47px 0 30px 78px;
+    text-align: left;
+    overflow: hidden;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+}
+.subComm .tipinfo .icon {
+    background: url(http://z5.tuanimg.com/v2/ju/img/commok.png) no-repeat;
+    float: left;
+    width: 39px;
+    height: 32px;
+}
+.subComm .tipinfo .info {
+    float: left;
+    margin-left: 10px;
+    font: 700 16px/20px "微软雅黑";
+    color: #333;
+}
+.subComm .btn {
+    float: right;
+    background-color: #e02f2f;
+    border-radius: 3px;
+    padding: 9px 20px;
+    color: #fff;
+    font: 14px/14px "微软雅黑";
+    margin: 12px 15px 0 0;
+    cursor: pointer;
+}
 
 
 

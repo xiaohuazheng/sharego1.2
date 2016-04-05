@@ -37,7 +37,7 @@ exports.random = function (size) {
 };
 
 //删除左右空格
-trim = function(str){
+exports.trim = function(str){
 	return str.replace(/(^\s*)|(\s*$)/g,'');
 }
 

@@ -124,4 +124,92 @@ $(function() {
 		}
 	});
 
+	
+	//评论页提交评论
+	
+	var docom = $('#wyReping .DoComment'),
+		isLogin = $.cookie('sharego_user'),
+	    btn = docom.find('.subcom'),
+		con = docom.find('textarea'),
+		limit = docom.find('.limit');
+
+	con.focus(function() {
+		this.value == this.title ? this.value = '' : null;
+	});
+
+	con.blur(function() {
+		$.trim(this.value) == '' ? this.value = this.title : null;
+	});
+
+	con.keyup(function() {
+		var len = 200 - this.value.toString().length;
+		limit.html('剩余字数：' + len);
+	});
+
+	if (isLogin) {
+		btn.css('background-color', '#f66');
+
+		$('.subcom').on('click', function() {
+			var val = con.val(),
+				id = docom.find('input[name=brand_id]').attr('value'),
+				oval = con.attr('title');
+
+			val = $.trim(val);
+			errTip(val, oval) && $.post('brand_comments', {
+				'content': val,
+				'brand_id': id
+			}, function(data) {
+				if (data.status == 1) {
+					$('#subComm').show();
+					that.closeTip();
+					con.val(oval); //成功后还原为默认值
+					limit.html('剩余字数：200');
+				} else {
+					that.errTip(data);
+				}
+			});
+		});
+	}
+
+	var errTip = function(val, oval) { //评论字数错误提醒
+
+		var err = $('#wyReping .notice');
+
+		if (!!val && typeof val === 'object') {
+			err.html(val.message);
+			return false;
+		} else {
+			val = val.toString() || '';
+			var len = val.length;
+		}
+
+		if (val == oval) {
+			err.html('请输入评论！');
+			return false;
+		}
+
+		if (len < 5) {
+			err.html('您填写的评论字数少于5个字，请您继续填写！');
+			return false;
+		} else if (len > 200) {
+			err.html('您填写的评论字数超过200个字，请您进行修改！');
+			return false;
+		} else {
+			err.html('');
+			return true;
+		}
+	}
+
+	var closeTip = function() { //关闭弹窗
+		var close = $('#subComm .close, #subComm .btn');
+		close.click(function() {
+			var $this = $(this);
+			$(this).parents('#subComm').remove();
+		});
+	}
+		
+
+
+
+
 });

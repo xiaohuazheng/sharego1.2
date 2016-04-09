@@ -51,20 +51,19 @@
 
 
 参考文献目录
-	[1]李健．在线商品评论对产品销量影响研究．上海大学管理学院．第32卷第一期．2012.1
-	[2] JohnResig.精通JavaScript.人民邮电出版社.2008.4 .
-	[3]陆凌牛.《Node.js权威指南》.机械工业出版社,2014年4月 .
-	[4]朴灵.《深入浅出NodeJs》. 人民邮电出版社,2013年12月.
-	[5] 李战.悟透JavaScript.北京：电子工业出版社.2008.12.
-	[6].百度开放服务平台Web服务开发文档
-	       http://developer.baidu.com/map/index.php?title=webapi/guide/webservice-placeapi
-	[7]. 赵坤，寸志，雷宗民，吴中骅 《NodeJs实战》2014年5月
-	[8]. NodeJs API开发文档. https://nodejs.org/en/
-	[9].张逸.软件设计精要与模式［M］.第四版.
-	[10].Express API开发文档 http://www.expressjs.com.cn.
-	[11].MySQL数据库API文档. http://dev.mysql.com/doc
-	[12].Superagent API文档http://visionmedia.github.io/superagent
-	[13].Cheerio API文档 https://github.com/cheeriojs/cheerio
+	[1].	李健．在线商品评论对产品销量影响研究．上海大学管理学院．第32卷第一期．2012.1．
+	[2].	JohnResig.精通JavaScript.人民邮电出版社.2008.4 ．
+	[3].	陆凌牛.《Node.js权威指南》.机械工业出版社,2014年4月．
+	[4].	朴灵.《深入浅出NodeJs》. 人民邮电出版社,2013年12月．
+	[5].	李战.悟透JavaScript.北京：电子工业出版社.2008.12．
+	[6].	赵坤，寸志，雷宗民，吴中骅 《NodeJs实战》2014年5月．
+	[7].	NodeJs API开发文档. https://nodejs.org/en/．
+	[8].	张逸.软件设计精要与模式［M］.第四版．
+	[9].	Express API开发文档 http://www.expressjs.com.cn.
+	[10].	MySQL数据库API文档. http://dev.mysql.com/doc．
+	[11].	Superagent API文档http://visionmedia.github.io/superagent.
+	[12].	Cheerio API文档 https://github.com/cheeriojs/cheerio．
+
 
 
 

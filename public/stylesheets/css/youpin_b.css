@@ -54,7 +54,7 @@ a { outline: none; }
  */
 .youpinRecommDeal { margin-top: 20px; background: #fff; position: relative; border: 1px solid #f6f6f6; font-family: '微软雅黑'; width: 980px;padding: 20px 0;}
 .youpinRecommDeal a.rd-goodsImg { width:600px; height: 232px; float: left; display: block; }
-.youpinRecommDeal a.rd-goodsImg img { width: 100%; height: 100%; line-height: 0; font-size: 0; }
+.youpinRecommDeal a img { width: 600px; height: 600px; line-height: 0; font-size: 0; }
 .youpinRecommDeal .rd-goodsDetail { width: 335px; float: right; padding-right:15px; position: relative;}
 .youpinRecommDeal .rd-goodsDetail h2{display: none;}
 .youpinRecommDeal .rd-goodsDetail .rd-goodslist{height: 90px;border-bottom: 1px solid #ebebeb;padding-top: 15px;display: block;color: #666}
@@ -79,8 +79,6 @@ h2.rd-goodsDesc a { color: #666; }
 .subscript{position: absolute;top: 0;left:0;z-index: 102;}
 
 @media (min-width: 1280px){
-    .dealbox .next_img, .dealbox .next_img a{width: 285px!important;height: 417px!important;}
-    .dealbox .next_img img{width: 281px;height: 281px;}
     #seclevel .seclevelinner, .yugaoDeals .area{width: 1200px;}
     .dealHtml{width: 1202px;}
     .dealHtml .dealbox{width: 1220px;}
@@ -90,7 +88,7 @@ h2.rd-goodsDesc a { color: #666; }
     .you-deal .crawlerBtn .info{padding: 2px 10px 6px 10px;}
     .you-deal .crawlerBtn h4{height: 30px;line-height: 30px;}
     .you-deal .crawlerBtn .desc {height: 28px;line-height: 28px;}
-    .youpinRecommDeal{width: 1280px;padding:0;}
+    .youpinRecommDeal{width: 1200px;padding:0;}
     .youpinRecommDeal a.rd-goodsImg{width: 720px;height: 300px;}
     .youpinRecommDeal .rd-goodsDetail { padding: 30px 80px 0 60px; }
     .you-deal .bd .tips-overlayer .go-buy-code{width: 110px; height: 110px;}

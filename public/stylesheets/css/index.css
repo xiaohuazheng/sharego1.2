@@ -28,7 +28,7 @@
 .char_btn span.randar_char{color: #FF8080;margin-left: 357px;}
 .char_btn span.bar_char{color: #2B91C4;margin-left: 93px;}
 #myChart{margin:0 auto;}
-#myChart1{margin:0 auto;display: none;}  
+#myChart1{margin:0 auto;}  
 .comments{margin: 10px auto 0;width:980px;height:100%;}
 .comments ul{}
 .comments ul li{width: 960px;padding: 0 10px;list-style:none;color: #666;font-family: "微软雅黑";}

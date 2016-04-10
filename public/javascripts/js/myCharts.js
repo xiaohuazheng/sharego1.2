@@ -47,7 +47,16 @@ $(function() {
 	var myNewChart = new Chart(ctx1);
 	myNewChart.Bar(data1);
 
-	
+	//点击切换图表
+	$('#myChart1').hide();
+	$('.randar_char').on('click', function() {
+		$('#myChart1').hide();
+		$('#myChart').show();
+	});
+	$('.bar_char').on('click', function() {
+		$('#myChart').hide();
+		$('#myChart1').show();
+	});
 });
 
 

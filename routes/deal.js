@@ -38,7 +38,7 @@ exports.dealpage = function(req, res){
       });
       for(var i = 0; i < items.length; i++) {
       	var tempVal = parseInt(items[i].replace(/[^0-9]+/g, ''));
-      	items[i] = tempVal == 0 ? 96 : (tempVal/allComment) * 100;
+      	items[i] = tempVal == 0 ? 90 : (tempVal/allComment) * 100;
       }
       items.unshift(parseInt($('.evalu_value .prodvalu11').text()));
       

@@ -21,7 +21,7 @@ exports.dealpage = function(req, res){
       var dealInfo = [];
       dealInfo.push({
       	dealPic: $('.goods_big_img img').attr('src'),
-      	dealName: $('.goods_big_img a').attr('title'),
+      	dealName: $('.goods_big_img img').attr('alt'),
       	dealPrice: $('#prodPriceAj').text(),
       	dealBuy: dealUrl,
         dealid: urlId.substring(2)

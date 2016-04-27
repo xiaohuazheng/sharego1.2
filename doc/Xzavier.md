@@ -36,7 +36,7 @@
 
 
 [摘要]  随着互联网的不断创新和发展，网上购物越来越普及。电子商务是互联网技术和厂商或其他交易主体之间进行的信息商务活动，而网上购物正是这种活动的表现形式之一，网上购物影响我们的生活越来越深。而人们购物的选择则是基于物品的外观、价格和商品的网络口碑等，其中，商品的网络口碑很大程度上影响着用户购买的选择。而商品的口碑主要体现在商品买家秀的评论内容中，用户通常会浏览相关评论内容来考虑是否购买。但是，随着网络站点的大量增长，网络中的信息量逐渐增大，用户在购物时湮没在海量的信息海洋中，不知道该如何取舍，甚至被虚假的商品信息误导。
-为了解决用户网上购物时湮没在海量的信息海洋中而不能选择到有用的信息，为了帮助用户对商品的网络口碑、用户评价有一个快速、直观的理解，本网站利用网络爬虫爬取目标网站的商品信息，并对商品信息分类展示，爬取商品的主要评价数据，对评论数据进行图表化，提供给用户直观的可视化评论分析图，突出商品商品优缺点，以帮助用户进行购物选择，帮助用户区分商品是否值得购买，节约时间成本，提高整个购物的效率。
+为了解决用户网上购物时湮没在海量的信息海洋中而不能选择到有用的信息的问题，为了帮助用户对商品的网络口碑、用户评价有一个快速、直观的理解，本网站利用网络爬虫爬取目标网站的商品信息，并对商品信息分类展示，爬取商品的主要评价数据，对评论数据进行图表化，提供给用户直观的可视化评论分析图，突出商品商品优缺点，以帮助用户进行购物选择，帮助用户区分商品是否值得购买，节约时间成本，提高整个购物的效率。
 技术方面，本网站基于网络爬虫，用Node.js为语言基础，express技术框架、MySQL存储数据，用Superagent爬取商品数据，用Cheerio过滤并获取数据，用Canvas对数据以图表的方式可视化。
 最后将爬取到的数据结果以导购网站的形式展示，在网站的商品详情页给用户提供一个基于评论数据的直观化的评论图表，以提升用户购物体验，推进电子商务购物平台的发展。
 
@@ -50,9 +50,11 @@ Software Engineering
 
 Student： ZHENG Xiao-hua       Adviser: CHEN Wen
 
-
-[Abstract]  With the innovation, development and popularization of the Internet, online shopping is being substantially boosted. E-commerce is an information commerce activity implemented between the electronic information, Internet technology and the manufactures, or other transaction participants. Meanwhile, online shopping is the representative of this activity. Online shopping gradually has a huge influence on people’s life. On 11/11/2015, the turnover of the “Double Eleven Shopping Carnival” held by Taobao and Tianmao reached 91.217 billion RMB. The user of online shopping becomes more and more. The appearance, price and comment of a product are the basic standards for consumers’ decision. Among them, the comment of a product has a great influence on consumers’ decision. Users log in the online shopping website to browse the products. When they choose a fitted one, they will see the comments which will help the users to make a decision. However, with the substantial increase of the Web sites, the online information becomes multifarious and disorderly, which makes the purchase process inconvenient. This website is a comment website based on the Web Crawler. It will use the Web Crawler to acquire the popular comments and show them on the website. It will sum up the numerous comment and help users filter, distinguish the products. This website could save the time and cost, hence improving the online shopping efficiency. Technically speaking, this product comment website is based on Web Crawler, utilizing Node.js, express, MySQL to explore and superagent to acquire data. Besides, this website would directly show the data to users, in order to enhance the user experience and promote the development of E-commerce online shopping.
-[Key Words]  web crawler; Node; Express; crawling data
+[Abstract]  With the constant innovation and development of the Internet, online shopping is becoming more and more popular. E-commerce is an information commerce activity implemented between internet technology and the manufacturers, or other transaction agents. Meanwhile, online shopping is the representative of this activity. Online shopping gradually has a huge influence on people’s life. The appearance, price and comment of a product are the basic standards for consumers’ decision. Among them, the comment of a product has a great influence on consumers’ decision. The comment of a product is mainly showed by the comments on commodities . When they choose a fitted one, they will see the comments which will help the users to make a decision. However, with the substantial increase of the Web sites, the online information becomes multifarious and disorderly, which makes the purchase process inconvenient and mislead the buyers by false product information . 
+In order to solve the problem that users get confused with the vast amounts of information and cannot choose the useful information when online shopping.To help users have a quick and intuitive understanding of comments on a product,this website is a comment website based on the Web Crawler. It will use the Web Crawler to acquire the popular comments and show them on the website in the form of graph.,which can highlight the advantages and disadvantage.It will sum up the numerous comment and help users filter, distinguish the products. This website could save the time and cost, hence improving the online shopping efficiency. 
+Technically speaking, this product comment website is based on Web Crawler, using Node.js as the foundation of language, express as technical framework, MySQL to Store the data. Using Superagent to acquire the data of products and filter them by Cheerio, realizing data visualization by charted on a graph utilizing Canvas.
+Finally,showing the acquired information in the form of online product-buying guide and providing the chart based on the data of comments directly to users in the commodity-for-details page of website.in order to enhance the user experience and promote the development of E-commerce online shopping.
+[Key Words]  web crawler; Node; data analysis; Shopping guide website
  
 目  录
 1.绪论		1
@@ -250,10 +252,10 @@ Student： ZHENG Xiao-hua       Adviser: CHEN Wen
 随着互联网的不断创新和发展，网上购物越来越普及。电子商务是互联网技术和厂商或其他交易主体之间进行的信息商务活动，而网上购物正是这种活动的表现形式之一。网上购物影响我们的生活越来越深。2015年11月11日，淘宝、天猫“双十一购物狂欢节”成交额高达912.17亿人名币，网上购物的用户越来越多。以淘宝为首的购物网站诸如京东、蘑菇街、聚划算等越来越庞大。
 但是，随着网络站点的大量增长，网络中的信息量逐渐增大，用户在购物时湮没在海量的信息海洋中，不知道该如何取舍，甚至被虚假的商品信息误导。而人们购物的选择则是基于物品的外观、价格和评价等，其中，商品的评论数据很大程度上影响着用户购买的选择。而商品的口碑主要体现在商品买家秀的评论内容中，用户通常会浏览相关评论内容来考虑是否购买。但是，随着网络站点的大量增长，网络中的信息量逐渐增大，非常庞杂的信息使得用户在挑选自己满意的商品时显得非常麻烦，海量的商品信息让用户在选择时非常困难。
 为了解决用户购物要浏览大量信息而浪费掉大量时间的问题，解决用户查看评论信息不直观的问题，本网站利用网络爬虫爬取目标网站的商品信息，并对商品信息分类展示，爬取商品的主要评价数据，对评论数据进行图表化，提供给用户直观的可视化评价分析图，突出商品商品优缺点，以帮助用户进行选择，帮助用户区分商品是否值得购买，节约时间成本，提高整个购物的效率。本网站基于网络爬虫，拟用Node.js为语言技术，express为技术框架、MySQL存储数据，用Superagent爬取真实网站的商品数据，用Cheerio过滤并获取数据，用Canvas对数据以图表的方式可视化。最后网站在商品页给用户提供一个基于评论数据直观化的评论图表，以提升用户购物体验。
- Node.js是一个基于JavaScript的可以运行在服务端的技术，一个基于Chrome JavaScript运行时建立的平台， 可以方便地搭建响应速度快、易于扩展的网络应用。Node.js 使用的是事件驱动， 非阻塞I/O模型，从而得以轻量和高效，非常适合在数据密集型的系统应用。以Node为服务则让网络爬虫系统实现起来意义非常，而它的功能库superagent和async更是让数据爬取更加便捷。
-综上，通过Node.js开发一个界面美观，功能丰富的基于网络爬虫的商品评论网站，是方便网上购物用户的需要。对于网上购物者来说，这是件十分有意义的事。同时由于Node.js使用事件驱动， 非阻塞I/O 模型而得以轻量和高效的特点，使用Node.js开发一个基于网络爬虫的商品评论网站非常便捷和高效。
+ Node.js是一个基于JavaScript的可以运行在服务端的技术，一个基于Chrome JavaScript运行时建立的平台， 可以方便地搭建响应速度快、易于扩展的网络应用[3]。Node.js 使用的是事件驱动， 非阻塞I/O模型，从而得以轻量和高效，非常适合在数据密集型的系统应用[7]。以Node为服务则让网络爬虫系统实现起来意义非常，而它的功能库superagent和async更是让数据爬取更加便捷。
+综上，通过Node.js开发一个界面美观，功能丰富的基于网络爬虫的商品评论网站，是方便网上购物用户的需要。对于网上购物者来说，这是件十分有意义的事。同时由于Node.js使用事件驱动， 非阻塞I/O 模型而得以轻量和高效的特点，使用Node.js开发一个基于网络爬虫的商品评论网站非常便捷和高效[6]。
 1.2.	国内外研究现状
-国内外的购物网站，一般都是购物之后对商品进行简单评论，评论内容就按时间顺序显示在商品下方，没有把相关数据进行分析，用更直观的方式展示评论。国外网站诸如亚马逊、Amazon、Yoox、eLUXURY  LVMH，国内网站诸如淘宝，天猫，拍拍等皆是如此。当然，除了这些购物网站，还有很多导购网站,而导购网站的模式各不相同。有如下模式：
+国内外的购物网站，一般都是购物之后对商品进行简单评论，评论内容就按时间顺序显示在商品下方，没有把相关数据进行分析，用更直观的方式展示评论。国外网站诸如亚马逊、Amazon、Yoox、eLUXURY  LVMH，国内网站诸如淘宝，天猫，拍拍等皆是如此。当然，除了这些购物网站，还有很多导购网站,而导购网站的模式各不相同[1]。有如下模式：
 对比价格模式 ：国外有以PriceGrabber、Shopping为代表，国内则有如聪明点、一比二购为代表的网站，这类网站收集各个购物网站产品价格进行对比，同时提供产品价格走势。
 购买返现模式 ：国外有以FatWallet为代表，国内有以易购网、特价王为代表的网站。这类网站用户通过该门户进入相应的购物网站，在购物后获取返现。这类网站主要和各个购物网站达成返现比例提成的方式来进行营利，其本身主要是各个购物网站的入口。
 论坛信息+首页模式 ：国外有以DealSea、SlickDeals为代表，国内有以我爱打折网、上海打折网为代表的网站。这类网站用户通过论坛发布折扣信息，然后在首页按照时间和人气进行排序限时折扣信息列表。这类网站很多折扣信息由自己网站和其他合作伙伴进行发布。
@@ -280,17 +282,17 @@ Student： ZHENG Xiao-hua       Adviser: CHEN Wen
  
 2.	项目涉及的相关知识和技术简介
 2.1.	Node.js简介
-Node.js是一个可以运行在服务端和客户端的基于JavaScript的技术，一个基于Chrome JavaScript运行时建立的平台， 可以方便地搭建响应速度快、易于扩展的网络应用。Node.js 使用的是事件驱动， 非阻塞I/O 模型，从而得以轻量和高效，非常适合数据密集型的系统应用。在各大社区以及海内外各专家的贡献下，Node有一系列“非阻塞”库来支持Event loop的方式，在本质上就是给文件系统、数据库之类的资源提供访问接口。当向文件系统发送一个请求时，客户端无需等待寻址并检索文件，当硬盘准备好了的时候，非阻塞接口会通知Node。该模型以可扩展的方式简化了对慢资源的访问。Node.js是一个基于Javascript的运行环境(runtime)，实际上它是对Google V8引擎进行了封装。Google的V8引 擎执行Javascript的速度快，性能好。而Node对一些特殊用例进行了优化，提供了用于替代的API，使得V8在非浏览器环境下运行得更好。
+Node.js是一个可以运行在服务端和客户端的基于JavaScript的技术，一个基于Chrome JavaScript运行时建立的平台， 可以方便地搭建响应速度快、易于扩展的网络应用。Node.js 使用的是事件驱动， 非阻塞I/O 模型，从而得以轻量和高效，非常适合数据密集型的系统应用。在各大社区以及海内外各专家的贡献下，Node有一系列“非阻塞”库来支持Event loop的方式，在本质上就是给文件系统、数据库之类的资源提供访问接口。当向文件系统发送一个请求时，客户端无需等待寻址并检索文件，当硬盘准备好了的时候，非阻塞接口会通知Node。该模型以可扩展的方式简化了对慢资源的访问。Node.js是一个基于Javascript的运行环境(runtime)，实际上它是对Google V8引擎进行了封装。Google的V8引 擎执行Javascript的速度快，性能好。而Node对一些特殊用例进行了优化，提供了用于替代的API，使得V8在非浏览器环境下运行得更好[7]。
 Nodejs事件驱动、非阻塞I/O这种方式能很好的提高性能。随着Nodejs的不断发展、Nodejs渐渐演变成一种构建网络应用的流行技术，有Express、KOA等框架更让Node搭建网络应用更加简便。Node已发展为一个不共享任何资源的单线程、单进程系统，包含了功能很适合网络的库，这样Nodejs就为构建大型分布式应用提供了基础设施。这些功能库的目标都是为了构建快速、可伸缩的网络应用平台。但是，这些库自身非常简单、采用通信协议来组织许多的Node，非常容易通过拓展来达成构建大型网络应用的目的。Node.js可以在不新增额外线程的情况下，依然可以对任务进行并行处理，因为Node.js是单线程的。它通过事件轮询来实现并行操作，对此，要充分利用这一点，多使用非阻塞操作，多使用异步。虽然，人们在异步方面也遇到过层层嵌套等问题，但是，在技术飞速发展的今天，新的ES6也正在解决这类问题。所以，我们既可以安心的使用Node的时间循环又可以写出优美的代码。
 2.2.	Node.js的事件机制简介
-Node.js有很多模块，其中大部分都继承自Event模块。Event模块，即events.EventEmitter是一个简单的事件监听模式的实现。模块具有addListener/on，once，removeListener，removeAllListeners，emit等基本方法，用于事件监听模式的实现。Node的事件机制与前端DOM树上的事件机制不相同，因为在Node事件模块里不存在冒泡，逐层捕获等属于DOM的事件行为，也没有preventDefault()、stopPropagation()、 stopImmediatePropagation() 等阻止事件传递的方法。
+Node.js有很多模块，其中大部分都继承自Event模块。Event模块，即events.EventEmitter是一个简单的事件监听模式的实现。模块具有addListener/on，once，removeListener，removeAllListeners，emit等基本方法，用于事件监听模式的实现。Node的事件机制与前端DOM树上的事件机制不相同，因为在Node事件模块里不存在冒泡，逐层捕获等属于DOM的事件行为，也没有preventDefault()、stopPropagation()、 stopImmediatePropagation() 等阻止事件传递的方法[7]。
 随着Node.js的发展越来越快，社区贡献者越来越多，Node.js已经在众多的后端JavaScript技术之中脱颖而出，其中，其基于事件的特点正是因受到欢迎的原因。在此，就异步同步来说，拿Rhino来做比较，Rhino引擎支持的后端JavaScript始终受到其他语言同步执行的影响，导致JavaScript在后端编程与前端编程之间有着十分显著的差别，在编程模型上无法形成统一。在前端编程中，事件的应用十分广泛，DOM上有各种诸如click，hover，focus，blur,mouseenter，mouseleave的事件。在Ajax大规模应用之后，异步请求更得到广泛的认同，而Ajax也是基于事件机制的。所以，在后端JavaScript中存在基于事件的机制的需要越来越受到重视。
 而Node事件监听模式也是一种事件钩子机制，利用事件钩子导出内部数据或状态给外部调用者。Node.js中的很多对象，大多具有黑盒的特点，功能点较少，只有通过事件钩子的形式去获取对象运行期间的中间值或内部状态。这种通过事件钩子的方式，可以使编程者不用关注组件是如何启动和执行的，只需关注需要的事件上即可。
 2.3.	Express框架简介
-Express是一个基于Node.js平台的可以快速搭建极简、灵活的 web 应用的开发框架，它提供一系列强大的特性和方法，可以用于创建各种Web系统和移动设备应用。Express有比较丰富的HTTP快捷方法，还有任意排列组合的Connect中间件，这让创建健壮又友好的API变得既快速又简单。Express并不是对node.js 已有的特性进行二次抽象，而是在Node之上扩展了Web应用开发所需的功能。在使用上，Express的注册模板引擎的 callback 用来处理ext扩展名的文件。默认情况下, 根据文件扩展名使用require()方法获取对应的模板引擎。
+Express是一个基于Node.js平台的可以快速搭建极简、灵活的 web 应用的开发框架，它提供一系列强大的特性和方法，可以用于创建各种Web系统和移动设备应用。Express有比较丰富的HTTP快捷方法，还有任意排列组合的Connect中间件，这让创建健壮又友好的API变得既快速又简单[9]。Express并不是对node.js 已有的特性进行二次抽象，而是在Node之上扩展了Web应用开发所需的功能。在使用上，Express的注册模板引擎的 callback 用来处理ext扩展名的文件。默认情况下, 根据文件扩展名使用require()方法获取对应的模板引擎。
 Express在处理请求方面有一套机制。客户端发起请求，然后web服务端进行处理，服务端返回相关数据结果给客户端。客户端要发起请求，首先需要一个标识，在Web应用中通常情况下是URL，通过这个标识将请求发送给web服务端的某个具体处理程序，在这个过程中，请求可能会经历一系列全局处理，比如验证、授权、URL解析等，然后才定位到某个控制处理程序进行业务处理，最后将生成的数据返回给客户端，客户端将数据结合视图模版呈现在用户面前。而从客户端请求到web服务端端处理程序的过程，也就叫做路由，其实就是如何定位到web服务端处理程序的过程。Express正是有这样的机制，通过解析客户端传递过来的URL，对URL进行解析，并分发至不同的控制处理程序，最终程序处理完的数据返回给客户端
 2.4.	Superagent简介
-SuperAgent是一个小的客户端的HTTP请求库，并同样运行在Node.js的模块，有许多高级HTTP客户端功能。SuperAgent在爬取网页方面是一个能手，通过它的get方法可以获取到对应的URL的内容，不过这些内容是没有加以修饰的，很复杂很冗余，这时候，再加上同样运行在Node.js模块的一些库，比如Cheerio，使用Cheerio的功能方法，对数据进行过滤，便可以很便捷的获取到网页中想要的数据。
+SuperAgent是一个小的客户端的HTTP请求库，并同样运行在Node.js的模块，有许多高级HTTP客户端功能[11]。SuperAgent在爬取网页方面是一个能手，通过它的get方法可以获取到对应的URL的内容，不过这些内容是没有加以修饰的，很复杂很冗余，这时候，再加上同样运行在Node.js模块的一些库，比如Cheerio，使用Cheerio的功能方法，对数据进行过滤[12]，便可以很便捷的获取到网页中想要的数据。
  
 3.	系统设计与开发
 3.1.	项目概况
@@ -302,7 +304,7 @@ SuperAgent是一个小的客户端的HTTP请求库，并同样运行在Node.js�
 图3.1.1系统结构图  
  
 图3.1.2网络模型图
-用户交互模块是客户端的一部分，其中，用户注册登录、信息修改、网页跳转、商品搜索、品牌评论、收藏商品、点击购买等都是通过点击页面上相应的功能按钮来发送请求获取新的页面；信息展示模块主要对爬取到的数据以及后台数据进行可视化，品牌展示模块对数据进行分类集中展示；后台管理模块的用户管理是管理员对网站用户以及其他管理员的管理功能模块，数据爬取是管理员通过点击相应的功能按钮触发对目标网站数据进行爬取的功能模块。
+用户交互模块是客户端的一部分，其中，用户注册登录、信息修改、网页跳转、商品搜索、品牌评论、收藏商品、点击购买等都是通过点击页面上相应的功能按钮来发送请求获取新的页面；信息展示模块主要对爬取到的数据以及后台数据进行可视化，品牌展示模块对数据进行分类集中展示；后台管理模块的用户管理是管理员对网站用户以及其他管理员的管理功能模块，数据爬取是管理员通过点击相应的功能按钮触发对目标网站数据进行爬取的功能模块[8]。
 整个系统的操作流程如图3.2：
  
 图3.2系统操作流程图
